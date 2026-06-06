@@ -1,0 +1,320 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.defense",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.defense.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_armor_1": {
+		"title": [
+			"+1 ",
+			{
+				"translate": "skills.defense.armor_bonus",
+				"color": "white"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:netherite_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 1,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "lyqslkuje3kmtly2"
+		}
+	},
+	"armor+1": {
+		"title": [
+			"+1 ",
+			{
+				"translate": "skills.defense.armor_bonus",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:netherite_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 1,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "r0ttfyb5m9u3brk9"
+		}
+	},
+	"armor+2.5": {
+		"title": [
+			"§6+2.5 ",
+			{
+				"translate": "skills.defense.armor_bonus",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:netherite_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 2.5,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "fiqm3ov2d58w6bfx"
+		}
+	},
+	"root_armor_toughness+0.25": {
+		"title": [
+			"§6+0.25 ",
+			{
+				"translate": "skills.defense.armor_toughness_bonus",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "immersiveengineering:armor_steel_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.25,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "t3xqofp9phko1061"
+		}
+	},
+	"armor_toughness+0.25": {
+		"title": [
+			"§6+0.25 ",
+			{
+				"translate": "skills.defense.armor_toughness_bonus",
+				"color": "gold"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "immersiveengineering:armor_steel_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.25,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "a17it5445lo6t0t9"
+		}
+	},
+	"armor_toughness+0.5": {
+		"title": [
+			"§6+0.5 ",
+			{
+				"translate": "skills.defense.armor_toughness_bonus",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "immersiveengineering:armor_steel_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.5,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "z30jxg7t0l0lxvue"
+		}
+	},
+	"root_resistance+0.01": {
+		"title": [
+			"+1% ",
+			{
+				"translate": "skills.defense.resistance",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "iss98109o2kroiuj"
+		}
+	},
+	"resistance+0.01": {
+		"title": [
+			"+1% ",
+			{
+				"translate": "skills.defense.resistance",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ru0wovcvpwuytc1t"
+		}
+	},
+	"resistance+0.025": {
+		"title": [
+			"§6+2.5% ",
+			{
+				"translate": "skills.defense.resistance",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "596yud0dmflrhedt"
+		}
+	}
+}

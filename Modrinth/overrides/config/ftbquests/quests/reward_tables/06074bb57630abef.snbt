@@ -1,0 +1,30 @@
+{
+	id: "06074BB57630ABEF"
+	loot_size: 1
+	order_index: 43
+	rewards: [
+		{
+			id: "768CF5AF90392C99"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:creative_source_jar"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.2f
+		}
+		{ id: "139336832B2E6913", item: { count: 1, id: "l2complements:space_shard" } }
+		{
+			count: 6
+			id: "5EAA47F440A8998B"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

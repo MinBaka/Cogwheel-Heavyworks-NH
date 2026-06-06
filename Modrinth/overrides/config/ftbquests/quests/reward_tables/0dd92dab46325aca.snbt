@@ -1,0 +1,19 @@
+{
+	id: "0DD92DAB46325ACA"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			command: "/gamerule keepInventory true"
+			id: "739F390375AFDA97"
+			permission_level: 2
+			type: "command"
+		}
+		{
+			command: "/gamerule keepInventory false"
+			id: "25728C7C9B247F8C"
+			permission_level: 2
+			type: "command"
+		}
+	]
+}

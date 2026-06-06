@@ -1,0 +1,299 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0DFFFCE01FACDE66"
+	group: ""
+	icon: {
+		id: "twilightforest:skeleton_skull_candle"
+	}
+	id: "0DFFFCE01FACDE66"
+	images: [
+		{
+			height: 5.0d
+			image: "minecraft:textures/gui/hanging_signs/birch.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			height: 6.0d
+			image: "minecraft:block/stripped_birch_log"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 6.0d
+			image: "minecraft:block/stripped_birch_log"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			height: 6.0d
+			image: "minecraft:block/stripped_birch_log"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			height: 6.0d
+			image: "minecraft:block/stripped_birch_log"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:item/birch_hanging_sign"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:item/birch_hanging_sign"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:item/birch_hanging_sign"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:item/birch_hanging_sign"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 7.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "23808A0400B9ED79"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "61DBE1149BAE2597"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["23808A0400B9ED79"]
+			id: "700F9E1905A43445"
+			tasks: [{
+				id: "4481CAC95ADE07EA"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["700F9E1905A43445"]
+			id: "449EF54BB902C94B"
+			tasks: [{
+				id: "3C94F620B7FBB0F8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["449EF54BB902C94B"]
+			id: "16DDF943379136B5"
+			tasks: [{
+				id: "77027971730D61AE"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["16DDF943379136B5"]
+			id: "69B9C11BB43E7CD7"
+			tasks: [{
+				id: "5347C79E43E92E78"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["449EF54BB902C94B"]
+			id: "03D244BF16EE4289"
+			tasks: [{
+				id: "5DAF5F3A0A48DB7F"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["03D244BF16EE4289"]
+			id: "381EE0268FC1D1FB"
+			tasks: [{
+				id: "26F75AEDC394DEAA"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["381EE0268FC1D1FB"]
+			id: "55F3B232F5B90811"
+			tasks: [{
+				id: "11EB498376806F26"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["381EE0268FC1D1FB"]
+			id: "368FBD3B42B7B3E6"
+			tasks: [
+				{
+					id: "0904395BC32284FB"
+					type: "checkmark"
+				}
+				{
+					id: "46F919FF94F5658B"
+					item: { count: 1, id: "create:packager" }
+					type: "item"
+				}
+				{
+					id: "00058CD21C2C6E81"
+					item: { count: 1, id: "create:package_frogport" }
+					type: "item"
+				}
+				{
+					id: "4F4C39900DEFD29B"
+					item: { count: 1, id: "create:stock_ticker" }
+					type: "item"
+				}
+				{
+					id: "74BBC41A7541B50C"
+					item: { count: 1, id: "create:stock_link" }
+					type: "item"
+				}
+				{
+					id: "55574FBCEBD79633"
+					item: { count: 1, id: "create:white_postbox" }
+					type: "item"
+				}
+				{
+					id: "11B6465D5BD1E133"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:bookwyrm_charm" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "73D8EC268728D3A8"
+					item: { count: 1, id: "create:item_vault" }
+					type: "item"
+				}
+				{
+					id: "566DE993BC74C7D1"
+					item: { count: 1, id: "storagedrawers:oak_full_drawers_4" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["381EE0268FC1D1FB"]
+			id: "616028F3CC32A916"
+			tasks: [
+				{
+					id: "563AD4DE428EB2BB"
+					type: "checkmark"
+				}
+				{
+					id: "260046BE07C2E305"
+					item: { count: 1, id: "create:factory_gauge" }
+					type: "item"
+				}
+				{
+					id: "6F6563C91F9705D4"
+					item: { count: 1, id: "create:redstone_requester" }
+					type: "item"
+				}
+				{
+					id: "0E5328FEF4CC3266"
+					item: { count: 1, id: "create:redstone_link" }
+					type: "item"
+				}
+				{
+					id: "099EE26D9C96D9F0"
+					item: { count: 1, id: "create:stockpile_switch" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["69B9C11BB43E7CD7"]
+			icon: {
+				id: "minecraft:chainmail_helmet"
+			}
+			id: "0D3A0FD842147159"
+			tasks: [{
+				id: "79CF2670E287D651"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0D3A0FD842147159"]
+			id: "33488C658366C2AD"
+			tasks: [{
+				id: "3359AFDFC42B6E95"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			id: "3E5B9585FEC9C01C"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "431456961B92E261"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3E5B9585FEC9C01C"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "3F16ABA55FF96879"
+			tasks: [{
+				id: "40ECEBD192A93534"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+	]
+}

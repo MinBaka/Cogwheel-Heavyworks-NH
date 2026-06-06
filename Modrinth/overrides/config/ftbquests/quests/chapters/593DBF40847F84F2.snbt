@@ -1,0 +1,1427 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "593DBF40847F84F2"
+	group: "13DF5BA5EEE759A2"
+	icon: {
+		id: "create:brass_casing"
+	}
+	id: "593DBF40847F84F2"
+	images: [
+		{
+			height: 5.0d
+			image: "citadel:textures/gui/book/book_pages.png"
+			rotation: 0.0d
+			width: 18.0d
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			height: 3.0d
+			image: "tacz:textures/crosshair/normal/square_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			height: 5.0d
+			image: "create:block/fan_blades"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			height: 8.0d
+			image: "createdieselgenerators:item/entity_filter"
+			rotation: 0.0d
+			width: 15.0d
+			x: 12.0d
+			y: 5.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4CC54F3BE47581F8"
+			tasks: [{
+				id: "30F3DA11528247D7"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "4B4835E1F3D6DB26"
+			rewards: [{
+				id: "382D332237401187"
+				item: {
+					components: {
+						"ftbquests:missing_item": "createages:brass_machine"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "77E000B841167801"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			id: "5631D62D308A534F"
+			tasks: [{
+				id: "3544D8005A154894"
+				item: { count: 1, id: "create:empty_blaze_burner" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CC54F3BE47581F8"]
+			id: "693B0155B833E3D8"
+			tasks: [{
+				id: "65C97D834C4E059B"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "448073168B0B35C4"
+			tasks: [{
+				id: "3690A3EF0A8F0BCB"
+				item: { count: 1, id: "create_connected:brass_gearbox" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "0A11584A869D25B8"
+			tasks: [{
+				id: "60C5F27DF31EE669"
+				item: { count: 1, id: "create:brass_funnel" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "44470723D0D8003E"
+			tasks: [{
+				id: "0484633E2B5E8323"
+				item: { count: 1, id: "create:brass_tunnel" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5631D62D308A534F"]
+			id: "0F5358127C9A5367"
+			tasks: [{
+				id: "7A237BBBEAC12FF3"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			id: "5577D8D1041FFFE9"
+			tasks: [{
+				id: "7F4459DCDCB5D8E5"
+				item: { count: 1, id: "create_fantasizing:compact_hydraulic_engine" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "19403D1BB5F6F554"
+			tasks: [{
+				id: "2531A4862765FB0E"
+				item: { count: 1, id: "create_fantasizing:compact_wind_engine" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0F5358127C9A5367"
+				"09B5F2DA9E6B9ACD"
+			]
+			id: "00D284B024F904C5"
+			rewards: [{
+				id: "2BF7062D9A9ABC58"
+				item: {
+					count: 1
+					id: "createdieselgenerators:huge_diesel_engine"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "739EA4A83B336C68"
+				item: { count: 1, id: "createdieselgenerators:huge_diesel_engine" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["09B5F2DA9E6B9ACD"]
+			id: "03DC0E6ECF2DF80A"
+			tasks: [{
+				id: "4FC08ABD771758DB"
+				item: { count: 1, id: "createdieselgenerators:diesel_engine" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["09B5F2DA9E6B9ACD"]
+			id: "2D5FD7DB63698CAF"
+			tasks: [{
+				id: "2F18D0457947F58C"
+				item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			id: "09B5F2DA9E6B9ACD"
+			tasks: [{
+				id: "2F4DBFF497476FCD"
+				item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			id: "284DE8D41C1F2B84"
+			tasks: [{
+				id: "4095808FA2F44FD3"
+				item: { count: 1, id: "createdieselgenerators:oil_scanner" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5631D62D308A534F"]
+			id: "2140F2EB11E05241"
+			tasks: [{
+				id: "76A2CDD68C04BB13"
+				item: { count: 1, id: "createdieselgenerators:burner" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["284DE8D41C1F2B84"]
+			id: "24610C32385151A7"
+			tasks: [{
+				id: "710B56077CD9693B"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["284DE8D41C1F2B84"]
+			id: "17848F97E0A15E2E"
+			tasks: [{
+				id: "78199771C95CE6E6"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_crank" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["284DE8D41C1F2B84"]
+			id: "37D5985163865D32"
+			tasks: [{
+				id: "3998996D48F3F982"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["284DE8D41C1F2B84"]
+			id: "07E6A6875995C0A3"
+			tasks: [{
+				id: "1E32737E2144E464"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			id: "60A70482F387A7F7"
+			tasks: [{
+				id: "2C133C5FC3C8E452"
+				item: { count: 1, id: "create:smart_fluid_pipe" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "51E078D1FF6DE6B9"
+			tasks: [{
+				id: "7C5D16F641553F1D"
+				item: { count: 1, id: "create:smart_chute" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "73A15C713879E264"
+			tasks: [{
+				id: "7C88D8ED406E1BC8"
+				item: { count: 1, id: "create:content_observer" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B4835E1F3D6DB26"]
+			id: "0F4903367D5F8A31"
+			tasks: [{
+				id: "4C1035DA96AC1AB1"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F4903367D5F8A31"]
+			id: "75E2605D8D802B45"
+			tasks: [{
+				id: "5D4885BAA4E1A6BF"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "54F5875BC02EB18A"
+			tasks: [{
+				id: "65E36F09580B7007"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4CC54F3BE47581F8"]
+			id: "34A055A37CACBC17"
+			tasks: [{
+				id: "206033B2227F96D0"
+				item: { count: 1, id: "create_connected:inventory_access_port" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			id: "35468D3F4BF767E4"
+			tasks: [{
+				id: "3F426F2ACB9722C6"
+				item: { count: 1, id: "create:sequenced_gearshift" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "220CABF9A3025CEE"
+			tasks: [{
+				id: "1D4341E5DA18E757"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "0962DB2B394686BF"
+			tasks: [{
+				id: "202897E56BB8ADB3"
+				item: { count: 1, id: "create_connected:kinetic_bridge" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			id: "41E151A31DD89808"
+			shape: "hexagon"
+			tasks: [{
+				id: "1AE3B071091C8019"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.5d
+		}
+		{
+			id: "2DF06242ABEC4805"
+			shape: "hexagon"
+			tasks: [{
+				id: "24E1AA35CC0B51E3"
+				item: { count: 1, id: "createoreexcavation:extractor" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "6497942697DA4B42"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:coal"
+				id: "46D5E2604925B02C"
+				permission_level: 2
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "509C5EC4336CA648"
+					item: { count: 1, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "751934A8408970EE"
+					item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["41E151A31DD89808"]
+			id: "45C353C9FD616A3D"
+			tasks: [{
+				id: "24D7707B444B02EB"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "03961D19C4337750"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:raw_redstone"
+				id: "5992043F696A4220"
+				permission_level: 2
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "638189EE72894C6A"
+					item: { count: 1, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "3DE0CB1803A74A77"
+					item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "6D514A68AF8E173A"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:lapis_lazuli"
+				id: "77266D201226EAF0"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "4FE5529438CEF052"
+					item: { count: 1, id: "minecraft:lapis_lazuli" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "5C0A64F3E43396B3"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "1D7E804DA373E10E"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:raw_iron"
+				id: "0CD47FDA35B76161"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "0DB3C0F025A3E2A7"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "69C924ECB6966FC8"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "13F956A82897B6A8"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:raw_copper"
+				id: "1A9D3CEDF3CB9F91"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "79FDE7BF8908EB24"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "722BD0B57F8C6C18"
+					item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["45C353C9FD616A3D"]
+			id: "0E5CE3C432140070"
+			rewards: [{
+				command: "/coe setvein ~ ~ ~ kubejsore:raw_zinc"
+				id: "6E1999C42B90C327"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "56C6B9C798A92740"
+					item: { count: 1, id: "create:zinc_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "3E1275509C96162F"
+					item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["45C353C9FD616A3D"]
+			id: "7EC5E3FCDB6D95E1"
+			tasks: [{
+				id: "060DD53978204277"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			id: "2134185CBFEA4C10"
+			tasks: [{
+				id: "4717D69188C9C09B"
+				item: { count: 1, id: "createoreexcavation:vein_finder" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.5d
+		}
+		{
+			id: "0EB441EBC7970032"
+			tasks: [{
+				id: "2FE98C47444B89B6"
+				item: { count: 1, id: "createoreexcavation:vein_atlas" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "0A701597827414CB"
+			rewards: [{
+				command: "/coe locate kubejsore:coolant"
+				id: "454956D533411611"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "4D35623D988B31F5"
+				item: { components: { "ftbquests:missing_item": "ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "4783D238BD947E5D"
+			rewards: [{
+				command: "/coe locate kubejsore:raw_diamond"
+				id: "2F8773A539F674D8"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "3FFBA9EC489AF7FA"
+				item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "74B45FC9CC3845C2"
+			rewards: [{
+				command: "/coe locate kubejsore:raw_emerald"
+				id: "79F5C8A15EA2862F"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "6B841EE5DAD126D8"
+				item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "70A0C2D6041EAB79"
+			rewards: [{
+				command: "/coe locate kubejsore:raw_gold"
+				id: "775A2D701AB6A349"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "797C734C02809E8A"
+				item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "12DDA6301E7527FF"
+			rewards: [{
+				command: "/coe locate kubejsore:gold_nugget"
+				id: "6EED9AB69325D13C"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "68E9130D1CF179F1"
+				item: { components: { "ftbquests:missing_item": "ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "3BAB1E6CAFF9C333"
+			rewards: [{
+				command: "/coe locate kubejsore:glowstone_dust"
+				id: "690C9D6ED633D783"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "03DFBAAE08F2FB82"
+				item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "2154FF5225E13F3B"
+			rewards: [{
+				command: "/coe locate kubejsore:quartz"
+				id: "5507D8B96277045A"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "3A431E0DCCEDF13E"
+				item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EC5E3FCDB6D95E1"]
+			id: "0468E3AD52E21C40"
+			rewards: [{
+				command: "/coe locate kubejsore:ancient_debris"
+				id: "42E2EB6CB71BCF13"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "0688D67744AB2482"
+					item: { components: { "ftbquests:missing_item": "10x ars_nouveau:earth_essence" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2BD61BD281DB4B91"
+					item: { count: 1, id: "minecraft:netherite_ingot" }
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			id: "3F08953FDF2F3B6C"
+			rewards: [{
+				id: "661DAB336AB8CD5E"
+				item: {
+					count: 1
+					id: "create:blaze_burner"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "0021F76F4DE5F9D4"
+					item: { count: 1, id: "create:empty_blaze_burner" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "30C689AA31EDF136"
+					item: { count: 1, id: "minecraft:gunpowder" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "5F4A2FA2A50798E2"
+			tasks: [{
+				id: "25371422185C417C"
+				item: { count: 1, id: "create:elevator_pulley" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "7082ED1F8DF68A1A"
+			tasks: [{
+				id: "4A6E59427D91832E"
+				item: { count: 1, id: "create_fantasizing:transporter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09B5F2DA9E6B9ACD"]
+			id: "7C43D4D00ABB7045"
+			tasks: [{
+				id: "61992DDBD8F5B684"
+				item: { count: 1, id: "createdieselgenerators:oil_barrel" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"44470723D0D8003E"
+				"693B0155B833E3D8"
+				"54F5875BC02EB18A"
+				"5F4A2FA2A50798E2"
+				"73A15C713879E264"
+				"5577D8D1041FFFE9"
+				"0F4903367D5F8A31"
+				"41E151A31DD89808"
+				"60A70482F387A7F7"
+				"07E6A6875995C0A3"
+				"448073168B0B35C4"
+				"220CABF9A3025CEE"
+				"5631D62D308A534F"
+				"4B4835E1F3D6DB26"
+				"2DF06242ABEC4805"
+				"00D284B024F904C5"
+				"51E078D1FF6DE6B9"
+				"35468D3F4BF767E4"
+				"7082ED1F8DF68A1A"
+				"34A055A37CACBC17"
+				"19403D1BB5F6F554"
+				"75E2605D8D802B45"
+				"0F5358127C9A5367"
+				"0A11584A869D25B8"
+				"24A98E5DFC9B0F69"
+				"74EF4DC2CBE9D76D"
+				"21372E8E6F130943"
+				"0B0F5DA729F8EE39"
+				"0E044E1B6448653D"
+				"76321F982B84A6A4"
+				"13892099C6FE9101"
+				"7D63CE8B02072C7F"
+				"0DE78A35B11DCC9D"
+				"18A2C33662AE3BAE"
+				"2F807DC2B5A26316"
+				"23E3734553855FF4"
+				"3FBEDFDF4D211A1A"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "299BAE1CC79785A1"
+			size: 2.0d
+			tasks: [{
+				id: "2828F46C99333080"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			id: "76321F982B84A6A4"
+			rewards: [
+				{
+					id: "7CEA5E18AD7B4B9A"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "25A5DA14FA983CC8"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:crusher_maxed_0000"
+				criterion: ""
+				id: "17C9D79B56CF5C44"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			id: "23E3734553855FF4"
+			rewards: [
+				{
+					id: "3552416C16C75DEA"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "6D03E881C6B02330"
+					item: {
+						components: {
+							"ftbquests:missing_item": "fluid:baton"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:arm_many_targets"
+				criterion: ""
+				id: "4E3AC3DE4DBCDFEA"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			id: "74EF4DC2CBE9D76D"
+			rewards: [
+				{
+					id: "0DC3AB848A7B901A"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "58F50DAFF8C16F2E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "1D539A26EB8EB303"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:train_roadkill"
+				criterion: ""
+				id: "3C1B2D6B91958471"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			id: "21372E8E6F130943"
+			rewards: [
+				{
+					id: "6B97F277A91F853E"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "7BDD20F627B685E7"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:long_train"
+				criterion: ""
+				id: "3D5E9DF41315B866"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			id: "13892099C6FE9101"
+			rewards: [
+				{
+					id: "595A2A46C913F540"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "18B2D95E6721BAFE"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "5655102962B60A3B"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:steam_engine_maxed"
+				criterion: ""
+				id: "4B8D4AB870498476"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: 4.5d
+		}
+		{
+			id: "18A2C33662AE3BAE"
+			rewards: [
+				{
+					id: "3DB0E8E1BB6AFF6C"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "54E3AAB2CFDCA928"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00F67F8C61F78157"
+					item: {
+						count: 1
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:hose_pulley_lava"
+				criterion: ""
+				id: "1A04E1274ED4BE4E"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			id: "0DE78A35B11DCC9D"
+			rewards: [
+				{
+					count: 2
+					id: "294FB75F4FECFF23"
+					item: {
+						components: {
+							"ftbquests:missing_item": "rainbowcompound:netherstar_ingot"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "74E1646835E145DB"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "1E476274976712F5"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:long_travel"
+				criterion: ""
+				id: "3F6DE7C4DA6DA7D3"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			id: "0E044E1B6448653D"
+			rewards: [
+				{
+					id: "4EF15579E3586BF1"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "3574852BFB5D43E5"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 3
+					id: "3C1E13E429E4ED4F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:train_crash_backwards"
+				criterion: ""
+				id: "47B659DE2A9DB821"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			id: "24A98E5DFC9B0F69"
+			rewards: [
+				{
+					id: "43936BD062F16913"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "4823A274EC00DE81"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "741C0D27EDAE91B0"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:raffle_ticket_rare"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:cart_pickup"
+				criterion: ""
+				id: "0EF47800EEB2C61D"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			id: "3FBEDFDF4D211A1A"
+			rewards: [
+				{
+					id: "28A0EDF0AD170A29"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "2A7766E0C53BE6EA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:red_signal"
+				criterion: ""
+				id: "5171B61276266F78"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 6.0d
+		}
+		{
+			id: "0B0F5DA729F8EE39"
+			rewards: [
+				{
+					count: 10
+					id: "512D9AD041A013F6"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:raffle_ticket_legendary"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2A86412048F2BEEB"
+					item: {
+						count: 1
+						id: "minecraft:netherite_block"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1D1AEA7AEBB5F70A"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+				{
+					id: "22702E7284BAD26C"
+					item: {
+						count: 1
+						id: "l2complements:eternium_block"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4859870FD8077AC6"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6843B27AA178AB7B"
+					item: {
+						components: {
+							"ftbquests:missing_item": "rainbowcompound:rainbow_upgrade_kit"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					advancement: "create_connected:overpowered_brake_0"
+					criterion: ""
+					id: "5FB97251EED6C4AB"
+					type: "advancement"
+				}
+				{
+					id: "2EB69663A754EBCB"
+					item: { count: 1, id: "create_connected:brake" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			id: "7D63CE8B02072C7F"
+			rewards: [
+				{
+					id: "21B646D3539251CA"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "23BACDF4B7F42BE2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:chained_drain"
+				criterion: ""
+				id: "2B04E94E4DBBA1E7"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "2F807DC2B5A26316"
+			rewards: [
+				{
+					id: "3B0DFAD0BE31A647"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:steam_source_emblem"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2D86C636DF98093F"
+					item: {
+						count: 1
+						id: "create_fantasizing:compact_wind_engine"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:windmill_maxed"
+				criterion: ""
+				id: "41E73609C64A4727"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+	]
+}

@@ -1,0 +1,744 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7A89FF56B36B2A6C"
+	group: ""
+	id: "7A89FF56B36B2A6C"
+	images: [
+		{
+			height: 10.0d
+			image: "twilightforest:block/pedestal/ur-ghast_glow"
+			rotation: 0.0d
+			width: 10.0d
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			height: 5.0d
+			image: "twilightforest:block/hollow_oak_sapling"
+			rotation: 0.0d
+			width: 5.0d
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			height: 5.0d
+			image: "twilightforest:block/hollow_oak_sapling"
+			rotation: 0.0d
+			width: 5.0d
+			x: -17.0d
+			y: -2.5d
+		}
+		{
+			height: 10.0d
+			image: "minecraft:block/fire_1"
+			rotation: 0.0d
+			width: 10.0d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 10.0d
+			image: "biomesoplenty:block/algal_end_stone_side"
+			rotation: 0.0d
+			width: 10.0d
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			height: 5.0d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbquests:block/barrier_open"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.3d
+			image: "tacz:textures/crosshair/normal/square_4.png"
+			rotation: 0.0d
+			width: 3.3d
+			x: 3.0d
+			y: 14.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			id: "0302D7004F00B3A6"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "6D92AE69AAF3FF0A"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0302D7004F00B3A6"]
+			id: "513900226D8A87BC"
+			tasks: [{
+				id: "065FBEC302B76C7B"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0302D7004F00B3A6"]
+			id: "3B2BD5FF007E0BF5"
+			tasks: [
+				{
+					id: "0BEE90A4745CEA43"
+					item: { count: 1, id: "naturescompass:naturescompass" }
+					type: "item"
+				}
+				{
+					id: "316E122873F65DA3"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0302D7004F00B3A6"]
+			id: "46DE347215389C0E"
+			tasks: [{
+				id: "6AEDD2EBCD6AC0D0"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46DE347215389C0E"]
+			id: "2B586D1A20812478"
+			rewards: [{
+				id: "67181CA97DC2C7A4"
+				item: {
+					count: 1
+					id: "twilightforest:magic_map_focus"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "22087E9D1AA76961"
+				type: "dimension"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0302D7004F00B3A6"]
+			id: "1CA4857BD51B2436"
+			tasks: [{
+				count: 10L
+				id: "778E913EDD3D7659"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CA4857BD51B2436"]
+			id: "068FE3AC6951B681"
+			rewards: [
+				{
+					count: 8
+					id: "36AE182895629910"
+					item: {
+						count: 1
+						id: "minecraft:quartz"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7F23A47A45303006"
+					item: {
+						count: 1
+						id: "minecraft:glowstone_dust"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "76566DCE784B4D2E"
+					item: {
+						count: 1
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "5B879BAB4EE0FD40"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["068FE3AC6951B681"]
+			id: "2894DA7F4C272AA8"
+			rewards: [{
+				id: "595D535443635734"
+				item: {
+					count: 1
+					id: "minecraft:wither_skeleton_skull"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F8338E59090726A"
+				structure: "betterfortresses:fortress"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B586D1A20812478"]
+			id: "06F1E4657A0B3673"
+			tasks: [{
+				id: "5AB44885BFD2C371"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["06F1E4657A0B3673"]
+			id: "5A6CBE9461BC7E70"
+			rewards: [{
+				count: 5
+				id: "6D20CB5BAA5DC8DB"
+				item: {
+					count: 1
+					id: "twilightdelight:plate_of_fiery_snakes"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+				id: "32CAE31442946430"
+				type: "advancement"
+			}]
+			x: -9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A6CBE9461BC7E70"]
+			id: "168FEF5E75606FDA"
+			rewards: [{
+				id: "139E55B801094904"
+				item: {
+					count: 1
+					id: "twilightforest:peacock_feather_fan"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+				id: "513E4804B0D92CA1"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["168FEF5E75606FDA"]
+			id: "11DF04E23B2C3989"
+			rewards: [{
+				count: 5
+				id: "3C3D56D61F9A8299"
+				item: {
+					count: 1
+					id: "twilightdelight:grilled_tomahawk_smeak"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "1D5B492BAF341D43"
+				type: "kill"
+				value: 1L
+			}]
+			x: -13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["11DF04E23B2C3989"]
+			id: "21506BA622ECF0F1"
+			rewards: [{
+				count: 5
+				id: "3E266F37C5CFA809"
+				item: {
+					count: 1
+					id: "l2complements:sun_membrane"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_hydra"
+				criterion: ""
+				id: "71769315B60C6EFE"
+				type: "advancement"
+			}]
+			x: -14.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["168FEF5E75606FDA"]
+			id: "1A722825936E3715"
+			rewards: [{
+				count: 5
+				id: "6C520FAB1B1DFCAE"
+				item: {
+					count: 1
+					id: "l2complements:soul_flame"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "167F1C14E31D16CE"
+				type: "kill"
+				value: 1L
+			}]
+			x: -13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1A722825936E3715"]
+			id: "35449DABF1A7235F"
+			rewards: [{
+				count: 5
+				id: "70A8D3064FF2D66B"
+				item: {
+					count: 1
+					id: "l2complements:void_eye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_glacier"
+				criterion: ""
+				id: "3831088702F85EA5"
+				type: "advancement"
+			}]
+			x: -14.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["168FEF5E75606FDA"]
+			id: "3C8F5E181945B737"
+			rewards: [{
+				count: 5
+				id: "00DA058A4D958FB1"
+				item: {
+					count: 1
+					id: "l2complements:explosion_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_knights"
+				criterion: ""
+				id: "691D67B89572EF49"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C8F5E181945B737"]
+			id: "7298BAC0A5AEDFA6"
+			rewards: [{
+				count: 5
+				id: "5F2C121285250F7C"
+				item: {
+					count: 1
+					id: "twilightforest:fiery_tears"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_ur_ghast"
+				criterion: ""
+				id: "62C5F40BF17113BF"
+				type: "advancement"
+			}]
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7298BAC0A5AEDFA6"]
+			id: "19CD65FE0D6EDD89"
+			tasks: [{
+				id: "7EACA6551E785A44"
+				item: { count: 1, id: "twilightforest:fiery_tears" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7298BAC0A5AEDFA6"
+				"35449DABF1A7235F"
+				"21506BA622ECF0F1"
+			]
+			id: "7C6BD8CC90E8C44D"
+			rewards: [{
+				id: "7DB849CB3A7F7AFA"
+				item: {
+					count: 1
+					id: "twilightforest:fiery_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:progress_merge"
+				criterion: ""
+				id: "390DBAF552FEF76B"
+				type: "advancement"
+			}]
+			x: -16.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7C6BD8CC90E8C44D"]
+			id: "62DA8932080B62A9"
+			tasks: [{
+				advancement: "twilightforest:troll"
+				criterion: ""
+				id: "38C0D616517EA2AA"
+				type: "advancement"
+			}]
+			x: -18.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7C6BD8CC90E8C44D"]
+			id: "361509A438E54983"
+			tasks: [{
+				advancement: "twilightforest:giants"
+				criterion: ""
+				id: "6F3F30F3514E80F9"
+				type: "advancement"
+			}]
+			x: -18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"361509A438E54983"
+				"62DA8932080B62A9"
+			]
+			id: "0C3D3E0C4CB7C8EE"
+			tasks: [{
+				id: "119676EC68BC40F1"
+				item: { count: 1, id: "twilightforest:lamp_of_cinders" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["06F1E4657A0B3673"]
+			id: "4B4B5092D6C0CBBA"
+			rewards: [{
+				id: "12C6A65EF1877394"
+				item: {
+					count: 1
+					id: "twilightdelight:fiery_cooking_pot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "twilightforest:quest_ram"
+				criterion: ""
+				id: "24FA4BB4434AE8D9"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0C3D3E0C4CB7C8EE"]
+			id: "35C43EFA44495BA7"
+			rewards: [
+				{
+					count: 3
+					id: "7FACC17279FD7036"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+				{
+					id: "2F156AA7C2716572"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			tasks: [{
+				id: "3B6691985125FD9B"
+				item: { count: 1, id: "twilightforest:uncrafting_table" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["068FE3AC6951B681"]
+			id: "2DD4B8234FF36D84"
+			tasks: [{
+				id: "55F68B27C71656A9"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2DD4B8234FF36D84"]
+			id: "524FB10E90115DE2"
+			rewards: [{
+				id: "159FF8CF57325299"
+				item: {
+					count: 1
+					id: "minecraft:ancient_debris"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "biomesoplenty:withered_abyss"
+				id: "3D2AA02274F9FFF8"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2DD4B8234FF36D84"]
+			id: "0A4DE8E3F3BDC323"
+			rewards: [{
+				id: "1F399D780E9F957B"
+				item: {
+					count: 1
+					id: "minecraft:ancient_debris"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "biomesoplenty:undergrowth"
+				id: "0F2CC5C91E1AE1FE"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2DD4B8234FF36D84"]
+			id: "25B71E5F93423C84"
+			rewards: [{
+				id: "60CD03CD12BC8F30"
+				item: {
+					count: 1
+					id: "minecraft:ancient_debris"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "biomesoplenty:visceral_heap"
+				id: "0B14D9B0B1126049"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25B71E5F93423C84"]
+			id: "116BFF8B6A88F8B6"
+			rewards: [{
+				id: "71AD65BD9776C97E"
+				item: {
+					count: 1
+					id: "vampirism:blood_bucket"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A0D324C05C614DE"
+				item: { count: 1, id: "biomesoplenty:blood_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DD4B8234FF36D84"]
+			id: "7DB2094B22A05B71"
+			rewards: [{
+				id: "160DBE413F3F3189"
+				item: {
+					count: 1
+					id: "minecraft:ancient_debris"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "biomesoplenty:crystalline_chasm"
+				id: "60B508505DB51E2F"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7DB2094B22A05B71"]
+			id: "402A8A16F4D13A35"
+			rewards: [{
+				count: 5
+				id: "15F57105F579793A"
+				item: {
+					count: 1
+					id: "create:polished_rose_quartz"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "33053BFC9965017F"
+					item: { count: 1, id: "biomesoplenty:rose_quartz_block" }
+					type: "item"
+				}
+				{
+					id: "42B5BB5F19DDF790"
+					item: { count: 1, id: "biomesoplenty:rose_quartz_chunk" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2DD4B8234FF36D84"]
+			id: "3AB639491B9B42DB"
+			rewards: [{
+				id: "29C084BB02C62668"
+				item: {
+					count: 1
+					id: "minecraft:ancient_debris"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "biomesoplenty:erupting_inferno"
+				id: "4145194FC90F63AE"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["068FE3AC6951B681"]
+			id: "64683F1DBE9EC4B7"
+			tasks: [{
+				id: "7383A97D6B51E034"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["64683F1DBE9EC4B7"]
+			id: "7CD4F597D67CC846"
+			tasks: [{
+				id: "6A34C3A566383CB6"
+				item: { count: 1, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7CD4F597D67CC846"]
+			id: "6C809477D562228D"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "6D9BEFFE491DB439"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C809477D562228D"]
+			id: "26FDDAF08AFC0D26"
+			rewards: [
+				{
+					id: "7BD0D65C20F03959"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+				{
+					id: "213B4FAAB4A739C7"
+					item: {
+						components: {
+							"ftbquests:missing_item": "baiyin:starrysky_pass"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "4EC5F52244DB635C"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C809477D562228D"]
+			id: "10E0439BE606AA94"
+			tasks: [{
+				id: "278FAB86DF85FCF1"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+	]
+}

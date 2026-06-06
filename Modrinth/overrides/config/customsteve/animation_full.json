@@ -1,0 +1,2847 @@
+{
+  "vmdBaseDir": "",
+  "boneMasks": {
+    "full_body": "all",
+    "upper_body": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "lower_body": [
+      1,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "left_arm": [
+      7,
+      8,
+      9,
+      21,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "right_arm": [
+      10,
+      11,
+      12,
+      22,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "head_only": [
+      5,
+      6,
+      23,
+      24,
+      25
+    ]
+  },
+  "editorGraph": {
+    "sharedConditionNodes": [
+      {
+        "name": "mc.riding \u003d\u003d true",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.riding",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "boat_driving_battle"
+          },
+          {
+            "layer": "body",
+            "state": "boat_driving_idle"
+          },
+          {
+            "layer": "body",
+            "state": "boat_moving"
+          },
+          {
+            "layer": "body",
+            "state": "boat_moving_left"
+          },
+          {
+            "layer": "body",
+            "state": "boat_moving_right"
+          },
+          {
+            "layer": "body",
+            "state": "riding"
+          },
+          {
+            "layer": "body",
+            "state": "riding_horse"
+          }
+        ]
+      },
+      {
+        "name": "mc.creativeFlying \u003d\u003d true",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.creativeFlying",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "fly_idle"
+          },
+          {
+            "layer": "body",
+            "state": "fly_move"
+          }
+        ]
+      },
+      {
+        "name": "mc.airborne \u003d\u003d true",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.airborne",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "fall_jump"
+          },
+          {
+            "layer": "body",
+            "state": "jump"
+          }
+        ]
+      },
+      {
+        "name": "mc.groundDistance \u003e 3",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.groundDistance",
+            "op": "\u003e",
+            "value": 3
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "fall"
+          },
+          {
+            "layer": "body",
+            "state": "fall_jump"
+          }
+        ]
+      },
+      {
+        "name": "mc.sneaking \u003d\u003d true",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.sneaking",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "sneak_idle"
+          },
+          {
+            "layer": "body",
+            "state": "sneak_walk"
+          }
+        ]
+      },
+      {
+        "name": "attack_bare_right",
+        "type": "actionState",
+        "actionState": "attack_bare",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_bare"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_bare_right"
+          }
+        ]
+      },
+      {
+        "name": "attack_bare_left",
+        "type": "actionState",
+        "actionState": "attack_bare",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_bare"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_bare_left"
+          }
+        ]
+      },
+      {
+        "name": "attack_item_right",
+        "type": "actionState",
+        "actionState": "attack_item",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_item"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_item_right"
+          }
+        ]
+      },
+      {
+        "name": "attack_item_left",
+        "type": "actionState",
+        "actionState": "attack_item",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_item"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_item_left"
+          }
+        ]
+      },
+      {
+        "name": "attack_stick_right",
+        "type": "actionState",
+        "actionState": "attack_stick",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_stick"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_stick_right"
+          }
+        ]
+      },
+      {
+        "name": "attack_stick_left",
+        "type": "actionState",
+        "actionState": "attack_stick",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_stick"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_stick_left"
+          }
+        ]
+      },
+      {
+        "name": "bow_draw_right",
+        "type": "actionState",
+        "actionState": "bow_draw",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "bow_draw"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "bow_draw_right"
+          }
+        ]
+      },
+      {
+        "name": "bow_draw_left",
+        "type": "actionState",
+        "actionState": "bow_draw",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "bow_draw"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "bow_draw_left"
+          }
+        ]
+      },
+      {
+        "name": "crossbow_draw_right",
+        "type": "actionState",
+        "actionState": "crossbow_draw",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "crossbow_draw"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "crossbow_draw_right"
+          }
+        ]
+      },
+      {
+        "name": "crossbow_draw_left",
+        "type": "actionState",
+        "actionState": "crossbow_draw",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "crossbow_draw"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "crossbow_draw_left"
+          }
+        ]
+      },
+      {
+        "name": "eat_right",
+        "type": "actionState",
+        "actionState": "eat",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "eat"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "eat_right"
+          }
+        ]
+      },
+      {
+        "name": "eat_left",
+        "type": "actionState",
+        "actionState": "eat",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "eat"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "eat_left"
+          }
+        ]
+      },
+      {
+        "name": "stick_hold_right",
+        "type": "actionState",
+        "actionState": "stick_hold",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "stick_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "stick_hold_right"
+          }
+        ]
+      },
+      {
+        "name": "stick_hold_left",
+        "type": "actionState",
+        "actionState": "stick_hold",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "stick_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "stick_hold_left"
+          }
+        ]
+      },
+      {
+        "name": "attacking_right_hand",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.attackingRightHand",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_bare_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "attack_item_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "attack_shield_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "attack_spear_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "attack_stick_right"
+          }
+        ]
+      },
+      {
+        "name": "attacking_left_hand",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.attackingLeftHand",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_bare_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "attack_item_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "attack_shield_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "attack_spear_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "attack_stick_left"
+          }
+        ]
+      },
+      {
+        "name": "using_right_hand",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.usingRightHand",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "bow_draw_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "bracing_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "eat_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "shield_parry_right"
+          }
+        ]
+      },
+      {
+        "name": "using_left_hand",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.usingLeftHand",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "bow_draw_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "bracing_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "eat_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "shield_parry_left"
+          }
+        ]
+      },
+      {
+        "name": "right_hand_shield",
+        "type": "handItem",
+        "slot": "right",
+        "hand": "right",
+        "mode": "item_type",
+        "itemId": "",
+        "itemType": "shield",
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_shield_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "shield_hold_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "shield_parry_right"
+          }
+        ]
+      },
+      {
+        "name": "left_hand_shield",
+        "type": "handItem",
+        "slot": "left",
+        "hand": "left",
+        "mode": "item_type",
+        "itemId": "",
+        "itemType": "shield",
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_shield_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "shield_hold_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "shield_parry_left"
+          }
+        ]
+      },
+      {
+        "name": "right_hand_weapon",
+        "type": "handItem",
+        "slot": "right",
+        "hand": "right",
+        "mode": "item_type",
+        "itemId": "",
+        "itemType": "3d_tool",
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_stick_right"
+          },
+          {
+            "layer": "action_right",
+            "state": "stick_hold_right"
+          }
+        ]
+      },
+      {
+        "name": "left_hand_weapon",
+        "type": "handItem",
+        "slot": "left",
+        "hand": "left",
+        "mode": "item_type",
+        "itemId": "",
+        "itemType": "3d_tool",
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_stick_left"
+          },
+          {
+            "layer": "action_left",
+            "state": "stick_hold_left"
+          }
+        ]
+      },
+      {
+        "name": "attack_shield_left_left",
+        "type": "actionState",
+        "actionState": "attack_shield_left",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_shield"
+          },
+          {
+            "param": "mc.attackingLeftHand",
+            "op": "\u003d\u003d",
+            "value": true
+          },
+          {
+            "param": "mc.leftHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_shield_left"
+          }
+        ]
+      },
+      {
+        "name": "attack_shield_right_right",
+        "type": "actionState",
+        "actionState": "attack_shield_right",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_shield"
+          },
+          {
+            "param": "mc.attackingRightHand",
+            "op": "\u003d\u003d",
+            "value": true
+          },
+          {
+            "param": "mc.rightHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_shield_right"
+          }
+        ]
+      },
+      {
+        "name": "shield_parry_left_left",
+        "type": "actionState",
+        "actionState": "shield_parry_left",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "shield_parry"
+          },
+          {
+            "param": "mc.usingLeftHand",
+            "op": "\u003d\u003d",
+            "value": true
+          },
+          {
+            "param": "mc.leftHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "shield_parry_left"
+          }
+        ]
+      },
+      {
+        "name": "shield_parry_right_right",
+        "type": "actionState",
+        "actionState": "shield_parry_right",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "shield_parry"
+          },
+          {
+            "param": "mc.usingRightHand",
+            "op": "\u003d\u003d",
+            "value": true
+          },
+          {
+            "param": "mc.rightHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "shield_parry_right"
+          }
+        ]
+      },
+      {
+        "name": "shield_hold_left_left",
+        "type": "actionState",
+        "actionState": "shield_hold_left",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "shield_hold"
+          },
+          {
+            "param": "mc.leftHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "shield_hold_left"
+          }
+        ]
+      },
+      {
+        "name": "shield_hold_right_right",
+        "type": "actionState",
+        "actionState": "shield_hold_right",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "shield_hold"
+          },
+          {
+            "param": "mc.rightHandItemType",
+            "op": "\u003d\u003d",
+            "value": "shield"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "shield_hold_right"
+          }
+        ]
+      },
+      {
+        "name": "mc.bodyState \u003d\u003d idle_battle",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.bodyState",
+            "op": "\u003d\u003d",
+            "value": "idle_battle"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "body",
+            "state": "idle_battle"
+          }
+        ]
+      },
+      {
+        "name": "attack_spear_right",
+        "type": "actionState",
+        "actionState": "attack_spear",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_spear"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_spear_right"
+          }
+        ]
+      },
+      {
+        "name": "attack_spear_left",
+        "type": "actionState",
+        "actionState": "attack_spear",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "attack_spear"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "attack_spear_left"
+          }
+        ]
+      },
+      {
+        "name": "spear_hold_right",
+        "type": "actionState",
+        "actionState": "spear_hold",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "spear_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "spear_hold_right"
+          }
+        ]
+      },
+      {
+        "name": "spear_hold_left",
+        "type": "actionState",
+        "actionState": "spear_hold",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "spear_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "spear_hold_left"
+          }
+        ]
+      },
+      {
+        "name": "bracing_right",
+        "type": "actionState",
+        "actionState": "bracing_spear",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "bracing_spear"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "bracing_right"
+          }
+        ]
+      },
+      {
+        "name": "bracing_left",
+        "type": "actionState",
+        "actionState": "bracing_spear",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "bracing_spear"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "bracing_left"
+          }
+        ]
+      },
+      {
+        "name": "item_hold_right",
+        "type": "actionState",
+        "actionState": "item_hold",
+        "conditions": [
+          {
+            "param": "mc.rightActionState",
+            "op": "\u003d\u003d",
+            "value": "item_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "item_hold_right"
+          }
+        ]
+      },
+      {
+        "name": "item_hold_left",
+        "type": "actionState",
+        "actionState": "item_hold",
+        "conditions": [
+          {
+            "param": "mc.leftActionState",
+            "op": "\u003d\u003d",
+            "value": "item_hold"
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_left",
+            "state": "item_hold_left"
+          }
+        ]
+      },
+      {
+        "name": "ItemWaveRight",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "mc.ItemWaveRight",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "action_right",
+            "state": "attack_item_right"
+          }
+        ]
+      },
+      {
+        "name": "player_only_playback",
+        "type": "group",
+        "conditions": [
+          {
+            "param": "csm.playerActive",
+            "op": "\u003d\u003d",
+            "value": true
+          }
+        ],
+        "targets": [
+          {
+            "layer": "player_only_playback",
+            "state": "player_only_playback"
+          }
+        ]
+      }
+    ]
+  },
+  "layers": [
+    {
+      "name": "action",
+      "stateInput": "ExpressionState",
+      "blendMode": "overlay",
+      "boneMask": "full_body",
+      "crossfadeTime": 0.3,
+      "defaultSource": "none",
+      "autoReturn": false,
+      "states": {
+        "socks_white": {
+          "source": "none",
+          "exprVmd": "exp_socksWhite.vmd",
+          "exprBlendMode": "blend",
+          "priority": 500,
+          "instantSwitch": true
+        },
+        "leather_boots": {
+          "source": "none",
+          "exprVmd": "exp_leatherBoots.vmd",
+          "exprBlendMode": "blend",
+          "priority": 600,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.feetItemId",
+              "op": "!\u003d",
+              "value": "minecraft:leather_boots"
+            }
+          ]
+        },
+        "boots_armor": {
+          "source": "none",
+          "exprVmd": "exp_bootsArmor.vmd",
+          "exprBlendMode": "blend",
+          "priority": 500,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.hasEquipmentSlot",
+              "op": "\u003d\u003d",
+              "value": 2
+            }
+          ]
+        },
+        "chest_armor": {
+          "source": "none",
+          "exprVmd": "exp_chestArmor.vmd",
+          "exprBlendMode": "blend",
+          "priority": 500,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.hasEquipmentSlot",
+              "op": "\u003d\u003d",
+              "value": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "player_only_playback",
+      "stateInput": "PlayerActive",
+      "blendMode": "overlay",
+      "boneMask": "full_body",
+      "crossfadeTime": 0.0,
+      "defaultSource": "none",
+      "autoReturn": false,
+      "states": {
+        "player_only_playback": {
+          "source": "fk",
+          "vmd": "__player_runtime__",
+          "loop": true,
+          "exprVmd": "__player_runtime__",
+          "priority": 400,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "csm.playerActive",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "upper_body",
+      "stateInput": "UpperBodyMode",
+      "blendMode": "overlay",
+      "boneMask": "upper_body",
+      "crossfadeTime": 0.15,
+      "defaultSource": "none",
+      "autoReturn": true,
+      "states": {
+        "bracing_up": {
+          "source": "fk",
+          "vmd": "bracingSpear_UP.vmd",
+          "loop": true,
+          "priority": 101,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "bracing_up"
+            }
+          ]
+        },
+        "attack_stick_up": {
+          "source": "fk",
+          "vmd": "wavingStick_UP.vmd",
+          "priority": 100,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "attack_stick_up"
+            }
+          ]
+        },
+        "attack_spear_up": {
+          "source": "fk",
+          "vmd": "thrustSpear_UP.vmd",
+          "priority": 100,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "attack_spear_up"
+            }
+          ]
+        },
+        "attack_item_up": {
+          "source": "fk",
+          "vmd": "wavingItem_UP.vmd",
+          "priority": 98,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "attack_item_up"
+            }
+          ]
+        },
+        "punch_right_up": {
+          "source": "fk",
+          "vmd": "punchRight_UP.vmd",
+          "priority": 96,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "punch_right_up"
+            }
+          ]
+        },
+        "punch_left_up": {
+          "source": "fk",
+          "vmd": "punchLeft_UP.vmd",
+          "priority": 95,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "punch_left_up"
+            }
+          ]
+        },
+        "bow_draw_up": {
+          "source": "fk",
+          "vmd": "useBow_UP.vmd",
+          "priority": 92,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "bow_draw_up"
+            }
+          ]
+        },
+        "crossbow_draw_up": {
+          "source": "fk",
+          "vmd": "use_crossbow_UP.vmd",
+          "priority": 92,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "crossbow_draw_up"
+            }
+          ]
+        },
+        "eat_up": {
+          "source": "fk",
+          "vmd": "DrinkRight.vmd",
+          "priority": 90,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "eat_up"
+            }
+          ]
+        },
+        "hold_bow_up": {
+          "source": "fk",
+          "vmd": "holdBow_UP.vmd",
+          "loop": true,
+          "priority": 32,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_bow_up"
+            }
+          ]
+        },
+        "hold_crossbow_up": {
+          "source": "fk",
+          "vmd": "hold_crossbow_UP.vmd",
+          "loop": true,
+          "priority": 32,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_crossbow_up"
+            }
+          ]
+        },
+        "hold_crossbow_loaded_up": {
+          "source": "fk",
+          "vmd": "hold_crossbow_loaded_UP.vmd",
+          "loop": true,
+          "priority": 33,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_crossbow_loaded_up"
+            }
+          ]
+        },
+        "hold_stick_up": {
+          "source": "fk",
+          "vmd": "holdStick_UP.vmd",
+          "loop": true,
+          "priority": 30,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_stick_up"
+            }
+          ]
+        },
+        "hold_spear_up": {
+          "source": "fk",
+          "vmd": "holdSpear_UP.vmd",
+          "loop": true,
+          "priority": 29,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_spear_up"
+            }
+          ]
+        },
+        "hold_item_right": {
+          "source": "fk",
+          "vmd": "holdBlock_UP.vmd",
+          "loop": true,
+          "priority": 28,
+          "blendWeight": 0.85,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "hold_item_right"
+            }
+          ]
+        },
+        "barehanded_up": {
+          "source": "fk",
+          "vmd": "barehanded_UP.vmd",
+          "loop": true,
+          "priority": 26,
+          "instantSwitch": true,
+          "blendWeight": 0.9,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.upperBodyMode",
+              "op": "\u003d\u003d",
+              "value": "barehanded_up"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "action_right",
+      "stateInput": "RightActionState",
+      "blendMode": "overlay",
+      "boneMask": "right_arm",
+      "crossfadeTime": 0.15,
+      "defaultSource": "none",
+      "autoReturn": true,
+      "states": {
+        "attack_bare_right": {
+          "source": "fk",
+          "vmd": "BarehandedWaveRight.vmd",
+          "priority": 100,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_bare"
+            },
+            {
+              "param": "mc.attackingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_spear_right": {
+          "source": "fk",
+          "vmd": "SpearThrustRight_UP.vmd",
+          "priority": 99,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_spear"
+            },
+            {
+              "param": "mc.attackingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_stick_right": {
+          "source": "fk",
+          "vmd": "StickWaveRight.vmd",
+          "priority": 98,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_stick"
+            },
+            {
+              "param": "mc.attackingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightHandItemType",
+              "op": "\u003d\u003d",
+              "value": "3d_tool"
+            }
+          ]
+        },
+        "attack_item_right": {
+          "source": "fk",
+          "vmd": "ItemWaveRight.vmd",
+          "priority": 96,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.ItemWaveRight",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_item"
+            },
+            {
+              "param": "mc.attackingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_shield_right": {
+          "source": "fk",
+          "vmd": "ShieldWaveRight.vmd",
+          "priority": 94,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_shield"
+            },
+            {
+              "param": "mc.attackingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            }
+          ]
+        },
+        "shield_parry_right": {
+          "source": "fk",
+          "vmd": "ShieldParryRight.vmd",
+          "priority": 80,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "shield_parry"
+            },
+            {
+              "param": "mc.usingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "bracing_right": {
+          "source": "fk",
+          "vmd": "spearRightBracing_UP.vmd",
+          "loop": true,
+          "priority": 79,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "bracing_spear"
+            },
+            {
+              "param": "mc.usingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "bow_draw_right": {
+          "source": "fk",
+          "vmd": "useBow_UP.vmd",
+          "priority": 78,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "bow_draw"
+            },
+            {
+              "param": "mc.usingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "crossbow_draw_right": {
+          "source": "fk",
+          "vmd": "use_crossbow_UP.vmd",
+          "priority": 78,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "crossbow_draw"
+            },
+            {
+              "param": "mc.usingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "eat_right": {
+          "source": "fk",
+          "vmd": "DrinkRight.vmd",
+          "priority": 76,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "eat"
+            },
+            {
+              "param": "mc.usingRightHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "item_hold_right": {
+          "source": "fk",
+          "vmd": "ItemHoldRight.vmd",
+          "loop": true,
+          "priority": 14,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "item_hold"
+            }
+          ]
+        },
+        "shield_hold_right": {
+          "source": "fk",
+          "vmd": "ShieldHoldRight.vmd",
+          "loop": true,
+          "priority": 12,
+          "blendWeight": 0.7,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "shield_hold"
+            }
+          ]
+        },
+        "spear_hold_right": {
+          "source": "fk",
+          "vmd": "SpearHoldRight_UP.vmd",
+          "loop": true,
+          "priority": 11,
+          "blendWeight": 0.75,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "spear_hold"
+            }
+          ]
+        },
+        "stick_hold_right": {
+          "source": "fk",
+          "vmd": "StickHoldRight.vmd",
+          "loop": true,
+          "priority": 10,
+          "blendWeight": 0.75,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.rightHandItemType",
+              "op": "\u003d\u003d",
+              "value": "3d_tool"
+            },
+            {
+              "param": "mc.rightActionState",
+              "op": "\u003d\u003d",
+              "value": "stick_hold"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "action_left",
+      "stateInput": "LeftActionState",
+      "blendMode": "overlay",
+      "boneMask": "left_arm",
+      "crossfadeTime": 0.15,
+      "defaultSource": "none",
+      "autoReturn": true,
+      "states": {
+        "attack_bare_left": {
+          "source": "fk",
+          "vmd": "BarehandedWaveRight.vmd",
+          "priority": 99,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_bare"
+            },
+            {
+              "param": "mc.attackingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_spear_left": {
+          "source": "fk",
+          "vmd": "SpearThrustLeft_UP.vmd",
+          "priority": 98,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_spear"
+            },
+            {
+              "param": "mc.attackingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_stick_left": {
+          "source": "fk",
+          "vmd": "StickWaveRight.vmd",
+          "priority": 97,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_stick"
+            },
+            {
+              "param": "mc.attackingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftHandItemType",
+              "op": "\u003d\u003d",
+              "value": "3d_tool"
+            }
+          ]
+        },
+        "attack_item_left": {
+          "source": "fk",
+          "vmd": "ItemWaveRight.vmd",
+          "priority": 95,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_item"
+            },
+            {
+              "param": "mc.attackingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "attack_shield_left": {
+          "source": "fk",
+          "vmd": "ShieldWaveRight.vmd",
+          "priority": 93,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "attack_shield"
+            },
+            {
+              "param": "mc.attackingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            }
+          ]
+        },
+        "shield_parry_left": {
+          "source": "fk",
+          "vmd": "ShieldParryLeft.vmd",
+          "priority": 79,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "shield_parry"
+            },
+            {
+              "param": "mc.usingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "bracing_left": {
+          "source": "fk",
+          "vmd": "spearLeftBracing_UP.vmd",
+          "loop": true,
+          "priority": 78,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "bracing_spear"
+            },
+            {
+              "param": "mc.usingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "bow_draw_left": {
+          "source": "fk",
+          "vmd": "useBow_UP.vmd",
+          "priority": 77,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "bow_draw"
+            },
+            {
+              "param": "mc.usingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "crossbow_draw_left": {
+          "source": "fk",
+          "vmd": "use_crossbow_UP.vmd",
+          "priority": 77,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "crossbow_draw"
+            },
+            {
+              "param": "mc.usingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "eat_left": {
+          "source": "fk",
+          "vmd": "DrinkLeft.vmd",
+          "priority": 75,
+          "instantSwitch": true,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "eat"
+            },
+            {
+              "param": "mc.usingLeftHand",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "item_hold_left": {
+          "source": "fk",
+          "vmd": "ItemHoldLeft.vmd",
+          "loop": true,
+          "priority": 14,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "item_hold"
+            }
+          ]
+        },
+        "shield_hold_left": {
+          "source": "fk",
+          "vmd": "ShieldHoldLeft.vmd",
+          "loop": true,
+          "priority": 11,
+          "blendWeight": 0.7,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftHandItemType",
+              "op": "\u003d\u003d",
+              "value": "shield"
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "shield_hold"
+            }
+          ]
+        },
+        "spear_hold_left": {
+          "source": "fk",
+          "vmd": "SpearHoldLeft_UP.vmd",
+          "loop": true,
+          "priority": 10,
+          "blendWeight": 0.75,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "spear_hold"
+            }
+          ]
+        },
+        "stick_hold_left": {
+          "source": "fk",
+          "vmd": "StickHoldLeft.vmd",
+          "loop": true,
+          "priority": 9,
+          "blendWeight": 0.75,
+          "conditions": [
+            {
+              "param": "mc.upperBodyEnabled",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.dualMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.leftHandItemType",
+              "op": "\u003d\u003d",
+              "value": "3d_tool"
+            },
+            {
+              "param": "mc.leftActionState",
+              "op": "\u003d\u003d",
+              "value": "stick_hold"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "body",
+      "stateInput": "BodyState",
+      "blendMode": "crossfade",
+      "boneMask": "full_body",
+      "crossfadeTime": 0.3,
+      "defaultSource": "mm",
+      "autoReturn": false,
+      "states": {
+        "fall_jump": {
+          "source": "fk",
+          "vmd": "fall.vmd",
+          "loop": true,
+          "priority": 61,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "fall_jump"
+            }
+          ]
+        },
+        "fall": {
+          "source": "fk",
+          "vmd": "fall.vmd",
+          "loop": true,
+          "priority": 60,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "fall"
+            }
+          ]
+        },
+        "jump": {
+          "source": "fk",
+          "vmd": "jump.vmd",
+          "priority": 55,
+          "crossfadeOut": 0.25,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "jump"
+            }
+          ]
+        },
+        "turn": {
+          "source": "mm",
+          "priority": 21,
+          "crossfadeIn": 0.25,
+          "crossfadeOut": 0.25,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "in",
+              "value": [
+                "idle",
+                "idle_1",
+                "idle_2",
+                "idle_3"
+              ]
+            },
+            {
+              "param": "mc.yawSpeed",
+              "op": "\u003e",
+              "value": 15
+            }
+          ]
+        },
+        "boat_driving_battle": {
+          "source": "fk",
+          "vmd": "boatDriving.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.boatRiding",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatIsDriver",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.battleMode",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddling",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "boat_moving": {
+          "source": "fk",
+          "vmd": "boatMoving.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.boatRiding",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatIsDriver",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleLeft",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleRight",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "boat_moving_left": {
+          "source": "fk",
+          "vmd": "boatMovingL.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.boatRiding",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatIsDriver",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleLeft",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleRight",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "boat_moving_right": {
+          "source": "fk",
+          "vmd": "boatMovingR.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.boatRiding",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatIsDriver",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleLeft",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.boatPaddleRight",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "boat_driving_idle": {
+          "source": "fk",
+          "vmd": "boatDriving.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.boatRiding",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatIsDriver",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.boatPaddleLeft",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.boatPaddleRight",
+              "op": "\u003d\u003d",
+              "value": false
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "riding_horse": {
+          "source": "fk",
+          "vmd": "horseRiding.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.ridingEntity",
+              "op": "in",
+              "value": [
+                "minecraft:horse",
+                "minecraft:donkey",
+                "minecraft:mule",
+                "minecraft:skeleton_horse",
+                "minecraft:zombie_horse"
+              ]
+            },
+            {
+              "param": "mc.riding",
+              "op": "\u003d\u003d",
+              "value": true
+            }
+          ]
+        },
+        "riding": {
+          "source": "fk",
+          "vmd": "riding.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "riding"
+            }
+          ]
+        },
+        "sleep": {
+          "source": "fk",
+          "vmd": "sleep.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "sleep"
+            }
+          ]
+        },
+        "swimming": {
+          "source": "fk",
+          "vmd": "swimming.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.swimming",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.visualSwimming",
+              "op": "\u003d\u003d",
+              "value": true
+            },
+            {
+              "param": "mc.swimAmount",
+              "op": "\u003e",
+              "value": 0.01
+            }
+          ],
+          "conditionMode": "or"
+        },
+        "swim": {
+          "source": "fk",
+          "vmd": "swim.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "swim"
+            }
+          ]
+        },
+        "elytra": {
+          "source": "fk",
+          "vmd": "fly.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "elytra"
+            }
+          ]
+        },
+        "fly_move": {
+          "source": "fk",
+          "vmd": "flying.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "fly_move"
+            }
+          ]
+        },
+        "fly_idle": {
+          "source": "fk",
+          "vmd": "fly.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "fly_idle"
+            }
+          ]
+        },
+        "ladderUp": {
+          "source": "fk",
+          "vmd": "ladderUp.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "ladderUp"
+            }
+          ]
+        },
+        "ladderDown": {
+          "source": "fk",
+          "vmd": "ladderDown.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "ladderDown"
+            }
+          ]
+        },
+        "ladder": {
+          "source": "fk",
+          "vmd": "ladder.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "ladder"
+            }
+          ]
+        },
+        "sneak_walk": {
+          "source": "fk",
+          "vmd": "sneaking_LO.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "sneak_walk"
+            }
+          ]
+        },
+        "sneak_idle": {
+          "source": "fk",
+          "vmd": "squat_LO.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "sneak_idle"
+            }
+          ]
+        },
+        "run": {
+          "source": "mm",
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "run"
+            }
+          ]
+        },
+        "walk": {
+          "source": "mm",
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "walk"
+            }
+          ]
+        },
+        "idle": {
+          "source": "fk",
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "in",
+              "value": [
+                "idle",
+                "idle_1",
+                "idle_2",
+                "idle_3"
+              ]
+            }
+          ],
+          "entries": [
+            {
+              "name": "idle_base",
+              "source": "fk",
+              "vmd": "stand.vmd",
+              "loop": true,
+              "weight": 1.0
+            }
+          ],
+          "noRepeat": false,
+          "switchInterval": 8.0
+        },
+        "idle_battle": {
+          "source": "fk",
+          "vmd": "stand_LO.vmd",
+          "loop": true,
+          "priority": 20,
+          "conditions": [
+            {
+              "param": "mc.bodyState",
+              "op": "\u003d\u003d",
+              "value": "idle_battle"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

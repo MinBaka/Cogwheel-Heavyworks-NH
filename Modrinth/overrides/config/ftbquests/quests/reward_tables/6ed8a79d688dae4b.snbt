@@ -1,0 +1,18 @@
+{
+	id: "6ED8A79D688DAE4B"
+	loot_size: 1
+	order_index: 37
+	rewards: [
+		{ id: "70736553D9A616A5", item: { components: { "ftbquests:missing_item": "alloyed:steel_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "0764678B1D5BCB5C", item: { components: { "ftbquests:missing_item": "ends_delight:dragon_tooth_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "6CDF5066C269FAFA", item: { count: 1, id: "twilightdelight:knightmetal_knife" } }
+		{ id: "13BB38A0A8A2774B", item: { components: { "ftbquests:missing_item": "ends_delight:dragon_egg_shell_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "06437F2C776E5ECD", item: { components: { "ftbquests:missing_item": "rainbowcompound:rainbow_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "0F897D9B8ED8FF45", item: { components: { "ftbquests:missing_item": "rainbowcompound:refined_radiance_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7500B5A4008FC536", item: { count: 1, id: "twilightdelight:steeleaf_knife" } }
+		{ id: "50E0B33FEE3B83BD", item: { count: 1, id: "twilightdelight:ironwood_knife" } }
+		{ id: "214B45498D1B0162", item: { components: { "ftbquests:missing_item": "rainbowcompound:obsidianite_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "62E41EB3C6B4FD69", item: { components: { "ftbquests:missing_item": "rainbowcompound:shadow_steel_knife" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "5CE9622C3D76D058", item: { count: 1, id: "twilightdelight:fiery_knife" } }
+	]
+}

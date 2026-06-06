@@ -1,0 +1,67 @@
+{
+	id: "4EC6DCA93BB7D512"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{
+			count: 32
+			id: "0378CA1CDF47C430"
+			item: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "22F522E59FD12C71"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 64
+			id: "19A631DD928EFB09"
+			item: {
+				count: 1
+				id: "minecraft:copper_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "317A146FB7B0A862"
+			item: {
+				count: 1
+				id: "minecraft:lapis_lazuli"
+			}
+		}
+		{
+			count: 16
+			id: "2673D7EA971882A2"
+			item: {
+				count: 1
+				id: "minecraft:amethyst_shard"
+			}
+		}
+		{
+			count: 16
+			id: "598510CEFDF0E2CC"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+		}
+		{
+			count: 5
+			id: "4A118E39A632FE6C"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+		}
+		{ id: "62A256E3A1E7E679", item: { count: 1, id: "minecraft:netherite_ingot" } }
+	]
+}

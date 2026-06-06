@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": {"translate":"skills.endurance", "color":"gray"},
+	"icon": {
+		"type": "effect",
+		"data": {
+			"effect": "quark:resilience"
+		}
+	},
+	"background": "textures/block/cyan_wool.png"
+}

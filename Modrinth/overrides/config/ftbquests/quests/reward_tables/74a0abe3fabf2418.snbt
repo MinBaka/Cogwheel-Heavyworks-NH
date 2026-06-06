@@ -1,0 +1,14 @@
+{
+	id: "74A0ABE3FABF2418"
+	loot_size: 1
+	order_index: 28
+	rewards: [
+		{ id: "466F54673B2F3071", item: { count: 1, id: "artifacts:flippers" } }
+		{ id: "25BB0B9881DDAC00", item: { count: 1, id: "artifacts:steadfast_spikes" } }
+		{ id: "32F005F46E7E7140", item: { count: 1, id: "artifacts:snowshoes" } }
+		{ id: "5D15E299A78E61DD", item: { count: 1, id: "artifacts:running_shoes" } }
+		{ id: "0705AFCE01454810", item: { count: 1, id: "artifacts:kitty_slippers" } }
+		{ id: "6233BD83B4FD28A7", item: { count: 1, id: "artifacts:bunny_hoppers" } }
+		{ id: "5761684BD554358B", item: { count: 1, id: "artifacts:aqua_dashers" } }
+	]
+}

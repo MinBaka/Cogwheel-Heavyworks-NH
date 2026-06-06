@@ -1,0 +1,34 @@
+{
+	id: "589FE530EA7423DA"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{
+			count: 3
+			id: "2145DBD923792D20"
+			item: {
+				count: 1
+				id: "vampirism:pure_blood_0"
+			}
+		}
+		{
+			count: 2
+			id: "06AF1997F1FF3B86"
+			item: {
+				count: 1
+				id: "vampirism:pure_blood_1"
+			}
+		}
+		{
+			count: 2
+			id: "5B8813719F270178"
+			item: {
+				count: 1
+				id: "vampirism:pure_blood_2"
+			}
+		}
+		{ id: "6AA1304B341830FC", item: { count: 1, id: "vampirism:pure_blood_3" } }
+		{ id: "33B36900D2B337B7", item: { count: 1, id: "vampirism:pure_blood_4" } }
+		{ id: "28F2602CBE369739", item: { count: 1, id: "vampirism:vampire_book" } }
+	]
+}

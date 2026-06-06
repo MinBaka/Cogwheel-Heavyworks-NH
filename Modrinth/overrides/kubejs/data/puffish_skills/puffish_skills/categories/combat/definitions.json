@@ -1,0 +1,314 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.combat",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.combat.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_melee_damage+2%": {
+		"title": [
+			"+2% ",
+			{
+				"translate": "skills.combat.melee_damage",
+				"color": "white"
+			}
+		],
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.02,
+					"operation": "add_multiplied_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5p"
+		}
+	},
+	"melee_damage+2%": {
+		"title": [
+			"+2% ",
+			{
+				"translate": "skills.combat.melee_damage",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.02,
+					"operation": "add_multiplied_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "u1te9zjkw9wa6syn"
+		}
+	},
+	"melee_damage+5%": {
+		"title": [
+			"§6+5% ",
+			{
+				"translate": "skills.combat.melee_damage",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.05,
+					"operation": "add_multiplied_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "0s4mmbtt8lveh828"
+		}
+	},
+	"root_knockback+0.1": {
+		"title": [
+			"+0.1 ",
+			{
+				"translate": "skills.combat.knockback",
+				"color": "white"
+			}
+		],
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "quark:textures/attribute/attack_knockback.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:knockback",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "5m2csix8uc26bfit"
+		}
+	},
+	"knockback+0.1": {
+		"title": [
+			"+0.1 ",
+			{
+				"translate": "skills.combat.knockback",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "quark:textures/attribute/attack_knockback.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:knockback",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "kqi818k4h0unzlq2"
+		}
+	},
+	"knockback+0.25": {
+		"title": [
+			"§6+0.25 ",
+			{
+				"translate": "skills.combat.knockback",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "quark:textures/attribute/attack_knockback.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:knockback",
+					"value": 0.25,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ld3v4h4szttjkh1l"
+		}
+	},
+	"root_attack_speed+2%": {
+		"title": [
+			"+2% ",
+			{
+				"translate": "skills.combat.attack_speed",
+				"color": "white"
+			}
+		],
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.02,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "tkubnxvctiqpoik3"
+		}
+	},
+	"attack_speed+2%": {
+		"title": [
+			"+2% ",
+			{
+				"translate": "skills.combat.attack_speed",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.02,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "tkubnxvctiqpoik3"
+		}
+	},
+	"attack_speed+2.5%": {
+		"title": [
+			"§6+2.5% ",
+			{
+				"translate": "skills.combat.attack_speed",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.025,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ryc1melvnirex9z9"
+		}
+	}
+}

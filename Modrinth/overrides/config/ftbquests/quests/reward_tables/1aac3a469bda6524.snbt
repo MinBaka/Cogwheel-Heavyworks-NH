@@ -1,0 +1,10 @@
+{
+	id: "1AAC3A469BDA6524"
+	loot_size: 1
+	order_index: 42
+	rewards: [
+		{ id: "7BD4F8BEA4411E14", item: { count: 1, id: "storagedrawers:creative_storage_upgrade" } }
+		{ id: "6E17CE74CC1A9963", item: { count: 1, id: "sophisticatedbackpacks:stack_upgrade_omega_tier" } }
+		{ id: "02DE75A9896C5B11", item: { count: 1, id: "l2complements:space_shard" } }
+	]
+}

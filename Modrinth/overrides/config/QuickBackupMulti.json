@@ -1,0 +1,50 @@
+{
+  "checkUpdate": true,
+  "ignoredFiles": [],
+  "ignoredFolders": [],
+  "lang": "zh_cn",
+  "autoRestartMode": "DEFAULT",
+  "clientAutoReJoinWorld": true,
+  "storagePath": "./QuickBackupMulti",
+  "cacheDatabase": false,
+  "fullBackupInterval": 5,
+  "saveFullBackupCount": 5,
+  "scheduleBackup": {
+    "resetTimerOnBackup": true,
+    "requireOnlinePlayers": false,
+    "requireOnlinePlayersIgnoreCarpetFakePlayer": true,
+    "requireOnlinePlayersBlacklist": [],
+    "enabled": false,
+    "interval": "3h",
+    "crontab": null
+  },
+  "prune": {
+    "timezoneOverride": null,
+    "regularBackup": {
+      "enabled": false,
+      "maxAmount": 10,
+      "maxLifeTime": "0s",
+      "last": -1,
+      "hour": 0,
+      "day": 0,
+      "week": 0,
+      "month": 1,
+      "year": 0
+    },
+    "temporaryBackup": {
+      "enabled": false,
+      "interval": "3h",
+      "crontab": null
+    },
+    "enabled": false,
+    "interval": "3h",
+    "crontab": null
+  },
+  "database": {
+    "backup": {
+      "enabled": false,
+      "interval": "3h",
+      "crontab": null
+    }
+  }
+}

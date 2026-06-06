@@ -1,0 +1,27 @@
+{
+	id: "180D00ADD83BBFA4"
+	loot_size: 1
+	order_index: 40
+	rewards: [
+		{
+			id: "767830BA3BF61E2D"
+			item: {
+				count: 1
+				id: "create:creative_motor"
+			}
+			weight: 0.2f
+		}
+		{ id: "6C9C3C7C4D3B2A3B", item: { count: 1, id: "l2complements:space_shard" } }
+		{
+			count: 6
+			id: "26CB208C4D0E624F"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

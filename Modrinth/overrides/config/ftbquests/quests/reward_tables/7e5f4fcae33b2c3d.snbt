@@ -1,0 +1,48 @@
+{
+	id: "7E5F4FCAE33B2C3D"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{
+			count: 10
+			id: "1F0003E6D21CD257"
+			item: {
+				count: 1
+				id: "vampiresdelight:tricolor_dango"
+			}
+			weight: 0.5f
+		}
+		{
+			count: 10
+			id: "369B61428BB68873"
+			item: {
+				count: 1
+				id: "vampiresdelight:dark_ice_cream"
+			}
+		}
+		{
+			count: 10
+			id: "5D6A6266CC235837"
+			item: {
+				count: 1
+				id: "vampiresdelight:orchid_eclair"
+			}
+		}
+		{
+			count: 10
+			id: "54683C8E4408581B"
+			item: {
+				count: 1
+				id: "vampiresdelight:blood_pie_slice"
+			}
+		}
+		{
+			count: 15
+			id: "5FC6A90E388F50FC"
+			item: {
+				count: 1
+				id: "vampiresdelight:orchid_cake_slice"
+			}
+		}
+	]
+}

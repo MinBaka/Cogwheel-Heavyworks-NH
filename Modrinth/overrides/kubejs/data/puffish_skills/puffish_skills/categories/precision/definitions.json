@@ -1,0 +1,320 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.precision",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.precision.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_ranged_damage+2.5%": {
+		"title": [
+			"+2.5% ",
+			{
+				"translate": "skills.precision.ranged_damage",
+				"color": "white"
+			}
+		],
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "deceasedcraft:textures/item/glock_17.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.025,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "kqi818k4h0unzlq2"
+		}
+	},
+	"ranged_damage+2.5%": {
+		"title": [
+			"+2.5% ",
+			{
+				"translate": "skills.precision.ranged_damage",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "deceasedcraft:textures/item/glock_17.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.025,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "kqi818k4h0unzlq2"
+		}
+	},
+	"ranged_damage+6.25%": {
+		"title": [
+			"§6+6.25% ",
+			{
+				"translate": "skills.precision.ranged_damage",
+				"color": "gold"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "deceasedcraft:textures/item/glock_17.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.0625,
+					"operation": "add_multiplied_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ld3v4h4szttjkh1l"
+		}
+	},
+	"root_crit_chance+1%": {
+		"title": [
+			"+1% ",
+			{
+				"translate": "skills.precision.critical_chance",
+				"color": "white"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:weakness"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "u2s17inja9njg246"
+		}
+	},
+	"crit_chance+1%": {
+		"title": [
+			"+1% ",
+			{
+				"translate": "skills.precision.critical_chance",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:weakness"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "u2s17inja9njg246"
+		}
+	},
+	"crit_chance+1.25%": {
+		"title": [
+			"+1.25% ",
+			{
+				"translate": "skills.precision.critical_chance",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:weakness"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.0125,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "6mhvczu8fhxp9ywz"
+		}
+	},
+	"root_crit_damage+2.5%%": {
+		"title": [
+			"+2.5% ",
+			{
+				"translate": "skills.precision.critical_damage",
+				"color": "white"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "suqtzvuqo5e4o6qv"
+		}
+	},
+	"crit_damage+2.5%%": {
+		"title": [
+			"+2.5% ",
+			{
+				"translate": "skills.precision.critical_damage",
+				"color": "white"
+			}
+		],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "suqtzvuqo5e4o6qv"
+		}
+	},
+	"crit_damage+6.25%": {
+		"title": [
+			"+6.25% ",
+			{
+				"translate": "skills.precision.critical_damage",
+				"color": "white"
+			}
+		],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.0625,
+					"operation": "add_value"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ytyamx9k3akj7gbr"
+		}
+	}
+}

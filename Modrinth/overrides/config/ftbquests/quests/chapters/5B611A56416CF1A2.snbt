@@ -1,0 +1,765 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5B611A56416CF1A2"
+	group: "01E5705B52F2A444"
+	id: "5B611A56416CF1A2"
+	images: [
+		{
+			height: 3.0d
+			image: "tacz:textures/crosshair/normal/square_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			height: 3.0d
+			image: "vampirism:textures/actions/regen.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "vampirism:textures/skills/sword_finisher.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			height: 4.0d
+			image: "vampiresdelight:block/dark_stone_stove_front_on"
+			rotation: 0.0d
+			width: 4.0d
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			height: 5.0d
+			image: "vampirism:textures/actions/half_invulnerable.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -5.5d
+			y: 8.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1A2D32432DC79091"
+			rewards: [
+				{
+					id: "6AA4F006BC74BBBF"
+					item: {
+						count: 1
+						id: "guideapi_vp:vampirism-guidebook"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "56F75174904D06E2"
+					item: {
+						count: 1
+						id: "vampirism:garlic"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "06CA386FF71FE66C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1A2D32432DC79091"
+				"4D8CEC5CE1F067CA"
+			]
+			id: "74198B23CF3FBBCF"
+			rewards: [{
+				count: 5
+				id: "5593A3EA4E95A081"
+				item: {
+					count: 1
+					id: "vampiresdelight:roasted_garlic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:hunter/become_hunter"
+				criterion: ""
+				id: "42FD45456656EAE0"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "4D8CEC5CE1F067CA"
+			rewards: [{
+				count: 5
+				id: "00CE7AF0AD980CB9"
+				item: {
+					count: 1
+					id: "vampirism:garlic"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "12FD1194DD1EE5FC"
+					item: { count: 1, id: "vampirism:injection_garlic" }
+					type: "item"
+				}
+				{
+					id: "6DF1CEE14D8D0BA4"
+					item: { count: 1, id: "vampirism:med_chair" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			id: "1F9693467C20C726"
+			tasks: [{
+				id: "6F266868E97334BB"
+				item: { count: 1, id: "vampirism:injection_sanguinare" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			id: "570ECFB404FF1B0A"
+			rewards: [{
+				id: "2ED63462EB9A3449"
+				item: {
+					count: 1
+					id: "vampirism:vampire_blood_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "101BD9C13F87EF7F"
+				item: { count: 1, id: "vampirism:stake" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["570ECFB404FF1B0A"]
+			id: "65872882E3A13F87"
+			rewards: [{
+				id: "6A697E307067F506"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_0"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CACEFBEEC6128E4"
+				item: { count: 1, id: "vampirism:hunter_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["65872882E3A13F87"]
+			id: "3412FFADB40486E9"
+			rewards: [{
+				id: "64AF3ADF78B0B7E8"
+				item: {
+					count: 1
+					id: "vampirism:vampire_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "120083226F0CD652"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1A2D32432DC79091"]
+			hide_dependency_lines: true
+			id: "72AC2DDC442A1BAA"
+			rewards: [{
+				count: 5
+				id: "5599D22FD961A8FD"
+				item: {
+					count: 1
+					id: "vampirism:soul_orb_vampire"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B433469D64658CC"
+				item: { count: 1, id: "vampirism:vampire_book" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1A2D32432DC79091"]
+			hide_dependency_lines: true
+			id: "2AAE936C50591B10"
+			tasks: [{
+				id: "6EB9A6DF9C9BD4C6"
+				item: { count: 1, id: "vampirism:vampire_fang" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1A2D32432DC79091"]
+			hide_dependency_lines: true
+			id: "3C23E4139B24538D"
+			rewards: [{
+				count: 5
+				id: "4F5C5197F73EA86D"
+				item: {
+					count: 1
+					id: "vampirism:soul_orb_vampire"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "vampirism:vampire_forest"
+				id: "031EF592E9493F57"
+				type: "biome"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C23E4139B24538D"]
+			id: "0790D212CE2885A1"
+			rewards: [{
+				count: 3
+				id: "0B1DB8167A894C63"
+				item: {
+					count: 1
+					id: "vampirism:soul_orb_vampire"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C3BF22ED8C647EC"
+				structure: "vampirism:mother"
+				type: "structure"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0790D212CE2885A1"]
+			id: "582E2FB7F7A2F30C"
+			rewards: [{
+				count: 3
+				id: "4FAB15292BF4FAFB"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_4"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:hunter/kill_mother"
+				criterion: ""
+				id: "4AE4AC95AE5A1819"
+				type: "advancement"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C23E4139B24538D"]
+			id: "7EF4D7494F515BBA"
+			rewards: [{
+				id: "229F436755C4EA0A"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_0"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "vampirism:vampire_baron"
+				id: "121938A0F60F6FB8"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7EF4D7494F515BBA"]
+			id: "5416B2DFB8BB5D82"
+			tasks: [{
+				id: "668DE2368A570082"
+				item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5416B2DFB8BB5D82"]
+			id: "7A51552510E9D003"
+			tasks: [{
+				id: "30184BF204D2B09E"
+				item: { count: 1, id: "vampirism:garlic_finder" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			id: "6CE705C51DFC794B"
+			rewards: [{
+				count: 5
+				id: "55BC3995AE18BB47"
+				item: {
+					count: 1
+					id: "vampirism:vampire_blood_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "699BBFB050F431A8"
+				item: { count: 1, id: "vampirism:potion_table" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			id: "29488F9A62FB28C9"
+			tasks: [{
+				id: "34849CEA774A713E"
+				item: { count: 1, id: "vampirism:weapon_table" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["29488F9A62FB28C9"]
+			id: "1C928534A7264F93"
+			tasks: [{
+				id: "0038289880F9A520"
+				item: { count: 1, id: "vampirism:hunter_axe_normal" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["29488F9A62FB28C9"]
+			id: "75671B889A51DFC5"
+			tasks: [{
+				id: "2B32441B7A4174C9"
+				item: { count: 1, id: "vampirism:pitchfork" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["29488F9A62FB28C9"]
+			id: "41EDD417F01C5C0B"
+			rewards: [{
+				count: 5
+				id: "5FC6168977740FC0"
+				item: {
+					count: 1
+					id: "vampirism:crossbow_arrow_normal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "319738D70C60F0E4"
+				item: { count: 1, id: "vampirism:basic_crossbow" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["41EDD417F01C5C0B"]
+			id: "52FF5622DAEDBFF8"
+			tasks: [
+				{
+					id: "7C756B86C4C57CF7"
+					item: { count: 1, id: "vampirism:crossbow_arrow_teleport" }
+					type: "item"
+				}
+				{
+					id: "19AE7447607AB5DA"
+					item: { count: 1, id: "vampirism:crossbow_arrow_normal" }
+					type: "item"
+				}
+				{
+					id: "0140DA4BBCFB9FC5"
+					item: { count: 1, id: "vampirism:crossbow_arrow_spitfire" }
+					type: "item"
+				}
+				{
+					id: "33F476FED3294519"
+					item: { count: 1, id: "vampirism:crossbow_arrow_vampire_killer" }
+					type: "item"
+				}
+				{
+					id: "157EA0515A3F9332"
+					item: { count: 1, id: "vampirism:tech_crossbow_ammo_package" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"29488F9A62FB28C9"
+				"3412FFADB40486E9"
+			]
+			hide_dependency_lines: true
+			id: "7748A5CFABFA397B"
+			rewards: [{
+				count: 10
+				id: "13C23E7DF5EF9456"
+				item: {
+					components: {
+						"ftbquests:missing_item": "createages:brass_machine"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "67E5A1BE00DC26DF"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["29488F9A62FB28C9"]
+			id: "0BC55D0A3181D8AB"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "51E0E6245B2E1BAB"
+				type: "checkmark"
+			}]
+			x: 3.9000000000000004d
+			y: 1.9500000000000002d
+		}
+		{
+			dependencies: ["29488F9A62FB28C9"]
+			id: "651AFEA32A8DA105"
+			tasks: [{
+				id: "03E2AA074941505E"
+				item: { count: 1, id: "vampirism:crucifix_normal" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3412FFADB40486E9"]
+			id: "41C79766A27E8010"
+			tasks: [
+				{
+					id: "0FF7997E945AA1F3"
+					item: { count: 1, id: "vampirism:totem_base" }
+					type: "item"
+				}
+				{
+					id: "668F7D95F4C201E8"
+					item: { count: 1, id: "vampirism:totem_top_crafted" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["41C79766A27E8010"]
+			id: "2F21D51626DE4864"
+			tasks: [{
+				id: "04539DC78CE40CAA"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3412FFADB40486E9"]
+			id: "3C016EF140276C84"
+			rewards: [{
+				id: "5060010D6400CFFE"
+				item: {
+					count: 1
+					id: "vampiresdelight:garlic_crate"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6407C89F672EA3E8"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			hide_dependency_lines: true
+			id: "0E550110C8225A28"
+			rewards: [{
+				count: 6
+				id: "53CB4280787F1131"
+				item: {
+					count: 1
+					id: "vampirism:oil_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "262D03B32CEA8AFF"
+				item: { count: 1, id: "vampirism:alchemy_table" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			hide_dependency_lines: true
+			id: "43291E6A0D7CBFAE"
+			tasks: [{
+				id: "14B707AB2E413B2C"
+				item: { count: 1, id: "vampiresdelight:roasted_garlic" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			hide_dependency_lines: true
+			id: "29A7F7D0FBCF75FA"
+			tasks: [{
+				id: "394552A8C0FD4905"
+				item: { count: 1, id: "vampiresdelight:snow_white_ice_cream" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			hide_dependency_lines: true
+			id: "50F59A0D9B124791"
+			tasks: [{
+				id: "73CBB7D4A71BDF61"
+				item: { count: 1, id: "vampiresdelight:garlic_soup" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			hide_dependency_lines: true
+			id: "4F754CEEA42C6CC3"
+			tasks: [{
+				id: "4C28A2E1BB2A149B"
+				item: { count: 1, id: "vampiresdelight:borscht" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			hide_dependency_lines: true
+			id: "5F676651C9E9B708"
+			tasks: [{
+				id: "4AC90DEA7E24833C"
+				item: { count: 1, id: "vampiresdelight:fish_burger" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C016EF140276C84"]
+			id: "08FAE67F9E6E39E4"
+			tasks: [{
+				id: "470683B88FFC1224"
+				item: { count: 1, id: "vampiresdelight:pure_sorbet" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["74198B23CF3FBBCF"]
+			hide_dependency_lines: true
+			id: "09F8DE27A13849F5"
+			tasks: [{
+				id: "4FA8C4E140F32ABC"
+				item: { count: 1, id: "vampirism:alchemical_cauldron" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4DCE723EA8FBE296"]
+			id: "5804E7A799BE9098"
+			tasks: [{
+				id: "78622E411310C1E8"
+				item: { count: 1, id: "vampirism:holy_water_bottle_normal" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["09F8DE27A13849F5"]
+			id: "4DCE723EA8FBE296"
+			tasks: [{
+				id: "2781DCBD52E4987E"
+				item: { count: 1, id: "vampirism:pure_salt" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["09F8DE27A13849F5"]
+			id: "7F71F4B8B2976A7C"
+			tasks: [{
+				id: "2A41B5F5A963F97A"
+				item: { count: 1, id: "vampirism:item_alchemical_fire" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3412FFADB40486E9"]
+			id: "5EE8A820EE02070E"
+			rewards: [{
+				count: 5
+				id: "376B4C6E6748B48F"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_4"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:hunter/max_level"
+				criterion: ""
+				id: "5113BBDDBF33EF74"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5EE8A820EE02070E"]
+			id: "45C64899FB1CD430"
+			tasks: [{
+				id: "48D862CA937B37B1"
+				item: { count: 1, id: "vampirism:hunter_minion_equipment" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["45C64899FB1CD430"]
+			id: "459F52011807D729"
+			tasks: [
+				{
+					id: "64E7DC5807F78103"
+					item: { count: 1, id: "vampirism:hunter_minion_upgrade_simple" }
+					type: "item"
+				}
+				{
+					id: "498BF0650A81A2E0"
+					item: { count: 1, id: "vampirism:hunter_minion_upgrade_enhanced" }
+					type: "item"
+				}
+				{
+					id: "633236508532F48D"
+					item: { count: 1, id: "vampirism:hunter_minion_upgrade_special" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5EE8A820EE02070E"]
+			id: "5B35DAB7451FAE48"
+			rewards: [{
+				id: "1F1BEBB9717880F0"
+				item: {
+					components: {
+						"ftbquests:missing_item": "baiyin:thoughts_on_starrysky"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				advancement: "vampirism:hunter/max_lord"
+				criterion: ""
+				id: "2DAE21D3D1CD23FB"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["582E2FB7F7A2F30C"]
+			id: "7FCE07FFE26678D5"
+			tasks: [{
+				id: "02D2167886DCCE8D"
+				item: { count: 1, id: "vampirism:vampire_beacon" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.5d
+		}
+	]
+}

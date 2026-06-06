@@ -1,0 +1,12 @@
+{
+  "tag_rules": [
+    {
+      "tag": "forge:ingots/netherite",
+      "rarity": 5
+    },
+    {
+      "tag": "forge:gems/diamond",
+      "rarity": 4
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "positions": {
+    "PmxModelNode#0": [
+      -3378.0,
+      -567.0
+    ],
+    "McInputDataNode#0": [
+      -3258.0,
+      -863.0
+    ],
+    "McStateDetectorNode#0": [
+      -2532.0,
+      -1288.0
+    ],
+    "VmdPlayerNode#0": [
+      -3449.0,
+      -180.0
+    ],
+    "AnimStateMachineNode#0": [
+      -2746.0,
+      406.0
+    ],
+    "McBodyInterpolationNode#0": [
+      -2309.0,
+      89.0
+    ],
+    "ExpressionLayerNode#0": [
+      -2139.0,
+      -1299.0
+    ],
+    "PdControllerNode#0": [
+      -2164.0,
+      -619.0
+    ],
+    "McWorldSyncNode#0": [
+      -1788.0,
+      -1610.0
+    ],
+    "PhysicsWorldNode#0": [
+      -1486.0,
+      -701.0
+    ],
+    "Ragdoll2HumanoidNode#0": [
+      -1349.0,
+      -1729.0
+    ],
+    "HumanoidUpdateNode#0": [
+      -1894.0,
+      -194.0
+    ],
+    "Humanoid2PmxNode#0": [
+      -1313.0,
+      -26.0
+    ],
+    "HumanoidFootIkBridgeNode#0": [
+      -1488.0,
+      -237.0
+    ],
+    "PmxResidualMergeNode#0": [
+      -998.0,
+      8.0
+    ],
+    "PlayerDirectPmxNode#0": [
+      -717.0,
+      -386.0
+    ],
+    "ModelUpdateNode#0": [
+      -327.0,
+      -491.0
+    ],
+    "PmxSkel2RBNode#0": [
+      -79.0,
+      -598.0
+    ],
+    "PhysicsWorldNode#1": [
+      -1208.0,
+      -953.0
+    ],
+    "RB2PmxSkelNode#0": [
+      -550.0,
+      -1563.0
+    ],
+    "RenderOutputNode#0": [
+      -390.0,
+      -1090.0
+    ],
+    "EquipmentPmxNode#0": [
+      -10.0,
+      -1031.0
+    ],
+    "DebugRenderPdNode#0": [
+      308.0,
+      -1061.0
+    ],
+    "DebugRenderBonesNode#0": [
+      1019.0,
+      -946.0
+    ],
+    "DebugRenderPhysicsNode#0": [
+      671.0,
+      -1042.0
+    ]
+  },
+  "editorState": "[editor]\npanning\u003d3182,1885\n\n[node.1]\norigin\u003d-3378,-567\n\n[node.2]\norigin\u003d-3258,-863\n\n[node.3]\norigin\u003d-2532,-1288\n\n[node.4]\norigin\u003d-3449,-180\n\n[node.5]\norigin\u003d-2746,406\n\n[node.6]\norigin\u003d-2309,89\n\n[node.7]\norigin\u003d-2139,-1299\n\n[node.8]\norigin\u003d-2164,-619\n\n[node.9]\norigin\u003d-1788,-1610\n\n[node.10]\norigin\u003d-1486,-701\n\n[node.11]\norigin\u003d-1349,-1729\n\n[node.12]\norigin\u003d-1894,-194\n\n[node.13]\norigin\u003d-1313,-26\n\n[node.14]\norigin\u003d-1488,-237\n\n[node.15]\norigin\u003d-998,8\n\n[node.16]\norigin\u003d-717,-386\n\n[node.17]\norigin\u003d-327,-491\n\n[node.18]\norigin\u003d-79,-598\n\n[node.19]\norigin\u003d-1208,-953\n\n[node.31]\norigin\u003d-444,-714\n\n[node.30]\norigin\u003d-881,-1227\n\n[node.20]\norigin\u003d-550,-1563\n\n[node.21]\norigin\u003d-390,-1090\n\n[node.22]\norigin\u003d-10,-1031\n\n[node.23]\norigin\u003d308,-1061\n\n[node.24]\norigin\u003d1019,-946\n\n[node.25]\norigin\u003d671,-1042\n\n[node.26]\norigin\u003d960,297\n\n[node.27]\norigin\u003d1114,-603\n\n[node.28]\norigin\u003d993,-80\n\n[node.29]\norigin\u003d921,630\n"
+}

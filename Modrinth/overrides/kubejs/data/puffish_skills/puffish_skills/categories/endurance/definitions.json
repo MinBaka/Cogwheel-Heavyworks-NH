@@ -1,0 +1,240 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.endurance",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.endurance.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "quark:resilience"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_fall_reduction+0.5": {
+		"title": ["+0.5 ", {"translate":"skills.endurance.fall_reduction", "color":"white"}],
+		"description": {"translate":"skills.endurance.fall_reduction.description", "color":"white"},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 0.5,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"fall_reduction+0.5": {
+		"title": ["+0.5 ", {"translate":"skills.endurance.fall_reduction", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 0.5,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"fall_reduction+1": {
+		"title": ["§6+1 ", {"translate":"skills.endurance.fall_reduction", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_stamina+10%": {
+		"title": ["+10% ", {"translate":"skills.endurance.stamina", "color":"white"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "parcool:inexhaustible"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.1,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"stamina+10%": {
+		"title": ["+10% ", {"translate":"skills.endurance.stamina", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "parcool:inexhaustible"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.1,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"stamina+25%": {
+		"title": ["§6+25% ", {"translate":"skills.endurance.stamina", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "parcool:inexhaustible"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.25,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"root_stamina_recovery+10%": {
+		"title": ["+10% ", {"translate":"skills.endurance.stamina_recovery", "color":"white"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.1,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"stamina_recovery+10%": {
+		"title": ["§6+10% ", {"translate":"skills.endurance.stamina_recovery", "color":"gold"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.1,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"stamina_recovery+25%": {
+		"title": ["§6+25% ", {"translate":"skills.endurance.stamina_recovery", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.25,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	}
+}

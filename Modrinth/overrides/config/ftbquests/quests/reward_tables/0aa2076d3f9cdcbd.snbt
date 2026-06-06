@@ -1,0 +1,100 @@
+{
+	id: "0AA2076D3F9CDCBD"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 8
+			id: "4C62325576A52116"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:source_gem"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			id: "75409EDE2228452D"
+			type: "xp_levels"
+			xp_levels: 5
+		}
+		{
+			count: 3
+			id: "70FCE9D2ED4B55AB"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:abjuration_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "046AF2F14DB137D8"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:conjuration_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "0190C28596D19A82"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:air_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "244DC9DB1B060268"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:earth_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "1C5F0A98D84015AB"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:fire_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "614F20A0C701054A"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:manipulation_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "7CCA80874B241E5C"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:water_essence"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

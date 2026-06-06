@@ -1,0 +1,127 @@
+[datapack]
+	#NONE: Disable all datapacks except soup
+	#NONE: 不启用数据兼容
+	#COMPAT: Extensive compatibility with other mod items
+	#COMPAT: 与其他模组物品与配方提供大量兼容
+	#UNITE: Duplicate items of the unified module
+	#UNITE: 统一与其它模组重复的物品
+	#Allowed Values: NONE, COMPAT, UNITE
+	mode = "COMPAT"
+	#Enable soup base material
+	#是否启用汤锅材质拓展
+	soup_enabled = true
+
+[lunchBlacklist]
+	#Whether the lunch bag blacklist is enabled
+	#是否启用嬗变饭袋物品黑名单
+	blacklist_enabled = true
+	#List of item IDs that cannot be put into the Transmutation Lunch Bag
+	#黑名单物品
+	#Format: modid:item_id (e.g., artifacts:everlasting_beef, minecraft:apple)
+	blacklist = ["artifacts:eternal_steak", "kaleidoscope_nether:everlasting_flame_steak"]
+
+[nourishmentEffect]
+	#Whether Nourishment effect is blocked when player has Satiated Shield
+	#是否启用滋养和饱腹代偿修复
+	#When enabled, FarmersDelight's Nourishment effect will not work if player has Satiated Shield effect
+	block_enabled = true
+
+[transmutationLunchBag]
+	#Whether the modified Transmutation Lunch Bag behavior is enabled
+	#是否启用嬗变饭袋回调
+	#When enabled, the lunch bag will only consume the first food item but apply all effects from all items in the bag
+	#When disabled, the original Kaleidoscope Cookery behavior will be used
+	back_behavior_enabled = false
+
+[farmersdelight]
+	#Whether all FarmersDelight cooking pot recipes are disabled
+	#是否禁用农夫乐事厨锅配方
+	#When enabled, all cooking pot recipes will not work
+	cooking_pot_recipes_disabled = false
+	#Whether all FarmersDelight cutting board recipes are disabled
+	#是否禁用农夫乐事砧板配方
+	#When enabled, all cutting board recipes will not work
+	cutting_board_recipes_disabled = false
+
+[farm_and_charm]
+	#Whether all Farm and Charm cooking pot recipes are disabled
+	#是否禁用沉浸农艺厨锅配方
+	#When enabled, all Farm and Charm cooking pot recipes will not work
+	cooking_pot_recipes_disabled = false
+	#Whether Farm and Charm mod compatibility is enabled
+	#是否启用沉浸农艺锅配方兼容
+	compat_enabled = true
+
+[vinery]
+	#Whether all Vinery fermentation barrel recipes are disabled
+	#是否禁用葡园酒香酿造桶配方
+	#When enabled, all Vinery fermentation barrel recipes will not work
+	barrel_recipes_disabled = false
+
+[scarecrow]
+	#Whether scarecrows can repel phantoms
+	#稻草人是否可以驱散幻翼
+	#When enabled, phantoms will avoid areas near scarecrows with heads
+	repel_phantoms = true
+
+[projectileDodge]
+	#Whether projectile dodge teleport is enabled
+	#是否启用弹射闪避的传送
+	#When enabled, players with Projectile Dodge effect will teleport when hit by projectiles
+	#When disabled, projectiles will be cancelled without teleportation
+	teleport_enabled = false
+	#Duration cost per dodge (in ticks)
+	#每次闪避消耗的持续时间（tick）
+	#Default: 200 ticks (10 seconds)
+	# Default: 200
+	# Range: > 1
+	duration_cost = 200
+
+[vitality]
+	#List of entity IDs that cannot be affected by Vitality effect
+	#生机效果黑名单实体ID
+	#Format: modid:entity_id (e.g., minecraft:zombie, minecraft:villager)
+	blacklist = []
+
+[create]
+	#Whether Create mod compatibility is enabled
+	#是否启用机械动力模块兼容
+	#When disabled, all Create compatibility features will not be loaded
+	compat_enabled = true
+
+[accessories]
+	#Whether Accessories mod compatibility is enabled
+	#是否启用草帽和accessories的兼容
+	compat_enabled = true
+
+[curios]
+	#Whether Curios mod compatibility is enabled
+	#是否启用草帽和curios的兼容
+	compat_enabled = true
+
+[appleskin]
+	#Whether AppleSkin mod compatibility is enabled
+	#是否启用苹果皮和嬗变饭袋的兼容
+	compat_enabled = true
+
+[jei]
+	#Whether JEI compatibility is enabled
+	#是否启用旋风烤肉塔JEI
+	compat_enabled = true
+
+[rich_soil]
+	#Whether rich soil hoe tilling is enabled
+	#是否启用水中锄耕农夫乐事沃土功能
+	#When enabled, right-clicking rich soil with water above will turn it into rich soil farmland
+	hoe_enabled = true
+
+[thirst]
+	#Whether Thirst mod compatibility is enabled
+	#是否启用口渴兼容
+	compat_enabled = true
+
+[quark]
+	#Whether Quark sickle harvest fix is enabled
+	#是否启用夸克兼容
+	#When enabled, sickle items will not trigger Quark's automatic harvest
+	sickle_harvest_fix_enabled = true

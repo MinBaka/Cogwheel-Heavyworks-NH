@@ -1,0 +1,50 @@
+{
+	id: "6AAE87DA27249C07"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{
+			count: 3
+			id: "6B6B7CD79C42BC35"
+			item: {
+				count: 1
+				id: "minecraft:netherite_upgrade_smithing_template"
+			}
+		}
+		{
+			count: 8
+			id: "5B8151209802C6B6"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+		}
+		{
+			count: 8
+			id: "08B03D6AA334DEBA"
+			item: {
+				count: 1
+				id: "minecraft:shulker_shell"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 16
+			id: "6B76B1F386EE96C7"
+			item: {
+				count: 1
+				id: "minecraft:ender_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "22C2C8A0506E11A9"
+			item: {
+				count: 1
+				id: "minecraft:heart_of_the_sea"
+			}
+			weight: 0.5f
+		}
+		{ id: "2E69F7F01029F0D5", item: { count: 1, id: "minecraft:trident" } }
+	]
+}

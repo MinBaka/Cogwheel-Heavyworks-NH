@@ -1,0 +1,234 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.athlete",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.athlete.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_sprint_speed+1%": {
+		"title": ["+1% ", {"translate":"skills.athlete.movement_speed", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"sprint_speed+1%": {
+		"title": ["+1% ", {"translate":"skills.athlete.movement_speed", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"sprint_speed+3.75%": {
+		"title": ["§6+3.75% ", {"translate":"skills.athlete.movement_speed", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "artifacts:running_shoes"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.0375,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"root_swim_speed+5%": {
+		"title": ["+5% ", {"translate":"skills.athlete.swim_speed", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "dolphins_grace"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"swim_speed+5%": {
+		"title": ["+5% ", {"translate":"skills.athlete.swim_speed", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "dolphins_grace"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"swim_speed+10%": {
+		"title": ["§6+10% ", {"translate":"skills.athlete.swim_speed", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "dolphins_grace"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.1,
+					"operation": "add_multiplied_base"
+				}
+			}
+		]
+	},
+	"root_dodge+1%": {
+		"title": ["+1% ", {"translate":"skills.athlete.dodge", "color":"white"}],
+		"description": {"translate":"skills.athlete.dodge.description", "color":"white"},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"dodge+1%": {
+		"title": ["+1% ", {"translate":"skills.athlete.dodge", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.01,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"dodge+2.5%": {
+		"title": ["§6+2.5% ", {"translate":"skills.athlete.dodge", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:jump_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		]
+	}
+}

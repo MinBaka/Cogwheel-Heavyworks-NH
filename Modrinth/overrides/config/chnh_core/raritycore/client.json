@@ -1,0 +1,31 @@
+{
+  "enableItemBorderRendering": true,
+  "itemBorderStyle": 1,
+  "useTextureBorder": true,
+  "enableItemNameColor": true,
+  "enableTooltipInsert": true,
+  "enableTooltipColor": true,
+  "skipUnconfiguredItems": false,
+  "enableBatchProcessing": true,
+  "enableCacheSystem": true,
+  "starDisplay": {
+    "enabled": true,
+    "mode": "repeat",
+    "repeat": {
+      "character": "★"
+    },
+    "custom": {
+      "strings": {
+        "1": "☆☆☆☆☆",
+        "2": "★☆☆☆☆",
+        "3": "★★☆☆☆",
+        "4": "★★★☆☆",
+        "5": "★★★★☆",
+        "6": "★★★★★",
+        "7": "★★★★★★",
+        "8": "★★★★★★★"
+      },
+      "specialRarityTexts": {}
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+	id: "5F206DF1078FA0E3"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ id: "36D11607CB12DB26", item: { count: 1, id: "create_fantasizing:compact_hydraulic_engine" } }
+		{ id: "418CC018212CB4A9", item: { count: 1, id: "create_fantasizing:compact_wind_engine" } }
+		{
+			count: 2
+			id: "518691AFC4085C5C"
+			item: {
+				components: {
+					"ftbquests:missing_item": "create_power_loader:brass_chunk_loader"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{ id: "47D382DA68A3A3CC", item: { components: { "ftbquests:missing_item": "rainbowcompound:rainbow_compound" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+}

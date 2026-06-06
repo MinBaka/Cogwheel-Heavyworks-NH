@@ -1,0 +1,13 @@
+{
+	id: "50C7A3D4F435BFBE"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ id: "6A539398513F474C", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "706E0F88469298FB", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "37A546BA443B72DD", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "08CF91FD225D8550", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "2BA5ABE8345120E4", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "0FF44366370D3F57", item: { count: 1, id: "minecraft:enchanted_book" } }
+	]
+}

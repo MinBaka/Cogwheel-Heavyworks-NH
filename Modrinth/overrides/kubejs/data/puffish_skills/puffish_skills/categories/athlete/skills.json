@@ -1,0 +1,260 @@
+{
+	"isw6zki8tqes56c6": {
+		"definition": "root_swim_speed+5%",
+		"x": -288,
+		"y": -128,
+		"root": true
+	},
+	"apli30sq9e4djlgg": {
+		"definition": "swim_speed+5%",
+		"x": -224,
+		"y": 64,
+		"root": false
+	},
+	"hlu2f0x0fv3bv9qi": {
+		"definition": "swim_speed+5%",
+		"x": -224,
+		"y": 128,
+		"root": false
+	},
+	"9vafdj5mtzskbciy": {
+		"definition": "swim_speed+5%",
+		"x": -224,
+		"y": 0,
+		"root": false
+	},
+	"cn1cvenm3m48dm4f": {
+		"definition": "swim_speed+5%",
+		"x": -352,
+		"y": 0,
+		"root": false
+	},
+	"18ytfhkhxvkh2oue": {
+		"definition": "swim_speed+5%",
+		"x": -224,
+		"y": -64,
+		"root": false
+	},
+	"ckq2njc45eeusdbi": {
+		"definition": "swim_speed+5%",
+		"x": -352,
+		"y": -64,
+		"root": false
+	},
+	"azq4gmjynti3ofa0": {
+		"definition": "swim_speed+5%",
+		"x": -352,
+		"y": 64,
+		"root": false
+	},
+	"972yf6dqf8ssdi6w": {
+		"definition": "swim_speed+5%",
+		"x": -352,
+		"y": 128,
+		"root": false
+	},
+	"4nk38sou7vbxedd0": {
+		"definition": "swim_speed+10%",
+		"x": -224,
+		"y": 192,
+		"root": false
+	},
+	"gxq4f03u8fehfxjh": {
+		"definition": "swim_speed+10%",
+		"x": -352,
+		"y": 192,
+		"root": false
+	},
+	"aksl8w72q95zk8wk": {
+		"definition": "swim_speed+10%",
+		"x": -288,
+		"y": 192,
+		"root": false
+	},
+	"pm3h1gkq9zitzxbf": {
+		"definition": "swim_speed+5%",
+		"x": -288,
+		"y": 0,
+		"root": false
+	},
+	"ia6djo9wz6ldc8w4": {
+		"definition": "swim_speed+10%",
+		"x": -288,
+		"y": 256,
+		"root": false
+	},
+	"povxqganx2cehrh1": {
+		"definition": "root_sprint_speed+1%",
+		"x": 0,
+		"y": -128,
+		"root": true
+	},
+	"lowhjbqyas55z2os": {
+		"definition": "sprint_speed+1%",
+		"x": -64,
+		"y": -64,
+		"root": false
+	},
+	"rbxlubez8vj9t2kn": {
+		"definition": "sprint_speed+1%",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"ggz6pesq611nspiu": {
+		"definition": "sprint_speed+1%",
+		"x": 64,
+		"y": 0,
+		"root": false
+	},
+	"lgce7t94e06b8dln": {
+		"definition": "sprint_speed+1%",
+		"x": -64,
+		"y": 0,
+		"root": false
+	},
+	"rfrxfqi17muqwihh": {
+		"definition": "sprint_speed+1%",
+		"x": 0,
+		"y": 0,
+		"root": false
+	},
+	"0mlvc9hl6ia4d8z8": {
+		"definition": "sprint_speed+1%",
+		"x": -64,
+		"y": 64,
+		"root": false
+	},
+	"62mg4zy8y2g5je1p": {
+		"definition": "sprint_speed+1%",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"lo40lvhexwi4gvmk": {
+		"definition": "sprint_speed+1%",
+		"x": 64,
+		"y": 128,
+		"root": false
+	},
+	"zbo26ne53207uzv3": {
+		"definition": "sprint_speed+1%",
+		"x": -64,
+		"y": 128,
+		"root": false
+	},
+	"7ut4xo4jown7l75o": {
+		"definition": "sprint_speed+3.75%",
+		"x": 0,
+		"y": 192,
+		"root": false
+	},
+	"4qbuus74hgkcaa4t": {
+		"definition": "sprint_speed+3.75%",
+		"x": -64,
+		"y": 192,
+		"root": false
+	},
+	"6d21qxywouqweyfb": {
+		"definition": "sprint_speed+3.75%",
+		"x": 64,
+		"y": 192,
+		"root": false
+	},
+	"j6gzvecoyzlta0bu": {
+		"definition": "sprint_speed+3.75%",
+		"x": 0,
+		"y": 256,
+		"root": false
+	},
+	"18hyvp4rlh6yvewv": {
+		"definition": "root_dodge+1%",
+		"x": 288,
+		"y": -128,
+		"root": true
+	},
+	"zt6i5q3txi931aj0": {
+		"definition": "dodge+1%",
+		"x": 224,
+		"y": -64,
+		"root": false
+	},
+	"qgq5xve2wnbqh28q": {
+		"definition": "dodge+1%",
+		"x": 352,
+		"y": -64,
+		"root": false
+	},
+	"mq45wicj3g1nrqca": {
+		"definition": "dodge+1%",
+		"x": 224,
+		"y": 0,
+		"root": false
+	},
+	"ecbgu7nkxsau978d": {
+		"definition": "dodge+1%",
+		"x": 352,
+		"y": 0,
+		"root": false
+	},
+	"9sblmcprltezxw94": {
+		"definition": "dodge+1%",
+		"x": 288,
+		"y": 0,
+		"root": false
+	},
+	"1mottgz001tbaaz3": {
+		"definition": "dodge+1%",
+		"x": 224,
+		"y": 64,
+		"root": false
+	},
+	"0bkgf105y32bsww6": {
+		"definition": "dodge+1%",
+		"x": 352,
+		"y": 64,
+		"root": false
+	},
+	"6vnz19148emjrsl9": {
+		"definition": "dodge+1%",
+		"x": 224,
+		"y": 128,
+		"root": false
+	},
+	"gxofp6rt3w1vsry1": {
+		"definition": "dodge+1%",
+		"x": 352,
+		"y": 128,
+		"root": false
+	},
+	"10i4t7wer94vyx58": {
+		"definition": "dodge+2.5%",
+		"x": 224,
+		"y": 192,
+		"root": false
+	},
+	"py6y4o4445nejc0f": {
+		"definition": "dodge+2.5%",
+		"x": 288,
+		"y": 192,
+		"root": false
+	},
+	"yzn0n5yv8ovrj91q": {
+		"definition": "dodge+2.5%",
+		"x": 352,
+		"y": 192,
+		"root": false
+	},
+	"x249c0tlkep3s0xs": {
+		"definition": "dodge+2.5%",
+		"x": 288,
+		"y": 256,
+		"root": false
+	},
+	"btgpjimej3kaqmxj": {
+		"definition": "root_info",
+		"x": 0,
+		"y": -256,
+		"root": true
+	}
+}

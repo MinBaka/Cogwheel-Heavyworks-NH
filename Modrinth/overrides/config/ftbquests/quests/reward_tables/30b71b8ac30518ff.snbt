@@ -1,0 +1,55 @@
+{
+	id: "30B71B8AC30518FF"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			count: 32
+			id: "3DF65E00399A4F2A"
+			item: {
+				count: 1
+				id: "minecraft:gunpowder"
+			}
+		}
+		{
+			count: 16
+			id: "05D81C86C869E3BC"
+			item: {
+				count: 1
+				id: "minecraft:ink_sac"
+			}
+		}
+		{
+			count: 5
+			id: "14314444494389D1"
+			item: {
+				count: 1
+				id: "minecraft:blaze_powder"
+			}
+		}
+		{
+			count: 16
+			id: "671C541D1ADD9878"
+			item: {
+				count: 1
+				id: "minecraft:spider_eye"
+			}
+		}
+		{
+			count: 32
+			id: "5C361CB9C787BC84"
+			item: {
+				count: 1
+				id: "minecraft:slime_ball"
+			}
+		}
+		{
+			count: 3
+			id: "7569ED321959DB1C"
+			item: {
+				count: 1
+				id: "minecraft:ghast_tear"
+			}
+		}
+	]
+}

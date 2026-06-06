@@ -1,0 +1,47 @@
+{
+	id: "2F06FD5AA9EEDE80"
+	loot_size: 1
+	order_index: 20
+	rewards: [
+		{
+			count: 10
+			id: "18F1DAE48057C648"
+			item: {
+				count: 1
+				id: "farmersdelight:barbecue_stick"
+			}
+		}
+		{
+			count: 10
+			id: "2777B941623D8FEC"
+			item: {
+				count: 1
+				id: "farmersdelight:egg_sandwich"
+			}
+		}
+		{
+			count: 10
+			id: "1F008020FC03024D"
+			item: {
+				count: 1
+				id: "farmersdelight:hamburger"
+			}
+		}
+		{
+			count: 10
+			id: "4000B2A530294A95"
+			item: {
+				count: 1
+				id: "farmersdelight:mutton_wrap"
+			}
+		}
+		{
+			count: 10
+			id: "5562C4ED70AEA28C"
+			item: {
+				count: 1
+				id: "farmersdelight:dumplings"
+			}
+		}
+	]
+}

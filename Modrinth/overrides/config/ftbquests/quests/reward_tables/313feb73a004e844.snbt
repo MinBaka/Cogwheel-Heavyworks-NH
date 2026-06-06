@@ -1,0 +1,27 @@
+{
+	id: "313FEB73A004E844"
+	loot_size: 1
+	order_index: 44
+	rewards: [
+		{
+			id: "0D0CF520C30EB0E8"
+			item: {
+				count: 1
+				id: "touhou_little_maid:substitute_jizo"
+			}
+			weight: 0.8f
+		}
+		{ id: "0C6473F48F55C4E5", item: { count: 1, id: "l2complements:space_shard" } }
+		{
+			count: 6
+			id: "0855D7BC2DF74ACE"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

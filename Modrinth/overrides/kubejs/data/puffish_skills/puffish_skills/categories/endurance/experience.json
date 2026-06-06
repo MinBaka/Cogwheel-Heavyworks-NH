@@ -1,0 +1,118 @@
+{
+    "experience_per_level": {
+        "type": "expression",
+        "data": {
+            "expression": "10000 + (level * 1000) + (level ^ 2 * 11.325)"
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:increase_stat",
+            "data": {
+                "variables": {
+                    "is_jump": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_stat"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "stat": "minecraft:jump"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "is_jump",
+                        "expression": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "puffish_skills:increase_stat",
+            "data": {
+                "variables": {
+                    "is_running": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_stat"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "stat": "minecraft:sprint_one_cm"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "is_running",
+                        "expression": "1"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "puffish_skills:increase_stat",
+            "data": {
+                "variables": {
+                    "is_swimming": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_stat"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "stat": "minecraft:swim_one_cm"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "is_swimming",
+                        "expression": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "puffish_skills:take_damage",
+            "data": {
+                "variables": {
+                    "damage": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_taken_damage"
+                            }
+                        ]
+                    },
+                    "is_melee": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_damage_source"
+                            },
+                            {
+                                "type": "puffish_skills:is_melee"
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "is_melee",
+                        "expression": "max(damage * 40, 1)"
+                    }
+                ]
+            }
+        }
+    ]
+}

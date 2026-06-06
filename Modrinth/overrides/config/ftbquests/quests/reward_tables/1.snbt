@@ -1,0 +1,20 @@
+{
+	id: "2CA6A98935CD3A76"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			command: "/gamerule mobGriefing false"
+			id: "32928103B6464C62"
+			permission_level: 2
+			type: "command"
+		}
+		{
+			command: "/gamerule mobGriefing true"
+			id: "0992FEDF6DFBA680"
+			permission_level: 2
+			team_reward: true
+			type: "command"
+		}
+	]
+}

@@ -1,0 +1,440 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1F0471C4DB13140A"
+	group: "01E5705B52F2A444"
+	icon: {
+		id: "werewolves:white_pelt_helmet"
+	}
+	id: "1F0471C4DB13140A"
+	images: [
+		{
+			height: 3.0d
+			image: "tacz:textures/crosshair/normal/square_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.5d
+			y: 13.5d
+		}
+		{
+			height: 4.0d
+			image: "werewolves:textures/skills/thick_fur.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			height: 4.0d
+			image: "werewolves:item/white_pelt_helmet"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "vampiresdelight:block/dark_stone_stove_front_on"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 8.5d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5645100EA9AFC3BE"
+			rewards: [
+				{
+					id: "64B404012689A2F0"
+					item: {
+						count: 1
+						id: "guideapi_vp:vampirism-guidebook"
+					}
+					type: "item"
+				}
+				{
+					id: "307ADEA75B3C5260"
+					item: {
+						count: 1
+						id: "werewolves:werewolf_tooth"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "313E8F345A5295F9"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5645100EA9AFC3BE"]
+			id: "6085D21C26AFE7CD"
+			rewards: [{
+				count: 5
+				id: "34FDFED0B0725E4C"
+				item: {
+					count: 1
+					id: "werewolves:liver"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "50656689DF5E8A84"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6085D21C26AFE7CD"]
+			id: "5F9A90569EC5053D"
+			tasks: [{
+				id: "16678C6324E0F9C4"
+				item: { count: 1, id: "werewolves:injection_un_werewolf" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6085D21C26AFE7CD"]
+			id: "1D34F35D59718F0D"
+			tasks: [{
+				id: "4FC1872F141B3D9A"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6085D21C26AFE7CD"]
+			id: "511903DF8A09CB37"
+			tasks: [{
+				id: "19FF1522BED84C9F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6085D21C26AFE7CD"]
+			id: "658FA427F5108A4B"
+			rewards: [{
+				count: 5
+				id: "512B6BFF95A994CE"
+				item: {
+					count: 1
+					id: "werewolves:wolf_berries"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "werewolves:werewolf_heaven"
+				id: "4366B84D134DE71B"
+				type: "biome"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["658FA427F5108A4B"]
+			id: "0F05A78ABD713A30"
+			rewards: [{
+				id: "46F06779ACAB9A7C"
+				item: {
+					count: 1
+					id: "werewolves:werewolf_tooth"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "werewolves:alpha_werewolf"
+				id: "172FD4892A5658A1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["658FA427F5108A4B"]
+			id: "79DB9E022EDD3076"
+			rewards: [
+				{
+					id: "300F57B7EC447A96"
+					item: {
+						count: 1
+						id: "werewolves:liver"
+					}
+					type: "item"
+				}
+				{
+					id: "4A783256C1DC1186"
+					item: {
+						count: 1
+						id: "werewolves:cracked_bone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "werewolves:human_werewolf"
+				id: "673E219C0F96468D"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["658FA427F5108A4B"]
+			id: "0214D6D4663001C2"
+			rewards: [
+				{
+					count: 5
+					id: "74E769D5E257161E"
+					item: {
+						count: 1
+						id: "werewolves:liver"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "18499B5B307C7679"
+					item: {
+						count: 1
+						id: "werewolves:cracked_bone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "70071A31A389FFA3"
+					item: { count: 1, id: "werewolves:stone_altar_fire_bowl" }
+					type: "item"
+				}
+				{
+					id: "67110EADE88A5395"
+					item: { count: 1, id: "werewolves:stone_altar" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0214D6D4663001C2"]
+			id: "12F86EA815970400"
+			rewards: [{
+				id: "6D66C4E9DB90C36A"
+				item: {
+					count: 1
+					id: "werewolves:werewolf_tooth"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "44C609458F8D5390"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["12F86EA815970400"]
+			id: "5E102BEC8EA1D3B1"
+			tasks: [{
+				id: "562CE09C25883B23"
+				item: { count: 1, id: "werewolves:wolf_berries" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5E102BEC8EA1D3B1"]
+			id: "21D46E56ABFD8B25"
+			tasks: [{
+				id: "514CC259F4B915FC"
+				item: { count: 1, id: "vampiresdelight:wolf_berry_cookie" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E102BEC8EA1D3B1"]
+			id: "457314F94BE2D43B"
+			tasks: [{
+				id: "7238DA72EB458003"
+				item: { count: 1, id: "vampiresdelight:wolf_berry_ice_cream" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["12F86EA815970400"]
+			id: "022CF39DA248931D"
+			tasks: [
+				{
+					id: "36F6180FBDCC4CC8"
+					item: { count: 1, id: "vampirism:totem_base" }
+					type: "item"
+				}
+				{
+					id: "5EB9A2569E859A8E"
+					item: { count: 1, id: "vampirism:totem_top_crafted" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["022CF39DA248931D"]
+			id: "2E7ABC2BEE94E47A"
+			tasks: [{
+				id: "3D03FBC256A4C6B0"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["12F86EA815970400"]
+			id: "4BD9E35C5E34BA0F"
+			rewards: [
+				{
+					id: "647F99D75399F0F5"
+					item: {
+						count: 1
+						id: "werewolves:white_pelt_helmet"
+					}
+					type: "item"
+				}
+				{
+					id: "7C933A928312F8A0"
+					item: {
+						count: 1
+						id: "werewolves:white_pelt_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "687C81730C89C4AC"
+					item: {
+						count: 1
+						id: "werewolves:white_pelt_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "633573D86EB1C1C9"
+					item: {
+						count: 1
+						id: "werewolves:white_pelt_boots"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "4C8D0C648C713615"
+				item: { count: 1, id: "werewolves:werewolf_tooth" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6085D21C26AFE7CD"]
+			id: "75A91EDF3420D11F"
+			rewards: [{
+				count: 10
+				id: "3D4EF1CE4E54B7FB"
+				item: {
+					count: 1
+					id: "minecraft:beef"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DDBA6032BB31266"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			id: "0C3F2DE00BAAB424"
+			tasks: [{
+				id: "579C2DBCD4FCC30C"
+				item: { count: 1, id: "werewolves:werewolf_minion_charm" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0C3F2DE00BAAB424"
+				"4BD9E35C5E34BA0F"
+			]
+			id: "2E26AF31137F0CCD"
+			tasks: [
+				{
+					id: "7808DE7855BED245"
+					item: { count: 1, id: "werewolves:werewolf_minion_upgrade_simple" }
+					type: "item"
+				}
+				{
+					id: "4105FC6E5FA339C8"
+					item: { count: 1, id: "werewolves:werewolf_minion_upgrade_enhanced" }
+					type: "item"
+				}
+				{
+					id: "453BE2B6FE01E80D"
+					item: { count: 1, id: "werewolves:werewolf_minion_upgrade_special" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4BD9E35C5E34BA0F"]
+			id: "6CDE3A0E7F54B288"
+			rewards: [{
+				id: "703A6726B829FE3B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "baiyin:thoughts_on_starrysky"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				entity: "werewolves:alpha_werewolf"
+				id: "27F50DD696A78607"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.5d
+			y: 13.5d
+		}
+	]
+}

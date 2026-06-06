@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "29B88CCBC399B017"
+	group: "13DF5BA5EEE759A2"
+	icon: {
+		id: "simulated:physics_assembler"
+	}
+	id: "29B88CCBC399B017"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "2E4EAE75DDC90AD4"
+		rewards: [{
+			id: "32C9D7F1D14A2525"
+			item: {
+				components: {
+					"minecraft:custom_name": "\"臂力惊人\""
+					"minecraft:enchantments": {
+						levels: {
+							"minecraft:power": 5
+						}
+					}
+					"minecraft:repair_cost": 1
+				}
+				count: 1
+				id: "simulated:iron_handle"
+			}
+			type: "item"
+		}]
+		tasks: [{
+			id: "3C5E05FA1B80A3CA"
+			item: { count: 1, id: "simulated:physics_assembler" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

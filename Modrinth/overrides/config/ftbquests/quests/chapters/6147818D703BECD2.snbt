@@ -1,0 +1,251 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6147818D703BECD2"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "ftbteams:textures/accept.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "6147818D703BECD2"
+	images: [{
+		height: 6.0d
+		image: "minecraft:block/command_block_back"
+		rotation: 0.0d
+		width: 6.0d
+		x: 0.0d
+		y: 3.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5998B9C1762A3093"
+			rewards: [{
+				count: 16
+				id: "102D240A7EC9E75A"
+				item: {
+					count: 1
+					id: "youkaisfeasts:kinako_dango"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6435C3851EC3B2CC"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			icon: {
+				id: "create:cogwheel"
+			}
+			id: "7250D2E0FFFCD1B5"
+			rewards: [
+				{
+					id: "05136B3A41C4C58C"
+					item: {
+						count: 1
+						id: "create:goggles"
+					}
+					type: "item"
+				}
+				{
+					id: "327F5BF286FCC69E"
+					item: {
+						count: 1
+						id: "create:wrench"
+					}
+					type: "item"
+				}
+				{
+					id: "7021154A23FDE9A9"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "343BD514313A6A47"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			id: "6323B2058054406A"
+			tasks: [{
+				id: "4DC5B637AD286341"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			id: "40ED12DBB0CC1867"
+			rewards: [{
+				id: "0B2603C5608EE78F"
+				item: {
+					count: 1
+					id: "vampiresdelight:orchid_tea"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B3C97421D0E7026"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			icon: {
+				id: "tacz:gun_smith_table"
+			}
+			id: "47680881981D2672"
+			rewards: [
+				{
+					id: "7C90DFDC02C76985"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								GunCurrentAmmoCount: 17
+								GunFireMode: "SEMI"
+								GunId: "tacz:glock_17"
+								HasBulletInBarrel: 1b
+							}
+						}
+						count: 1
+						id: "tacz:modern_kinetic_gun"
+					}
+					type: "item"
+				}
+				{
+					count: 60
+					id: "6FDDB4C242A2415D"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								AmmoId: "tacz:9mm"
+							}
+							"minecraft:max_stack_size": 60
+						}
+						count: 1
+						id: "tacz:ammo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "236197D8F90D22F1"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6323B2058054406A"]
+			id: "58CC7E807E4E2827"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E095863335FB2D0"
+				table_id: 3217445390581054070L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "08271B5C21A16E28"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6323B2058054406A"]
+			id: "540C77C65895FAAD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22706E546E3D49CE"
+				table_id: 997879006079638218L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "7114905B9DFFD68F"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7250D2E0FFFCD1B5"]
+			icon: {
+				id: "create:goggles"
+			}
+			id: "58C9D74BE0E61E9D"
+			tasks: [{
+				id: "034F95FF842B6AB8"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			id: "2E43AFA65793B795"
+			tasks: [{
+				id: "6500667EDEF502C9"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E43AFA65793B795"]
+			id: "759646174516F190"
+			tasks: [{
+				id: "767DD97169B4CDB6"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5998B9C1762A3093"]
+			id: "515C5799C6A27EC1"
+			rewards: [{
+				count: 16
+				id: "3E1ED4D74D258D25"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:baozi"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FC6EBF383083725"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "58A6B4EF19B4B3C9"
+			tasks: [{
+				id: "7A046A512CE4EC15"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+}

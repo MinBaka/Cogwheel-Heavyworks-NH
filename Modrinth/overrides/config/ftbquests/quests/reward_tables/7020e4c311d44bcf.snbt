@@ -1,0 +1,33 @@
+{
+	id: "7020E4C311D44BCF"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ id: "588EF3EE487277FF", item: { count: 1, id: "l2hostility:counter_strike" } }
+		{ id: "647785B3F02F7295", item: { count: 1, id: "l2hostility:shulker" } }
+		{
+			id: "357B8A0B31DBE482"
+			item: {
+				count: 1
+				id: "l2hostility:soul_burner"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "04B48B6EB9919495"
+			item: {
+				count: 1
+				id: "l2hostility:moonwalk"
+			}
+			weight: 0.25f
+		}
+		{
+			id: "5D598DF959EDA5A0"
+			item: {
+				count: 1
+				id: "l2hostility:gravity"
+			}
+			weight: 0.25f
+		}
+	]
+}

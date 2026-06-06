@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0D7BD273894AB01E"
+	group: ""
+	icon: {
+		id: "tacz:gun_smith_table"
+	}
+	id: "0D7BD273894AB01E"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7C0F0EE75EF02E4A"]
+			id: "3DB766C74424A972"
+			tasks: [{
+				id: "0B741C35E156223A"
+				item: { count: 1, id: "tacz:gun_smith_table" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "7C0F0EE75EF02E4A"
+			tasks: [{
+				id: "5F8C02001BEFFCFC"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	id: "4D8E82C82E01CC13"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ id: "612FDE04DAE1EF4B", item: { count: 1, id: "l2hostility:cursed" } }
+		{
+			id: "4C6D1F4C5CBEB53C"
+			item: {
+				count: 1
+				id: "l2hostility:wither"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "5DFD0A01FA551F80"
+			item: {
+				count: 1
+				id: "l2hostility:poison"
+			}
+			weight: 0.75f
+		}
+		{
+			id: "3F3270B7B3E780EE"
+			item: {
+				count: 1
+				id: "l2hostility:slowness"
+			}
+			weight: 0.5f
+		}
+		{ id: "6148546DBA0EE2F4", item: { count: 1, id: "l2hostility:tank" } }
+		{ id: "4FD0FA4551D36B14", item: { count: 1, id: "l2hostility:fiery" } }
+	]
+}

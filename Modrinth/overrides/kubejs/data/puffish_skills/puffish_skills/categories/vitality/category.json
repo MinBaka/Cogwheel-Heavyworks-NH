@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": {"translate":"skills.vitality", "color":"red"},
+	"icon": {
+		"type": "effect",
+		"data": {
+			"effect": "minecraft:regeneration"
+		}
+	},
+	"background": "textures/block/iron_block.png"
+}

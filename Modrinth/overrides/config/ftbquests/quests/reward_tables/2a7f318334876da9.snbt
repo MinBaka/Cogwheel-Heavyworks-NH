@@ -1,0 +1,14 @@
+{
+	id: "2A7F318334876DA9"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{ id: "4F7ED48B204920CC", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "403C2080A4A0DDEE", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "2C7BC6265EDA722E", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "42324AEA36642A5C", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "7BD44C74F88FE2C6", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "53E51FF7C400DF6F", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+		{ id: "21332EA8875F6B3F", item: { count: 1, id: "tacz:modern_kinetic_gun" } }
+	]
+}

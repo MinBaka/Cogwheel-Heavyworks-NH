@@ -1,0 +1,260 @@
+{
+	"oadh1v1v24t6qjeq": {
+		"definition": "root_health+1",
+		"x": 0,
+		"y": -96,
+		"root": true
+	},
+	"5ciokx4s4eawlbee": {
+		"definition": "health+1",
+		"x": -64,
+		"y": -32,
+		"root": false
+	},
+	"61aq5s1fy88bvrxf": {
+		"definition": "health+1",
+		"x": -64,
+		"y": 32,
+		"root": false
+	},
+	"g2nm3lpbkzxn6p4b": {
+		"definition": "health+1",
+		"x": 64,
+		"y": -32,
+		"root": false
+	},
+	"105lzkf10a81jwbe": {
+		"definition": "health+1",
+		"x": 0,
+		"y": 32,
+		"root": false
+	},
+	"1411bnsn4r4vfrqm": {
+		"definition": "health+1",
+		"x": 64,
+		"y": 32,
+		"root": false
+	},
+	"jwlivhjw14m6podu": {
+		"definition": "health+1",
+		"x": 64,
+		"y": 96,
+		"root": false
+	},
+	"nd79o68k7ckx3565": {
+		"definition": "health+1",
+		"x": -64,
+		"y": 96,
+		"root": false
+	},
+	"1y67xu0gvuabblr5": {
+		"definition": "health+1",
+		"x": -64,
+		"y": 160,
+		"root": false
+	},
+	"oq2d1jpdn84odpmb": {
+		"definition": "health+1",
+		"x": 64,
+		"y": 160,
+		"root": false
+	},
+	"tiav873hf7cojcia": {
+		"definition": "health+2",
+		"x": 64,
+		"y": 224,
+		"root": false
+	},
+	"6crh39qiityxsgq7": {
+		"definition": "health+2",
+		"x": -64,
+		"y": 224,
+		"root": false
+	},
+	"myeh2otx1kuojqyc": {
+		"definition": "health+2",
+		"x": -64,
+		"y": 288,
+		"root": false
+	},
+	"a00rbwqm4zrsqdc2": {
+		"definition": "health+2",
+		"x": 64,
+		"y": 288,
+		"root": false
+	},
+	"ce083l17nua0uhg7": {
+		"definition": "root_resilience+1",
+		"x": -288,
+		"y": -96,
+		"root": true
+	},
+	"dhmjcz22jcddipkb": {
+		"definition": "resilience+1",
+		"x": -224,
+		"y": -32,
+		"root": false
+	},
+	"vrokxjapwxzi07v5": {
+		"definition": "resilience+1",
+		"x": -352,
+		"y": -32,
+		"root": false
+	},
+	"uwwzln3deec6m7h9": {
+		"definition": "resilience+1",
+		"x": -352,
+		"y": 32,
+		"root": false
+	},
+	"52t10s20vs901y2p": {
+		"definition": "resilience+1",
+		"x": -352,
+		"y": 96,
+		"root": false
+	},
+	"lut2jrrwmxlr3gdl": {
+		"definition": "resilience+1",
+		"x": -224,
+		"y": 32,
+		"root": false
+	},
+	"coxwokiidi4n3h53": {
+		"definition": "resilience+1",
+		"x": -224,
+		"y": 96,
+		"root": false
+	},
+	"8rx51jdhdvbdsy1z": {
+		"definition": "resilience+1",
+		"x": -224,
+		"y": 160,
+		"root": false
+	},
+	"xymbydbnm63eckva": {
+		"definition": "resilience+1",
+		"x": -352,
+		"y": 160,
+		"root": false
+	},
+	"jjodzzolp7zhkqfl": {
+		"definition": "resilience+2",
+		"x": -352,
+		"y": 224,
+		"root": false
+	},
+	"ou17fbsfa36da780": {
+		"definition": "resilience+2",
+		"x": -352,
+		"y": 288,
+		"root": false
+	},
+	"mvd5bcjeocrih9j3": {
+		"definition": "resilience+2",
+		"x": -224,
+		"y": 224,
+		"root": false
+	},
+	"6nyhhquto34no0p7": {
+		"definition": "resilience+2",
+		"x": -224,
+		"y": 288,
+		"root": false
+	},
+	"ohfcchlfhwrt41lu": {
+		"definition": "resilience+1",
+		"x": -288,
+		"y": 32,
+		"root": false
+	},
+	"3zl5iycyn7edfqsl": {
+		"definition": "root_healing+2.5%",
+		"x": 288,
+		"y": -96,
+		"root": true
+	},
+	"mxd32riti4qgrl89": {
+		"definition": "healing+2.5%",
+		"x": 224,
+		"y": -32,
+		"root": false
+	},
+	"fvd7z0aii790c2eu": {
+		"definition": "healing+2.5%",
+		"x": 352,
+		"y": -32,
+		"root": false
+	},
+	"1pdfaeslkoaz5mqx": {
+		"definition": "healing+2.5%",
+		"x": 224,
+		"y": 32,
+		"root": false
+	},
+	"8evlajw0m8r15ex7": {
+		"definition": "healing+2.5%",
+		"x": 352,
+		"y": 32,
+		"root": false
+	},
+	"bj5yuzdciitw6l6n": {
+		"definition": "healing+2.5%",
+		"x": 352,
+		"y": 96,
+		"root": false
+	},
+	"kkgsf3y5neumu9lu": {
+		"definition": "healing+2.5%",
+		"x": 224,
+		"y": 96,
+		"root": false
+	},
+	"2bpfgh08zn10kuu4": {
+		"definition": "healing+2.5%",
+		"x": 224,
+		"y": 160,
+		"root": false
+	},
+	"iyl8ig5t1h9z6k3n": {
+		"definition": "healing+2.5%",
+		"x": 352,
+		"y": 160,
+		"root": false
+	},
+	"8mkuhpgz6velfv5r": {
+		"definition": "healing+6.25%",
+		"x": 224,
+		"y": 224,
+		"root": false
+	},
+	"0g094zwxavjqbhrk": {
+		"definition": "healing+6.25%",
+		"x": 352,
+		"y": 224,
+		"root": false
+	},
+	"8f6sdfvf60dxh97g": {
+		"definition": "healing+6.25%",
+		"x": 352,
+		"y": 288,
+		"root": false
+	},
+	"n5as2w23p3upkqvh": {
+		"definition": "healing+6.25%",
+		"x": 224,
+		"y": 288,
+		"root": false
+	},
+	"uwf6ear43ri3zclz": {
+		"definition": "healing+2.5%",
+		"x": 288,
+		"y": 32,
+		"root": false
+	},
+	"gpg1le5hnes4ht48": {
+		"definition": "root_info",
+		"x": 0,
+		"y": -224,
+		"root": true
+	}
+}

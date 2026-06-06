@@ -1,0 +1,51 @@
+{
+	id: "18F7A6F6AB72DE4E"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{
+			count: 5
+			id: "7E689B112ED42DA6"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:wixie_charm"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 5
+			id: "08931C48B81988DE"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:drygmy_charm"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 5
+			id: "42E06097E0BF94C5"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:starbuncle_charm"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			id: "7F65A2D67D97BBB6"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_additions:warp_nexus"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.2f
+		}
+	]
+}

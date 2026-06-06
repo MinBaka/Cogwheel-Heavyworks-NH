@@ -1,0 +1,36 @@
+{
+	id: "1198CF84CA5C8844"
+	loot_size: 1
+	order_index: 39
+	rewards: [
+		{ id: "5BC6FD0E995DB26E", item: { count: 1, id: "alexsmobs:music_disc_daze" } }
+		{ id: "7FB6668ED3D1E178", item: { components: { "ftbquests:missing_item": "ars_nouveau:music_disc_firel_the_wild_hunt" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7655105555AC83EF", item: { components: { "ftbquests:missing_item": "ars_nouveau:music_disc_aria_biblio" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7AEFCD6E945B0824", item: { count: 1, id: "twilightforest:music_disc_superstitious" } }
+		{ id: "00A9FB8879704AFD", item: { count: 1, id: "twilightforest:music_disc_motion" } }
+		{ id: "658B71FBE313E2E1", item: { count: 1, id: "alexsmobs:music_disc_thime" } }
+		{ id: "408D057ECD73B519", item: { components: { "ftbquests:missing_item": "aether:music_disc_sliders_wrath" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "2781942B38BB9B3C", item: { count: 1, id: "biomesoplenty:music_disc_wanderer" } }
+		{ id: "6491CE637AF02A24", item: { count: 1, id: "twilightforest:music_disc_maker" } }
+		{ id: "5FEF723F52BD929B", item: { count: 1, id: "minecraft:music_disc_11" } }
+		{ id: "2A3F28B538C1CB11", item: { count: 1, id: "minecraft:music_disc_ward" } }
+		{ id: "67A73CC29B6B7A3E", item: { count: 1, id: "minecraft:music_disc_13" } }
+		{ id: "79DBFE950A5027DC", item: { count: 1, id: "minecraft:music_disc_strad" } }
+		{ id: "5EBBC15B50000950", item: { count: 1, id: "minecraft:music_disc_stal" } }
+		{ id: "343138C005881F46", item: { count: 1, id: "minecraft:music_disc_mellohi" } }
+		{ id: "7DD59E19CCD7B3AD", item: { count: 1, id: "minecraft:music_disc_wait" } }
+		{ id: "20BFAF25E72F596F", item: { count: 1, id: "minecraft:music_disc_chirp" } }
+		{ id: "41480CC98BC9536E", item: { count: 1, id: "minecraft:music_disc_5" } }
+		{ id: "0D7AE26D456E4EA9", item: { count: 1, id: "minecraft:music_disc_pigstep" } }
+		{ id: "0543D3B1A22DF07D", item: { count: 1, id: "minecraft:music_disc_cat" } }
+		{ id: "2A7505CE920D125C", item: { count: 1, id: "minecraft:music_disc_blocks" } }
+		{ id: "17B523F2F62A58A2", item: { components: { "ftbquests:missing_item": "takesapillage:bastille_blues_music_disc" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "18372C0D61B32DAB", item: { count: 1, id: "minecraft:music_disc_otherside" } }
+		{ id: "2B7732A790E1879E", item: { count: 1, id: "minecraft:music_disc_far" } }
+		{ id: "56471BA29EF2AC16", item: { count: 1, id: "minecraft:music_disc_mall" } }
+		{ id: "328C871CD12D0461", item: { count: 1, id: "create_connected:music_disc_interlude" } }
+		{ id: "24F812F4C926A93D", item: { count: 1, id: "create_connected:music_disc_elevator" } }
+		{ id: "47C6477015E3DAE3", item: { count: 1, id: "twilightforest:music_disc_thread" } }
+		{ id: "57A80266704A3A2B", item: { count: 1, id: "twilightforest:music_disc_radiance" } }
+	]
+}

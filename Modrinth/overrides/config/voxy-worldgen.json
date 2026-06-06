@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "ingestEnabled": true,
+  "serviceThreads": 3,
+  "showF3MenuStats": true,
+  "generationRadius": 128,
+  "maxQueueSize": 20000,
+  "maxActiveTasks": 20,
+  "pregenLogIntervalTicks": 600
+}

@@ -1,0 +1,265 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.vitality",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.vitality.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:regeneration"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_resilience+1": {
+		"title": ["§6+1 ",{"translate":"skills.vitality.resilience", "color":"gold"} ],
+		"description": {"translate":"skills.vitality.resilience.description", "color":"white"},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ghast_tear"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1.0,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"resilience+1": {
+		"title": ["+1 ", {"translate":"skills.vitality.resilience", "color":"white"}],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ghast_tear"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1.0,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"resilience+2": {
+		"title": ["§6+2 ", {"translate":"skills.vitality.resilience", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ghast_tear"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 2,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_healing+2.5%": {
+		"title": ["§6+2.5% ", {"translate":"skills.vitality.healing", "color":"gold"}],
+		"description": {"translate":"skills.vitality.healing.description", "color":"white"},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:regeneration"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:healing",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"healing+2.5%": {
+		"title": ["§6+2.5% ", {"translate":"skills.vitality.healing", "color":"gold"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:regeneration"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:healing",
+					"value": 0.025,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"healing+6.25%": {
+		"title": ["§6+6.25% ", {"translate":"skills.vitality.healing", "color":"gold"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:regeneration"
+			}
+		},
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:healing",
+					"value": 0.0625,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_health+1": {
+		"title": ["§6+1 ", {"translate":"skills.vitality.health", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "instant_health"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "add_value"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 2,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"health+1": {
+		"title": ["+1.0 ", {"translate":"skills.vitality.health", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "instant_health"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "add_value"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 2,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"health+2": {
+		"title": ["§6+2 ", {"translate":"skills.vitality.health", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "instant_health"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 2,
+					"operation": "add_value"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add_value"
+				}
+			}
+		]
+	}
+}

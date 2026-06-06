@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": {"translate":"skills.precision", "color":"dark_red"},
+	"icon": {
+		"type": "effect",
+		"data": {
+			"effect": "minecraft:strength"
+		}
+	},
+	"background": "textures/block/netherite_block.png"
+}

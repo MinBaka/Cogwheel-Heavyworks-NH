@@ -1,0 +1,15 @@
+{
+	id: "391769E13E020DC8"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{ id: "6C3C15CCE2999584", item: { count: 1, id: "artifacts:villager_hat" } }
+		{ id: "26C78A8FA78A750E", item: { count: 1, id: "artifacts:superstitious_hat" } }
+		{ id: "78798A38F6CA618C", item: { count: 1, id: "artifacts:plastic_drinking_hat" } }
+		{ id: "063F96909242CF70", item: { count: 1, id: "artifacts:novelty_drinking_hat" } }
+		{ id: "514F53516FECF6DF", item: { count: 1, id: "artifacts:cowboy_hat" } }
+		{ id: "198EC61B97F53D5F", item: { count: 1, id: "artifacts:snorkel" } }
+		{ id: "65BFEFAB430BED44", item: { count: 1, id: "artifacts:night_vision_goggles" } }
+		{ id: "30213EE49F27F18B", item: { count: 1, id: "artifacts:anglers_hat" } }
+	]
+}

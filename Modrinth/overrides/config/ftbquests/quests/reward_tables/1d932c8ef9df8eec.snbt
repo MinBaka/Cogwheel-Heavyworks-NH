@@ -1,0 +1,27 @@
+{
+	id: "1D932C8EF9DF8EEC"
+	loot_size: 1
+	order_index: 41
+	rewards: [
+		{
+			id: "7CB7089DAE48CC34"
+			item: {
+				count: 1
+				id: "create:creative_blaze_cake"
+			}
+			weight: 2.0f
+		}
+		{ id: "6FCAEF734E768583", item: { count: 1, id: "l2complements:space_shard" } }
+		{
+			count: 6
+			id: "7A6F7A8EDC8EE3E8"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

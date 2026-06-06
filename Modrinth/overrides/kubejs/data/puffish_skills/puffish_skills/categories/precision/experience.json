@@ -1,0 +1,91 @@
+{
+    "experience_per_level": {
+        "type": "expression",
+        "data": {
+            "expression": "10 + (level ^ 2 * 5.65)"
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:kill_entity",
+            "data": {
+                "variables": {
+                    "max_health": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_killed_living_entity"
+                            },
+                            {
+                                "type": "puffish_skills:get_max_health"
+                            }
+                        ]
+                    },
+                    "max_armor": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_killed_living_entity"
+                            },
+                            {
+                                "type": "puffish_skills:get_attribute",
+                                "data": {
+                                    "attribute": "minecraft:generic.armor"
+                                }
+                            },
+                            {
+                                "type": "puffish_skills:get_value"
+                            }
+                        ]
+                    },
+                    "is_xpmob": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_killed_living_entity"
+                            },
+                            {
+                                "type": "puffish_skills:get_type"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "entity_type": "#c:mobs"
+                                }
+                            },
+                            {
+                                "type": "puffish_skills:switch",
+                                "data": {
+                                    "true": 1,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    },
+                    "is_ranged": {
+                        "operations": [
+                            {
+                                "type": "puffish_skills:get_damage_source"
+                            },
+                            {
+                                "type": "puffish_skills:get_type"
+                            },
+                            {
+                                "type": "puffish_skills:is_projectile"
+                            },
+                            {
+                                "type": "puffish_skills:switch",
+                                "data": {
+                                    "true": 1,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": "(max_health / 10) * max(max_armor / 15, 1) * is_xpmob * is_ranged",
+                "anti_farming": {
+                    "limit_per_chunk": 50,
+                    "reset_after_seconds": 120
+                }
+            }
+        }
+    ]
+}

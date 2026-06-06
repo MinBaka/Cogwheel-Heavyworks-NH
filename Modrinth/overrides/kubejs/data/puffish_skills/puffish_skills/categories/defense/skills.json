@@ -1,0 +1,260 @@
+{
+	"5zecwk7sfy229zt5": {
+		"definition": "root_armor_1",
+		"x": 288,
+		"y": -96,
+		"root": true
+	},
+	"ijcb4u8t5asfw9xh": {
+		"definition": "root_armor_toughness+0.25",
+		"x": 0,
+		"y": -96,
+		"root": true
+	},
+	"p88rn0fazx4gafia": {
+		"definition": "armor_toughness+0.25",
+		"x": 64,
+		"y": -32,
+		"root": false
+	},
+	"xkd54uc3yani6r9m": {
+		"definition": "armor_toughness+0.25",
+		"x": -64,
+		"y": -32,
+		"root": false
+	},
+	"b59mpj0fyhv129it": {
+		"definition": "armor_toughness+0.25",
+		"x": 64,
+		"y": 32,
+		"root": false
+	},
+	"2dfmsapsz9b2x9yn": {
+		"definition": "armor_toughness+0.25",
+		"x": -64,
+		"y": 32,
+		"root": false
+	},
+	"xa1k3sn70r94bzx9": {
+		"definition": "armor_toughness+0.25",
+		"x": 0,
+		"y": 96,
+		"root": false
+	},
+	"ezi9uo00jfbstv0z": {
+		"definition": "armor_toughness+0.25",
+		"x": 64,
+		"y": 96,
+		"root": false
+	},
+	"dfxby0lt4i7bk0cx": {
+		"definition": "armor_toughness+0.25",
+		"x": -64,
+		"y": 96,
+		"root": false
+	},
+	"q3gr3vgmt8h2yvko": {
+		"definition": "armor_toughness+0.25",
+		"x": -64,
+		"y": 160,
+		"root": false
+	},
+	"57zk6qhsxqp98z3p": {
+		"definition": "armor_toughness+0.25",
+		"x": 64,
+		"y": 160,
+		"root": false
+	},
+	"dpdmy6sppa5bo4u9": {
+		"definition": "armor+1",
+		"x": 352,
+		"y": -32,
+		"root": false
+	},
+	"3homiqailcc2z1nj": {
+		"definition": "armor+1",
+		"x": 224,
+		"y": -32,
+		"root": false
+	},
+	"ug121i3wi4c2p632": {
+		"definition": "armor+1",
+		"x": 224,
+		"y": 32,
+		"root": false
+	},
+	"4rkfkr5rc00c3jy1": {
+		"definition": "armor+1",
+		"x": 352,
+		"y": 32,
+		"root": false
+	},
+	"wpx8bdszynuj06ht": {
+		"definition": "armor+1",
+		"x": 288,
+		"y": 96,
+		"root": false
+	},
+	"ofru9jr3g525txba": {
+		"definition": "armor+1",
+		"x": 224,
+		"y": 96,
+		"root": false
+	},
+	"zt12funcf5b4m96f": {
+		"definition": "armor+1",
+		"x": 352,
+		"y": 96,
+		"root": false
+	},
+	"p1co0h6dxhxoybpk": {
+		"definition": "armor+1",
+		"x": 224,
+		"y": 160,
+		"root": false
+	},
+	"i9i7k2mvctcgyhy4": {
+		"definition": "armor+1",
+		"x": 352,
+		"y": 160,
+		"root": false
+	},
+	"s360ck6nhuw7le1j": {
+		"definition": "armor+2.5",
+		"x": 224,
+		"y": 224,
+		"root": false
+	},
+	"s3g93oq0sp92ry6r": {
+		"definition": "armor+2.5",
+		"x": 352,
+		"y": 224,
+		"root": false
+	},
+	"2j1ig72ftrkv1ty3": {
+		"definition": "armor+2.5",
+		"x": 352,
+		"y": 288,
+		"root": false
+	},
+	"u2oi095fvm0ouz5w": {
+		"definition": "armor+2.5",
+		"x": 224,
+		"y": 288,
+		"root": false
+	},
+	"5144drirl3i55stp": {
+		"definition": "armor_toughness+0.5",
+		"x": 64,
+		"y": 224,
+		"root": false
+	},
+	"lv6lctywn9kw583g": {
+		"definition": "armor_toughness+0.5",
+		"x": -64,
+		"y": 224,
+		"root": false
+	},
+	"h7213r2tg32pik52": {
+		"definition": "armor_toughness+0.5",
+		"x": -64,
+		"y": 288,
+		"root": false
+	},
+	"c6pzczqy9d95edza": {
+		"definition": "armor_toughness+0.5",
+		"x": 64,
+		"y": 288,
+		"root": false
+	},
+	"yh81wknwiwv7q8cf": {
+		"definition": "root_resistance+0.01",
+		"x": -288,
+		"y": -96,
+		"root": true
+	},
+	"5lmixdxt31di09jq": {
+		"definition": "resistance+0.01",
+		"x": -224,
+		"y": -32,
+		"root": false
+	},
+	"4lr6bm5kua3pegha": {
+		"definition": "resistance+0.01",
+		"x": -352,
+		"y": -32,
+		"root": false
+	},
+	"twsfgbce0udrga47": {
+		"definition": "resistance+0.01",
+		"x": -352,
+		"y": 32,
+		"root": false
+	},
+	"3k80z2qol5vz59fj": {
+		"definition": "resistance+0.01",
+		"x": -224,
+		"y": 32,
+		"root": false
+	},
+	"hkwastot5nhuuddd": {
+		"definition": "resistance+0.01",
+		"x": -224,
+		"y": 96,
+		"root": false
+	},
+	"dw9hm9ashne18k02": {
+		"definition": "resistance+0.01",
+		"x": -352,
+		"y": 96,
+		"root": false
+	},
+	"w9b7rfgpjzd2bj5c": {
+		"definition": "resistance+0.01",
+		"x": -352,
+		"y": 160,
+		"root": false
+	},
+	"n43urqf7zp0jg36u": {
+		"definition": "resistance+0.01",
+		"x": -224,
+		"y": 160,
+		"root": false
+	},
+	"001kkr00rtiazrvv": {
+		"definition": "resistance+0.01",
+		"x": -288,
+		"y": 96,
+		"root": false
+	},
+	"b1l72tc0jjp78kv7": {
+		"definition": "resistance+0.025",
+		"x": -352,
+		"y": 224,
+		"root": false
+	},
+	"hj24dqyt4dubxn4i": {
+		"definition": "resistance+0.025",
+		"x": -352,
+		"y": 288,
+		"root": false
+	},
+	"3qz0y5kvap3vdl0n": {
+		"definition": "resistance+0.025",
+		"x": -224,
+		"y": 224,
+		"root": false
+	},
+	"v1xdfu6c37xbbk3i": {
+		"definition": "resistance+0.025",
+		"x": -224,
+		"y": 288,
+		"root": false
+	},
+	"bn7lt2v6u1st6rru": {
+		"definition": "root_info",
+		"x": 0,
+		"y": -224,
+		"root": true
+	}
+}

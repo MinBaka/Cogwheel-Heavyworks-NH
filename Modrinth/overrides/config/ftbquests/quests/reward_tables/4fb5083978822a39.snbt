@@ -1,0 +1,17 @@
+{
+	id: "4FB5083978822A39"
+	loot_size: 1
+	order_index: 18
+	rewards: [
+		{
+			count: 8
+			id: "05E65A2930BD934D"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+			weight: 5.0f
+		}
+		{ id: "18CB26F3220612B1", item: { count: 1, id: "minecraft:cake" } }
+	]
+}

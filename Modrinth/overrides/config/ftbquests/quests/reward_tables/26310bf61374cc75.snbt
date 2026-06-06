@@ -1,0 +1,50 @@
+{
+	id: "26310BF61374CC75"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			id: "224A330BDC1C1281"
+			item: {
+				count: 1
+				id: "l2hostility:dispell"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "60D4ED3371E5C537"
+			item: {
+				count: 1
+				id: "l2hostility:killer_aura"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "5B6FAC58FCEAF9B2"
+			item: {
+				count: 1
+				id: "l2hostility:dementor"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "2A27735C5B782C1D"
+			item: {
+				count: 1
+				id: "l2hostility:pulling"
+			}
+			weight: 0.5f
+		}
+		{ id: "0BD46EFAB1EAC6E6", item: { count: 1, id: "l2hostility:ragnarok" } }
+		{ id: "732B2B8B1E0870B9", item: { count: 1, id: "l2hostility:undying" } }
+		{ id: "3CBF48DB0CA406FA", item: { count: 1, id: "l2hostility:teleport" } }
+		{
+			id: "778EEF809FF9629A"
+			item: {
+				count: 1
+				id: "l2hostility:repelling"
+			}
+			weight: 0.5f
+		}
+	]
+}

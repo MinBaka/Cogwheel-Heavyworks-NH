@@ -1,0 +1,53 @@
+{
+  "rarities": {
+    "1": {
+      "color": "#CCCCCC",
+      "texture": "raritycore:textures/border/rarity_1.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "2": {
+      "color": "#55FF55",
+      "texture": "raritycore:textures/border/rarity_2.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "3": {
+      "color": "#55FFFF",
+      "texture": "raritycore:textures/border/rarity_3.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "4": {
+      "color": "#FF55FF",
+      "texture": "raritycore:textures/border/rarity_4.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "5": {
+      "color": "#FFCC00",
+      "texture": "raritycore:textures/border/rarity_5.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "6": {
+      "color": "#FF6666",
+      "texture": "raritycore:textures/border/rarity_6.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    },
+    "7": {
+      "color": "#FF3333",
+      "texture": "raritycore:textures/border/rarity_7.png",
+      "tooltips": true,
+      "renderer": true,
+      "nameColor": true
+    }
+  }
+}

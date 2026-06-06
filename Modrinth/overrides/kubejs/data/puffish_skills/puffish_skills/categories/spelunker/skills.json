@@ -1,0 +1,290 @@
+{
+	"t28wwdkw0nrejr12": {
+		"definition": "fortune+0.1",
+		"x": -224,
+		"y": -128,
+		"root": false
+	},
+	"2mzhqu6bxqq7raza": {
+		"definition": "fortune+0.1",
+		"x": -352,
+		"y": -128,
+		"root": false
+	},
+	"r0md6cccdvdq8yrk": {
+		"definition": "root_fortune+0.1",
+		"x": -288,
+		"y": -192,
+		"root": true
+	},
+	"0ay3uag4pe9nc52g": {
+		"definition": "fortune+0.1",
+		"x": -352,
+		"y": -64,
+		"root": false
+	},
+	"umu22lbgy54fx65x": {
+		"definition": "fortune+0.1",
+		"x": -352,
+		"y": 0,
+		"root": false
+	},
+	"2xv8zjf8ngsgyxh3": {
+		"definition": "fortune+0.1",
+		"x": -224,
+		"y": 0,
+		"root": false
+	},
+	"xt2mebglqwzqlzt3": {
+		"definition": "fortune+0.1",
+		"x": -352,
+		"y": 64,
+		"root": false
+	},
+	"vj9jou3d7zr6cpsi": {
+		"definition": "fortune+0.1",
+		"x": -288,
+		"y": -128,
+		"root": false
+	},
+	"nebn2fsghynumy4s": {
+		"definition": "fortune+0.1",
+		"x": -224,
+		"y": -64,
+		"root": false
+	},
+	"h4phvflxwnn4ztgq": {
+		"definition": "fortune+0.1",
+		"x": -224,
+		"y": 64,
+		"root": false
+	},
+	"ckstojn5scyxkliq": {
+		"definition": "fortune+0.2",
+		"x": -288,
+		"y": -64,
+		"root": false
+	},
+	"4bxqwfrhz0c8u8q4": {
+		"definition": "fortune+0.2",
+		"x": -352,
+		"y": 128,
+		"root": false
+	},
+	"920mywqi1s0zhyzp": {
+		"definition": "fortune+0.2",
+		"x": -224,
+		"y": 128,
+		"root": false
+	},
+	"v7kfqq3n4vgljncu": {
+		"definition": "fortune+0.2",
+		"x": -224,
+		"y": 192,
+		"root": false
+	},
+	"o5fjdr9p4iapc2c0": {
+		"definition": "fortune+0.2",
+		"x": -352,
+		"y": 192,
+		"root": false
+	},
+	"s7igu0hfgslwbzr4": {
+		"definition": "root_experience+10%",
+		"x": 288,
+		"y": -192,
+		"root": true
+	},
+	"2n5povculxzshec7": {
+		"definition": "experience+10%",
+		"x": 288,
+		"y": -128,
+		"root": false
+	},
+	"lpttuwiugh49019o": {
+		"definition": "experience+10%",
+		"x": 352,
+		"y": -128,
+		"root": false
+	},
+	"9tcv2lqiqvmoye4h": {
+		"definition": "experience+10%",
+		"x": 224,
+		"y": -128,
+		"root": false
+	},
+	"ayrz9jybpdka17v3": {
+		"definition": "experience+10%",
+		"x": 352,
+		"y": -64,
+		"root": false
+	},
+	"c66j2wyebnuw10t0": {
+		"definition": "experience+10%",
+		"x": 224,
+		"y": -64,
+		"root": false
+	},
+	"wvib2n2jubvk1qak": {
+		"definition": "experience+10%",
+		"x": 352,
+		"y": 0,
+		"root": false
+	},
+	"6ni1gf7weicnypio": {
+		"definition": "experience+10%",
+		"x": 224,
+		"y": 0,
+		"root": false
+	},
+	"gqy1yo54296ch1i1": {
+		"definition": "experience+10%",
+		"x": 352,
+		"y": 64,
+		"root": false
+	},
+	"yi38g5yrqu9jao8b": {
+		"definition": "experience+10%",
+		"x": 224,
+		"y": 64,
+		"root": false
+	},
+	"gy0a3nf6y630158m": {
+		"definition": "experience+25%",
+		"x": 288,
+		"y": -64,
+		"root": false
+	},
+	"fqbvzu42c9dohirb": {
+		"definition": "experience+25%",
+		"x": 352,
+		"y": 128,
+		"root": false
+	},
+	"ghdclqve5r1udnk2": {
+		"definition": "experience+25%",
+		"x": 224,
+		"y": 128,
+		"root": false
+	},
+	"nosw2akb2e0a8r26": {
+		"definition": "experience+25%",
+		"x": 224,
+		"y": 192,
+		"root": false
+	},
+	"hyzeocm0annu3zun": {
+		"definition": "experience+25%",
+		"x": 352,
+		"y": 192,
+		"root": false
+	},
+	"ta6rn3zztx36bqo2": {
+		"definition": "root_luck+1",
+		"x": -288,
+		"y": 128,
+		"root": false
+	},
+	"zfuw0jfsxvvb153j": {
+		"definition": "root_luck+1",
+		"x": 288,
+		"y": 128,
+		"root": false
+	},
+	"fv05fj31o17uamuc": {
+		"definition": "root_mining_speed+5%",
+		"x": 0,
+		"y": -128,
+		"root": true
+	},
+	"y9nbjrj9lofu7urd": {
+		"definition": "mining_speed+5%",
+		"x": 0,
+		"y": -64,
+		"root": false
+	},
+	"zfqiruvlkjy7xrht": {
+		"definition": "mining_speed+5%",
+		"x": -64,
+		"y": -64,
+		"root": false
+	},
+	"i4ffa0r9l0xhkzfb": {
+		"definition": "mining_speed+5%",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"gbwmjyug6vtuztro": {
+		"definition": "mining_speed+5%",
+		"x": 64,
+		"y": 0,
+		"root": false
+	},
+	"1fkfhfqcfsjmatyk": {
+		"definition": "mining_speed+5%",
+		"x": -64,
+		"y": 0,
+		"root": false
+	},
+	"m42v17rz0ldflatt": {
+		"definition": "mining_speed+5%",
+		"x": -64,
+		"y": 64,
+		"root": false
+	},
+	"r2jgeunzs6lcu9ze": {
+		"definition": "mining_speed+5%",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"wuhcz1enyfmp88zq": {
+		"definition": "mining_speed+5%",
+		"x": 64,
+		"y": 128,
+		"root": false
+	},
+	"2nx141p2twuek5v0": {
+		"definition": "mining_speed+5%",
+		"x": -64,
+		"y": 128,
+		"root": false
+	},
+	"0dqfqckgk2t6zuii": {
+		"definition": "mining_speed+10%",
+		"x": 0,
+		"y": 0,
+		"root": false
+	},
+	"d6mytdqaz9zn9kl9": {
+		"definition": "mining_speed+10%",
+		"x": -64,
+		"y": 192,
+		"root": false
+	},
+	"4lkm8imeh22q94yx": {
+		"definition": "mining_speed+10%",
+		"x": -64,
+		"y": 256,
+		"root": false
+	},
+	"jmratrulkqi826p5": {
+		"definition": "mining_speed+10%",
+		"x": 64,
+		"y": 192,
+		"root": false
+	},
+	"ztjqio8xeote2u4r": {
+		"definition": "mining_speed+10%",
+		"x": 64,
+		"y": 256,
+		"root": false
+	},
+	"b4mxd9t5ojl3rx2h": {
+		"definition": "root_info",
+		"x": 0,
+		"y": -224,
+		"root": true
+	}
+}

@@ -1,0 +1,39 @@
+{
+	id: "1FAFFE1E74CF8475"
+	loot_size: 1
+	order_index: 36
+	rewards: [
+		{
+			id: "50BEBFD51CB04535"
+			item: {
+				count: 1
+				id: "l2complements:eternium_ingot"
+			}
+			weight: 0.5f
+		}
+		{
+			count: 3
+			id: "0D0D95D2F038F54B"
+			item: {
+				count: 1
+				id: "l2complements:eternium_nugget"
+			}
+		}
+		{
+			id: "3D62E9B396C22400"
+			item: {
+				count: 1
+				id: "l2complements:eternium_block"
+			}
+			weight: 0.1f
+		}
+		{
+			count: 6
+			id: "53BE69521C0B77A7"
+			item: {
+				count: 1
+				id: "l2complements:eternium_nugget"
+			}
+		}
+	]
+}

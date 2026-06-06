@@ -1,0 +1,21 @@
+{
+	id: "2CED3B3D963AA022"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{ id: "1C9C9EF786B7B93B", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "35A5C285150B5C4E", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "1B88943C6A3C90E9", item: { count: 1, id: "minecraft:enchanted_book" } }
+		{
+			id: "02A66D6963BE8D76"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_common"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 3.0f
+		}
+	]
+}

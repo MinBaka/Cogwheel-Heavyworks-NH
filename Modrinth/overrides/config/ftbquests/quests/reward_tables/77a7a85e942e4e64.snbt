@@ -1,0 +1,35 @@
+{
+	id: "77A7A85E942E4E64"
+	loot_size: 1
+	order_index: 45
+	rewards: [
+		{
+			id: "58C9DEF2A3EA49D1"
+			item: {
+				count: 1
+				id: "tacz:ammo_box"
+			}
+			weight: 0.1f
+		}
+		{
+			id: "4AE7F2E88971B1AB"
+			item: {
+				count: 1
+				id: "tacz:ammo_box"
+			}
+			weight: 0.5f
+		}
+		{ id: "3B843A0E71BAF360", item: { count: 1, id: "l2complements:space_shard" } }
+		{
+			count: 6
+			id: "6B7A3B1E7ED52BCB"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_epic"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

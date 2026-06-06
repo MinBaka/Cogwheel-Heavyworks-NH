@@ -1,0 +1,40 @@
+{
+	id: "498A750C1B43D065"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{
+			count: 10
+			id: "4EBB48904A5B87CF"
+			item: {
+				components: {
+					"ftbquests:missing_item": "createages:andesite_machine"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 10
+			id: "3A143E2C8FB4EC3C"
+			item: {
+				components: {
+					"ftbquests:missing_item": "createages:copper_machine"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 5
+			id: "730F99938013ED48"
+			item: {
+				components: {
+					"ftbquests:missing_item": "createages:brass_machine"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+	]
+}

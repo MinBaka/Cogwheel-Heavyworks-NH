@@ -1,0 +1,1230 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "591B867D4A54DD88"
+	group: "01E5705B52F2A444"
+	id: "591B867D4A54DD88"
+	images: [
+		{
+			height: 10.0d
+			image: "vampirism:textures/skills/vampire.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			height: 4.0d
+			image: "vampirism:textures/actions/bat.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			height: 7.0d
+			image: "vampirism:textures/actions/dark_blood_projectile.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -5.0d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:block/barrier_open"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			height: 3.0d
+			image: "tacz:textures/crosshair/normal/square_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 16.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "09F41DF71A432DD3"
+			rewards: [{
+				id: "05A48B391F26638B"
+				item: {
+					count: 1
+					id: "guideapi_vp:vampirism-guidebook"
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "158356647FEEDD09"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["09F41DF71A432DD3"]
+			id: "18B12887FC52B60C"
+			rewards: [{
+				count: 5
+				id: "0EA46AD8B3A9B2D1"
+				item: {
+					count: 1
+					id: "vampiresdelight:dark_ice_cream"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/become_vampire"
+				criterion: ""
+				id: "2CF0D5EAC58F478C"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2159D6D963600DB2"]
+			id: "3CFCE7F0259F9F70"
+			rewards: [{
+				id: "790C9CB85306107A"
+				item: {
+					count: 1
+					id: "vampirism:blood_bucket"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EBDC40F14F291FB"
+				item: { count: 1, id: "vampirism:altar_inspiration" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05C0C463454F427D"]
+			id: "5693590B411A24B7"
+			rewards: [
+				{
+					id: "045F0CB1A85CCF0A"
+					item: {
+						count: 1
+						id: "vampirism:pure_blood_0"
+					}
+					type: "item"
+				}
+				{
+					id: "02BA0E902D955033"
+					item: {
+						count: 1
+						id: "vampirism:human_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "51AFFB31A0F225BF"
+					item: {
+						count: 1
+						id: "vampirism:vampire_book"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4158E58DB42EFE0C"
+					item: { count: 1, id: "vampirism:altar_tip" }
+					type: "item"
+				}
+				{
+					id: "70318AD15183EFE1"
+					item: { count: 1, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					id: "270BCA2A491EF04C"
+					item: { count: 1, id: "vampirism:altar_infusion" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["74FCA97CF74CE297"]
+			id: "756822C4EA6AB47E"
+			rewards: [{
+				id: "113BE5579F113524"
+				item: {
+					count: 1
+					id: "vampiresdelight:blood_wine_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "vampirism:vampire_baron"
+				id: "25953601EED78BF5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["09F41DF71A432DD3"]
+			hide_dependency_lines: true
+			id: "18884F570998E085"
+			rewards: [{
+				id: "53EE52367D28A0DB"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_0"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F93932F21AB8DE3"
+				item: { count: 1, id: "vampirism:vampire_book" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			id: "74FCA97CF74CE297"
+			rewards: [{
+				id: "2BA75E37A6CE08F7"
+				item: {
+					count: 1
+					id: "vampiresdelight:blood_wine_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				biome: "vampirism:vampire_forest"
+				id: "433E5B66915D3D7A"
+				type: "biome"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			id: "2159D6D963600DB2"
+			tasks: [{
+				id: "0ADF791771D35346"
+				item: { count: 1, id: "vampirism:blood_container" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74FCA97CF74CE297"]
+			id: "3F4F6E7AC0A0390D"
+			tasks: [{
+				id: "427546A499AD8F23"
+				structure: "vampirism:mother"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2159D6D963600DB2"]
+			id: "7B85C304767C9F51"
+			rewards: [{
+				id: "66B8BC14DA7A1A9D"
+				item: {
+					count: 1
+					id: "vampiresdelight:dark_ice_cream"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30C0E81DB273B9DA"
+					item: { count: 1, id: "vampirism:blood_grinder" }
+					type: "item"
+				}
+				{
+					id: "49A867D6A9A33D35"
+					item: { count: 1, id: "vampirism:blood_sieve" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09F41DF71A432DD3"]
+			hide_dependency_lines: true
+			id: "3755548F3394E222"
+			rewards: [{
+				id: "3D967FBAA76B0BC4"
+				item: {
+					count: 1
+					id: "vampiresdelight:blood_wine_bottle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EBD4E8A5AB75629"
+				item: { count: 1, id: "vampirism:human_heart" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["09F41DF71A432DD3"]
+			hide_dependency_lines: true
+			id: "0153AD5058EDB459"
+			tasks: [{
+				id: "48764AE1D2D0B323"
+				item: { count: 1, id: "vampirism:weak_human_heart" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5693590B411A24B7"]
+			id: "73B1638B131A0BC6"
+			rewards: [{
+				id: "0FA5B09F8A50E42C"
+				item: {
+					count: 1
+					id: "vampirism:vampire_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/blood_cult"
+				criterion: ""
+				id: "45ED7D44260EBB14"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3CFCE7F0259F9F70"]
+			id: "05C0C463454F427D"
+			rewards: [{
+				count: 3
+				id: "0697AD94C8F5E8E2"
+				item: {
+					count: 1
+					id: "vampiresdelight:dark_ice_cream"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "65DC2673834413E9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["05C0C463454F427D"]
+			id: "4C8640E8A0C7644C"
+			rewards: [{
+				count: 3
+				id: "2B2E75F6AC88A8AB"
+				item: {
+					count: 1
+					id: "vampiresdelight:dark_ice_cream"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "361A8CA8F99A637C"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4C8640E8A0C7644C"]
+			id: "54CCF4224EF9D95E"
+			rewards: [
+				{
+					id: "62E0CFA7C4304EB4"
+					item: {
+						count: 1
+						id: "vampiresdelight:blood_pie"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0685DB68FBBA4BE7"
+					item: {
+						count: 1
+						id: "vampiresdelight:blood_wine_bottle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "71CFEA1717F4F7D7"
+				item: { count: 1, id: "vampiresneedumbrellas:creative_umbrella" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["73B1638B131A0BC6"]
+			id: "2D4D35D07109F822"
+			tasks: [{
+				id: "3F519EFE0D19633A"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			id: "53E93AB12D24C848"
+			tasks: [{
+				id: "6499EBEC7F3EE081"
+				item: { count: 1, id: "vampirism:vampire_orchid" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			id: "2E353BE85E854278"
+			tasks: [{
+				id: "684F3988DCD4ECE6"
+				item: { count: 1, id: "vampiresdelight:black_mushroom" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"2E353BE85E854278"
+				"53E93AB12D24C848"
+			]
+			id: "1963A80859368173"
+			tasks: [
+				{
+					id: "01EF811DEFA6B3CD"
+					item: { count: 1, id: "vampiresdelight:bloody_soil" }
+					type: "item"
+				}
+				{
+					id: "219943217118FF9E"
+					item: { count: 1, id: "vampirism:cursed_earth" }
+					type: "item"
+				}
+				{
+					id: "36066186D74F9CAF"
+					item: { count: 1, id: "vampirism:cursed_grass" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["53E93AB12D24C848"]
+			id: "6A74F6863023C266"
+			tasks: [{
+				id: "4DB3DD7DE836B0C6"
+				item: { count: 1, id: "vampiresdelight:orchid_petals" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["53E93AB12D24C848"]
+			id: "77CC9CB2CB0F4EB0"
+			tasks: [{
+				id: "001BC99B60299DA2"
+				item: { count: 1, id: "vampiresdelight:orchid_seeds" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			id: "0BA2A7BAD9A1E63F"
+			tasks: [{
+				id: "141D4F69E1D70BA1"
+				item: { count: 1, id: "vampiresdelight:blood_syrup" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0BA2A7BAD9A1E63F"]
+			id: "3E4DFEB7F327C38A"
+			tasks: [{
+				id: "66C49A2415D1DDE6"
+				item: { count: 1, id: "vampiresdelight:blood_wine_bottle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3E4DFEB7F327C38A"]
+			id: "4D63DD5C128AF5C6"
+			tasks: [{
+				id: "53019D49FCE8E1BA"
+				item: { count: 1, id: "vampiresdelight:blood_wine_glass" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "2F361F9523B2DDAC"
+			tasks: [{
+				id: "11165088843BC31B"
+				item: { count: 1, id: "vampiresdelight:orchid_curry" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "3C33AF4D8719F822"
+			tasks: [{
+				id: "1BD0C95E7F2D3BA2"
+				item: { count: 1, id: "vampiresdelight:orchid_cake" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3C33AF4D8719F822"]
+			id: "1DDBE85556E950C0"
+			tasks: [{
+				id: "47C2FD94A62E01CF"
+				item: { count: 1, id: "vampiresdelight:orchid_cake_slice" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "081310F61D0B0EE3"
+			tasks: [{
+				id: "2DADDCEE90ABEE11"
+				item: { count: 1, id: "vampiresdelight:orchid_cookie" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "0D0BC37942FDE6ED"
+			tasks: [{
+				id: "07D1BB671DFA7C3C"
+				item: { count: 1, id: "vampiresdelight:orchid_tea" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "4B5CD6351962C64D"
+			tasks: [{
+				id: "618771F6EFED87A9"
+				item: { count: 1, id: "vampiresdelight:orchid_ice_cream" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "0C95CE1136BBB689"
+			tasks: [{
+				id: "3139F83B902BBB4F"
+				item: { count: 1, id: "vampiresdelight:orchid_eclair" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "6035610816D02EEE"
+			tasks: [{
+				id: "52FEF3CAB286633D"
+				item: { count: 1, id: "vampiresdelight:tricolor_dango" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0BA2A7BAD9A1E63F"]
+			id: "5A23679344A67EB7"
+			tasks: [{
+				id: "2D559750C59E83E4"
+				item: { count: 1, id: "vampiresdelight:blood_sausage" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5A23679344A67EB7"]
+			id: "5AD343DCCCA787B3"
+			tasks: [{
+				id: "2D16EE9E50BB8147"
+				item: { count: 1, id: "vampiresdelight:blood_hot_dog" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0BA2A7BAD9A1E63F"]
+			id: "3A9995C2794D55F1"
+			tasks: [{
+				id: "5E9A8CB7DFDE7298"
+				item: { count: 1, id: "vampiresdelight:dark_ice_cream" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0BA2A7BAD9A1E63F"]
+			id: "151146EF3F9D2AFF"
+			tasks: [{
+				id: "4D8BCEFE78591171"
+				item: { count: 1, id: "vampiresdelight:blood_dough" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["151146EF3F9D2AFF"]
+			id: "1006D6FFF5D75450"
+			tasks: [{
+				id: "114818547A7C0259"
+				item: { count: 1, id: "vampiresdelight:blood_bagel" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0BA2A7BAD9A1E63F"]
+			id: "69DCBD844FAD8573"
+			tasks: [{
+				id: "604AEEAC26BF53F1"
+				item: { count: 1, id: "vampiresdelight:blood_pie" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["69DCBD844FAD8573"]
+			id: "31168654979642C2"
+			tasks: [{
+				id: "669A01A6E268C1DE"
+				item: { count: 1, id: "vampiresdelight:blood_pie_slice" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["151146EF3F9D2AFF"]
+			id: "7BF4A2E3F2F3FBA8"
+			tasks: [{
+				id: "72731E9A570AC45F"
+				item: { count: 1, id: "vampiresdelight:bagel_sandwich" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4D63DD5C128AF5C6"]
+			id: "66CE52A7A20953AF"
+			tasks: [{
+				id: "0A09977C74379031"
+				item: { count: 1, id: "vampiresdelight:mulled_wine_glass" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["151146EF3F9D2AFF"]
+			id: "2BF4F0BD8E0CE3CD"
+			tasks: [{
+				id: "5B3C29D6BD2A9654"
+				item: { count: 1, id: "vampiresdelight:cursed_cupcake" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6A74F6863023C266"]
+			id: "0D54CB2046751B09"
+			tasks: [{
+				id: "3E3D2FF6476366CD"
+				item: { count: 1, id: "vampiresdelight:orchid_cream_soup" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2E353BE85E854278"]
+			id: "7248DC9CE986D6C6"
+			tasks: [{
+				id: "50B6EC5C27E13880"
+				item: { count: 1, id: "vampiresdelight:black_mushroom_soup" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2E353BE85E854278"]
+			id: "70015563FE9E4C30"
+			tasks: [{
+				id: "14A71A4CC3BCE963"
+				item: { count: 1, id: "vampiresdelight:black_mushroom_noodles" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			hide_dependency_lines: true
+			id: "27B0C29045F4E427"
+			tasks: [{
+				id: "10BA0A59EBBCF6D7"
+				item: { count: 1, id: "vampiresdelight:heart_pieces" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			id: "126A1339ECA8158F"
+			tasks: [{
+				id: "1BC46B2182FA8555"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["126A1339ECA8158F"]
+			id: "416C1DA25430B4D4"
+			tasks: [{
+				id: "09614BEBB8859280"
+				item: { count: 1, id: "vampiresdelight:pure_sorbet" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["126A1339ECA8158F"]
+			id: "4075B9D376C499DE"
+			tasks: [{
+				id: "4F431A8FE6C50A1E"
+				item: { count: 1, id: "vampiresdelight:weird_jelly_block" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4075B9D376C499DE"]
+			id: "53C7EB59735FE878"
+			tasks: [{
+				id: "7D1D7000470BC79F"
+				item: { count: 1, id: "vampiresdelight:weird_jelly" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			hide_dependency_lines: true
+			id: "6AA2017B10E4B1E0"
+			tasks: [{
+				id: "5806805317302449"
+				item: { count: 1, id: "vampiresdelight:human_eye" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2D4D35D07109F822"]
+			hide_dependency_lines: true
+			id: "483A00C7F7C85CF2"
+			tasks: [{
+				id: "7EA866D79F67E8D4"
+				item: { count: 1, id: "vampiresdelight:raw_bat" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["483A00C7F7C85CF2"]
+			id: "07D5F8FD221A343C"
+			tasks: [{
+				id: "2C4B5FF40B491110"
+				item: { count: 1, id: "vampiresdelight:raw_bat_chops" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6AA2017B10E4B1E0"]
+			id: "1BF4B9C15AEBB5A6"
+			tasks: [{
+				id: "19EB61E39038F28E"
+				item: { count: 1, id: "vampiresdelight:eyes_on_stick" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6AA2017B10E4B1E0"]
+			id: "2C1D6386C2C497B9"
+			tasks: [{
+				id: "5EA1D3A75B4F2530"
+				item: { count: 1, id: "vampiresdelight:eye_croissant" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["483A00C7F7C85CF2"]
+			id: "2102FA67D73B736E"
+			tasks: [{
+				id: "5C7E15CC52C82770"
+				item: { count: 1, id: "vampiresdelight:cooked_bat" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["07D5F8FD221A343C"]
+			id: "3352CB5ACA8D9FD2"
+			tasks: [{
+				id: "56F92D5A7217CAF0"
+				item: { count: 1, id: "vampiresdelight:cooked_bat_chops" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3352CB5ACA8D9FD2"]
+			id: "701B39D59DA1FFD8"
+			tasks: [{
+				id: "6B0DEDED92072EFB"
+				item: { count: 1, id: "vampiresdelight:bat_taco" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["73B1638B131A0BC6"]
+			id: "11F34173BD38A632"
+			rewards: [{
+				id: "66D58F1118F9917A"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_2"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "28A38C9C191299C2"
+					item: { count: 1, id: "vampirism:totem_base" }
+					type: "item"
+				}
+				{
+					id: "4BEE1F6DBF5085FA"
+					item: { count: 1, id: "vampirism:totem_top_crafted" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["11F34173BD38A632"]
+			id: "43ECA7E8F0D7D53B"
+			tasks: [{
+				id: "6DCCE5C15EAF4CFD"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["05C0C463454F427D"]
+			id: "4ACB750688D067D7"
+			tasks: [{
+				advancement: "vampirism:vampire/bat"
+				criterion: ""
+				id: "5DA77A367755FFBE"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73B1638B131A0BC6"]
+			id: "3BA7DE8E77F24363"
+			rewards: [{
+				count: 64
+				id: "349CCC95C778B9D2"
+				item: {
+					count: 1
+					id: "vampiresdelight:dark_ice_cream"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/max_level"
+				criterion: ""
+				id: "0DB9206E9465FA4F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			id: "7E290C86E703C409"
+			tasks: [{
+				id: "151F1A2848114108"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			id: "56FC176996CD70B4"
+			tasks: [{
+				id: "254982FBCFBA8A28"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A58354DD28957E8"]
+			id: "25523BF52EAD21D4"
+			tasks: [{
+				id: "4AAD66A373BA2F4B"
+				item: { count: 1, id: "vampirism:vampire_minion_binding" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["25523BF52EAD21D4"]
+			id: "4F428C156B995C85"
+			tasks: [
+				{
+					id: "7E70F4CB3906ABAD"
+					item: { count: 1, id: "vampirism:vampire_minion_upgrade_simple" }
+					type: "item"
+				}
+				{
+					id: "3EE5D6E9D2498592"
+					item: { count: 1, id: "vampirism:vampire_minion_upgrade_enhanced" }
+					type: "item"
+				}
+				{
+					id: "784ABE2F80A6D89B"
+					item: { count: 1, id: "vampirism:vampire_minion_upgrade_special" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3BA7DE8E77F24363"]
+			id: "5A58354DD28957E8"
+			rewards: [{
+				count: 5
+				id: "7FF86EE5A1132ED8"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_4"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "133656E55201AF95"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["25523BF52EAD21D4"]
+			id: "655CA20840307E84"
+			tasks: [{
+				advancement: "vampirism:minion/collect_blood"
+				criterion: ""
+				id: "48958D0FFDEBA7B2"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["25523BF52EAD21D4"]
+			id: "575005C41334361C"
+			tasks: [{
+				advancement: "vampirism:minion/collect_hunter_items"
+				criterion: ""
+				id: "086353DE0E7F256D"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["25523BF52EAD21D4"]
+			id: "5B6FA34A297A23BF"
+			tasks: [{
+				advancement: "vampirism:minion/protect_lord"
+				criterion: ""
+				id: "7A620EAE39FBB40C"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["25523BF52EAD21D4"]
+			id: "5F028631B226178C"
+			tasks: [{
+				advancement: "vampirism:minion/defend_area"
+				criterion: ""
+				id: "76790FB030FD9651"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5A58354DD28957E8"]
+			id: "43F018F28A42F3C5"
+			rewards: [{
+				id: "69DABB3346650A98"
+				item: {
+					components: {
+						"ftbquests:missing_item": "baiyin:thoughts_on_starrysky"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				advancement: "vampirism:vampire/max_lord"
+				criterion: ""
+				id: "6D653CC75BD7E764"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["756822C4EA6AB47E"]
+			id: "0C85AF818E1B6174"
+			tasks: [
+				{
+					id: "1F9933375DBBF446"
+					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "451A56858775CB59"
+					item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0C85AF818E1B6174"]
+			id: "26B3A37E0E82D7A8"
+			tasks: [
+				{
+					id: "0F0AA36B0176F845"
+					item: { count: 1, id: "vampirism:heart_seeker_normal" }
+					type: "item"
+				}
+				{
+					id: "7CDC97EDE6DE7F6C"
+					item: { count: 1, id: "vampirism:heart_striker_normal" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F4F6E7AC0A0390D"]
+			id: "762F05EFC74E943F"
+			rewards: [{
+				count: 3
+				id: "71AD4CAC7A0AFF36"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_4"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/kill_mother"
+				criterion: ""
+				id: "32195AD31115263F"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["762F05EFC74E943F"]
+			id: "7F823ECAADB073BC"
+			tasks: [{
+				id: "2161BCFFD1801C19"
+				item: { count: 1, id: "vampirism:fog_diffuser" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			hide_dependency_lines: true
+			id: "7D0826422424578C"
+			rewards: [{
+				count: 2
+				id: "6D38627A1593A401"
+				item: {
+					count: 1
+					id: "vampirism:pure_blood_2"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "60CB57E3AB7C9A7D"
+					item: { count: 1, id: "vampirism:vampire_clothing_crown" }
+					type: "item"
+				}
+				{
+					id: "2EC0BAC1BE9CA6A0"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "75FA5A3F7C88AB62"
+					item: { count: 1, id: "vampirism:vampire_clothing_hat" }
+					type: "item"
+				}
+				{
+					id: "26E147CCC7DE79A7"
+					item: { count: 1, id: "vampirism:vampire_clothing_legs" }
+					type: "item"
+				}
+				{
+					id: "399D139D1F5B4351"
+					item: { count: 1, id: "vampirism:vampire_clothing_boots" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18B12887FC52B60C"]
+			id: "77C8AE671A57C527"
+			tasks: [{
+				id: "6391A0FB382283FA"
+				item: { count: 1, id: "vampirism:coffin_white" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26B3A37E0E82D7A8"]
+			icon: {
+				id: "vampirism:heart_seeker_ultimate"
+			}
+			id: "5FDB185C9037AC0B"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "723B8A47144BC551"
+				item: { count: 1, id: "vampirism:blood_pedestal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+	]
+}

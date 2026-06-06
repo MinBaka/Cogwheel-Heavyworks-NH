@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"chnh_core:sulfur_powder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:gunpowder"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

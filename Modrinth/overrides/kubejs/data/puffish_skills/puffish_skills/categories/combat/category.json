@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": {"translate":"skills.combat", "color":"white"},
+	"icon": {
+		"type": "effect",
+		"data": {
+			"effect": "minecraft:strength"
+		}
+	},
+	"background": "textures/block/netherite_block.png"
+}

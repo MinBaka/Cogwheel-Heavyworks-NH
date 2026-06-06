@@ -1,0 +1,16 @@
+{
+	id: "05356B56452219F4"
+	loot_size: 1
+	order_index: 29
+	rewards: [
+		{ id: "3EC08E59B7D26D15", item: { count: 1, id: "artifacts:pickaxe_heater" } }
+		{ id: "156314B6CCAF4178", item: { count: 1, id: "artifacts:onion_ring" } }
+		{ id: "005B5EE126FAD2C0", item: { count: 1, id: "artifacts:golden_hook" } }
+		{ id: "0F720112792D67F6", item: { count: 1, id: "artifacts:pocket_piston" } }
+		{ id: "2A126663FF0738A1", item: { count: 1, id: "artifacts:power_glove" } }
+		{ id: "4E28DBD35A672692", item: { count: 1, id: "artifacts:vampiric_glove" } }
+		{ id: "0745ACA57A0DA227", item: { count: 1, id: "artifacts:fire_gauntlet" } }
+		{ id: "138BFA1F4A0956EB", item: { count: 1, id: "artifacts:feral_claws" } }
+		{ id: "6FBEBC82F770A370", item: { count: 1, id: "artifacts:digging_claws" } }
+	]
+}

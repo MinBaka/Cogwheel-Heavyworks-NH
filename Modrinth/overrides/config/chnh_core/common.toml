@@ -1,0 +1,80 @@
+#未安装 RarityCore 时显示警告 / Show warning when RarityCore is not installed
+showRarityCoreWarning = true
+
+[options]
+	#启用彩色提示框 / Enable colored tooltips
+	enabled = true
+	#启用自定义标题栏（物品图标+白色名称+稀有度文字），关闭则保留原版物品名称。未安装 RarityCore 时强制禁用 / Enable custom header (item icon + white name + rarity text), disable to keep vanilla item name. Forced disabled without RarityCore
+	customHeaderEnabled = true
+	#背景透明度 (0.0-1.0) / Background alpha
+	# Default: 0.97
+	# Range: 0.0 ~ 1.0
+	bgAlpha = 0.97
+	#背景暗度 / Background darken factor
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	bgDarken = 0.7
+	#启用边框渐变效果 / Enable border gradient effect
+	borderGradientEnabled = true
+	#启用标题栏渐变效果 / Enable titlebar gradient effect
+	titlebarGradientEnabled = true
+
+[color_variation]
+	#色相变化范围 (0.0-1.0) / Hue variation range
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	hueVariation = 0.1
+	#明度变化范围 (0.0-1.0) / Value variation range
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	valueVariation = 0.4
+	#饱和度变化范围 (0.0-1.0) / Saturation variation range
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	saturationVariation = 0.1
+
+[switch_animation]
+	#拖尾分段数 (10-100) / Trail segments
+	# Default: 50
+	# Range: 10 ~ 100
+	switchTailSegments = 50
+	#拖尾长度因子 (0.1-2.0) / Trail length factor
+	# Default: 1.6
+	# Range: 0.1 ~ 2.0
+	switchTailLength = 1.6
+	#拖尾透明度衰减指数 (0.1-1.0, 越小越明显) / Trail alpha decay exponent
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	switchTailAlphaExponent = 0.5
+	#淡出延迟/毫秒 (0-1000) / Fade out delay in ms
+	# Default: 100
+	# Range: 0 ~ 1000
+	fadeOutDelay = 50
+	#淡入时长/毫秒 (0-500) / Fade in duration in ms
+	# Default: 100
+	# Range: 0 ~ 500
+	fadeInDuration = 100
+	#闪光动画时长/毫秒 (0-1000) / Switch flash duration in ms
+	# Default: 500
+	# Range: 0 ~ 1000
+	switchFlashDuration = 500
+	#物品出现最小缩放 (0.1-1.0) / Item scale minimum
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	itemScaleMin = 0.5
+
+[color_flow]
+	#颜色渐变周期 (50-500) / Gradient period
+	# Default: 200.0
+	# Range: 50.0 ~ 500.0
+	gradientPeriod = 200.0
+	#颜色滚动速度 (0.01-1.0) / Scroll speed
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	scrollSpeed = 0.05
+
+[tooltip_lock]
+	#滚轮移动提示框灵敏度 (1.0-20.0) / Scroll sensitivity for tooltip movement
+	# Default: 10.0
+	# Range: 1.0 ~ 20.0
+	lockScrollSensitivity = 10.0

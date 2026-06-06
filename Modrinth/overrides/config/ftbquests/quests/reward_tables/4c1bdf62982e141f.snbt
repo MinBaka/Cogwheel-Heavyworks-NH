@@ -1,0 +1,52 @@
+{
+	id: "4C1BDF62982E141F"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			id: "48E9A5D4A4E861E9"
+			item: {
+				count: 1
+				id: "l2hostility:growth"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "5306E3F34E77E7B0"
+			item: {
+				count: 1
+				id: "l2hostility:erosion"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "630042C2CA06172E"
+			item: {
+				count: 1
+				id: "l2hostility:corrosion"
+			}
+			weight: 0.5f
+		}
+		{ id: "5259281187044B31", item: { count: 1, id: "l2hostility:grenade" } }
+		{
+			id: "264C66659D4B4856"
+			item: {
+				count: 1
+				id: "l2hostility:arena"
+			}
+			weight: 0.01f
+		}
+		{ id: "14A3BEB5B9A0274A", item: { count: 1, id: "l2hostility:split" } }
+		{ id: "7A45B9DA0D500F35", item: { count: 1, id: "l2hostility:drain" } }
+		{ id: "7583517056496A3E", item: { count: 1, id: "l2hostility:reprint" } }
+		{
+			id: "02F53D6067261866"
+			item: {
+				count: 1
+				id: "l2hostility:reflect"
+			}
+			weight: 0.5f
+		}
+		{ id: "0E4B17DBF409446B", item: { count: 1, id: "l2hostility:adaptive" } }
+	]
+}

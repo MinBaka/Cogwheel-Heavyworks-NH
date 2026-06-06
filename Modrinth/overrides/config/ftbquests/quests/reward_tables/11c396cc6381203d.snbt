@@ -1,0 +1,44 @@
+{
+	id: "11C396CC6381203D"
+	loot_size: 1
+	order_index: 35
+	rewards: [
+		{
+			count: 4
+			id: "64823AFB3A47AB87"
+			item: {
+				count: 1
+				id: "minecraft:netherite_block"
+			}
+		}
+		{
+			count: 16
+			id: "60C026603BB6DD29"
+			item: {
+				count: 1
+				id: "minecraft:diamond_block"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 128
+			id: "51C927BBB89C8231"
+			item: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:source_gem_block"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 32
+			id: "71D2C94D3646618F"
+			item: {
+				count: 1
+				id: "vampirism:blood_infused_iron_block"
+			}
+		}
+	]
+}

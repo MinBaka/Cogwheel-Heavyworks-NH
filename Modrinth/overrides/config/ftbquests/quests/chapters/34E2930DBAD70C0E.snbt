@@ -1,0 +1,577 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "34E2930DBAD70C0E"
+	group: ""
+	id: "34E2930DBAD70C0E"
+	images: [
+		{
+			height: 5.0d
+			image: "minecraft:block/soul_campfire_fire"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/campfire_fire"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/campfire_fire"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 2.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2D28C31C8C910AFF"
+			rewards: [{
+				id: "41432599F737A7B1"
+				item: {
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "67BF3A8E8EF5FAE0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D28C31C8C910AFF"]
+			id: "24DF4AFA0E0CB61A"
+			rewards: [
+				{
+					id: "69208624DF88A9A2"
+					item: {
+						count: 1
+						id: "l2hostility:curse_of_sloth"
+					}
+					type: "item"
+				}
+				{
+					id: "076F715BF702129E"
+					item: {
+						count: 1
+						id: "l2hostility:divinity_light"
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7A85AAD826772545"
+					item: {
+						count: 1
+						id: "l2hostility:bottle_of_sanity"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "61EE12C15CE8270E"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D28C31C8C910AFF"]
+			id: "2BAF68FC7BD3801C"
+			tasks: [{
+				id: "6E23CCDC3C35DA60"
+				item: { count: 1, id: "l2hostility:hostility_orb" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BAF68FC7BD3801C"]
+			id: "073CC2623FA878D7"
+			tasks: [{
+				id: "0F641024F2BE3E18"
+				item: { count: 1, id: "l2hostility:hostility_spawner" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BAF68FC7BD3801C"]
+			id: "2631C608EF11CB36"
+			tasks: [{
+				id: "15AFFFF3D6EBDE4C"
+				item: { count: 1, id: "l2hostility:hostility_detector" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BAF68FC7BD3801C"]
+			id: "394326280DD9A687"
+			rewards: [{
+				count: 3
+				id: "188D836C41D90758"
+				item: {
+					count: 1
+					id: "l2hostility:hostility_essence"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "610F086FD8A4E863"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			id: "39DE412A7F6AC0D5"
+			tasks: [{
+				id: "763309359AF0EF61"
+				item: { count: 1, id: "l2hostility:triple_strip_cape" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "39A624A2A975B071"
+			tasks: [{
+				id: "09BA285F6BA4E547"
+				item: { count: 1, id: "l2hostility:oddeyes_glasses" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			id: "76253ED7EC47D79A"
+			tasks: [{
+				id: "55D92857FE982857"
+				item: { count: 1, id: "l2hostility:infinity_glove" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "14AD2D4842474831"
+			tasks: [{
+				id: "0AB5F57A3BC9533C"
+				item: { count: 1, id: "l2hostility:curse_of_envy" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			id: "365500F85E1856AB"
+			tasks: [{
+				id: "35B2C4032AC707F4"
+				item: { count: 1, id: "l2hostility:curse_of_greed" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			id: "27F96BD09C8FC7FE"
+			tasks: [{
+				id: "24622F4CA81EE5C3"
+				item: { count: 1, id: "l2hostility:curse_of_pride" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "0242CD9C144AAB1E"
+			tasks: [{
+				id: "72D8F0D9B6458B41"
+				item: { count: 1, id: "l2hostility:ring_of_reflection" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			id: "6C6B3E60C4A500B1"
+			tasks: [{
+				id: "55CB1E0BB46B5B07"
+				item: { count: 1, id: "l2hostility:flaming_thorn" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			id: "2432BD92AF71B703"
+			tasks: [{
+				id: "0C5947765A2F4613"
+				item: { count: 1, id: "l2hostility:abrahadabra" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			id: "2CE5409263597986"
+			tasks: [{
+				id: "2859D13995501E75"
+				item: { count: 1, id: "l2hostility:curse_of_gluttony" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			id: "3E8A9BA7A51CD514"
+			tasks: [{
+				id: "6F6AF5AA33E70F21"
+				item: { count: 1, id: "l2hostility:curse_of_lust" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			id: "7B9804645AB80A5B"
+			tasks: [{
+				id: "2C4FCE3309313D07"
+				item: { count: 1, id: "l2hostility:curse_of_sloth" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			id: "56E975E2B4F7F436"
+			tasks: [{
+				id: "60657989D2D61AA0"
+				item: { count: 1, id: "l2hostility:ring_of_ocean" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			id: "3F8BFC8F49CCC7FC"
+			tasks: [{
+				id: "2A241DB6A9778D4B"
+				item: { count: 1, id: "l2hostility:curse_of_wrath" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			id: "592725DB504D7574"
+			tasks: [{
+				id: "48F45A79F3441698"
+				item: { count: 1, id: "l2hostility:ring_of_life" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "3F18DF2E38B69A77"
+			tasks: [{
+				id: "7F42D46B52C0CDE2"
+				item: { count: 1, id: "l2hostility:ring_of_divinity" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			id: "0314B08D83D16D61"
+			tasks: [{
+				id: "0D9BC781846B3A1E"
+				item: { count: 1, id: "l2hostility:ring_of_corrosion" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			id: "64EDB5AFC56E5D97"
+			tasks: [{
+				id: "43052B565E851402"
+				item: { count: 1, id: "l2hostility:ring_of_healing" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			id: "423E438925A3D178"
+			tasks: [{
+				id: "39466DE9B98BC230"
+				item: { count: 1, id: "l2hostility:imagine_breaker" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			id: "08325F106E771352"
+			tasks: [{
+				id: "2C642866498B89F5"
+				item: { count: 1, id: "l2hostility:abyssal_thorn" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			id: "5EEAEBFBFFB67E5E"
+			tasks: [{
+				id: "2B3380B1C2E4533B"
+				item: { count: 1, id: "l2hostility:divinity_cross" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			id: "2FCFCE1DB645DBCB"
+			tasks: [{
+				id: "00D829174C378268"
+				item: { count: 1, id: "l2hostility:greed_of_nidhoggur" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.0d
+		}
+		{
+			id: "58EF1B351BD12414"
+			tasks: [{
+				id: "6DE897246A259047"
+				item: { count: 1, id: "l2hostility:divinity_light" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			id: "4AA1A30958A31ADF"
+			tasks: [{
+				id: "626AEFEC20814123"
+				item: { count: 1, id: "l2hostility:detector_glasses" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			id: "7E14F1ABD595D038"
+			tasks: [{
+				id: "0BD691171BB5FB8A"
+				item: { count: 1, id: "l2hostility:ring_of_incarceration" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 11.0d
+		}
+		{
+			id: "49A88443168A2B4D"
+			tasks: [{
+				id: "46242C800941B1B7"
+				item: { count: 1, id: "l2hostility:pocket_of_restoration" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			id: "2A41A1F2CB370AE2"
+			tasks: [{
+				id: "5AEE819007FC75C2"
+				item: { count: 1, id: "l2hostility:platinum_star" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2BAF68FC7BD3801C"]
+			id: "3E9169A3855D5A70"
+			tasks: [{
+				id: "7737D0589865A48A"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3E9169A3855D5A70"]
+			id: "4AC5D57D02BEE6FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A884595674F6C6E"
+				table_id: 5588547983890304019L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "6FF21D8DB6BEACA2"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3E9169A3855D5A70"]
+			id: "31EE6EC68BF5F416"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5283471DEE27160E"
+				table_id: 3740915071424151585L
+				type: "random"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "0DC5EC074D6F5A0C"
+					item: { components: { "ftbquests:missing_item": "5x rainbowcompound:rainbow_compound" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "790B1473B4CFAB09"
+					item: { count: 1, id: "minecraft:netherite_ingot" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3E9169A3855D5A70"]
+			id: "56FC4C40260C35CA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "023A41326E0DEDFD"
+				table_id: 8079709257971551183L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7E2C70939E172550"
+				item: { components: { "ftbquests:missing_item": "rainbowcompound:netherstar_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3E9169A3855D5A70"]
+			id: "617BF6BD2EF32B4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FB880D2DBA0D57B"
+				table_id: 5484222585806656543L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6FDC9C379B69BCB8"
+					points: false
+					type: "xp"
+					value: 10L
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "490D2180CE83728D"
+					item: { components: { "ftbquests:missing_item": "5x rainbowcompound:netherstar_ingot" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3E9169A3855D5A70"]
+			id: "34AC8BC6F5474022"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EF002EBEB5E0248"
+				table_id: 2751993998816365685L
+				type: "random"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "0F25F54ED70173E3"
+					item: { components: { "ftbquests:missing_item": "10x rainbowcompound:netherstar_ingot" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "711458047B576CFA"
+					item: { components: { "ftbquests:missing_item": "3x rainbowcompound:radiance_resonant_assembly" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "55331E5D4072C286"
+					item: { components: { "ftbquests:missing_item": "3x rainbowcompound:shadow_resonant_assembly" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "518F1D671F8576D0"
+					item: { components: { "ftbquests:missing_item": "10x rainbowcompound:strange_colored_ingot" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2DFF47227054040D"
+					item: { count: 1, id: "minecraft:netherite_block" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "0EEF09CC2BF9714C"
+			tasks: [{
+				id: "5007C392B35102D5"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+}

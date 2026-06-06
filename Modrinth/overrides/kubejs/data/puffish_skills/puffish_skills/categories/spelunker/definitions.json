@@ -1,0 +1,267 @@
+{
+	"root_info": {
+		"title": [
+			{
+				"translate": "skills.spelunker",
+				"color": "gold"
+			}
+		],
+		"description": {
+			"translate": "skills.spelunker.description",
+			"color": "white"
+		},
+		"size": 2.5,
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond_pickaxe"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "e2knw8qt08o0lu5d"
+		}
+	},
+	"root_mining_speed+5%": {
+		"title": ["+5% ", {"translate":"skills.spelunker.mining", "color":"white"}],
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:haste"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:mining_speed",
+					"value": 0.05,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"mining_speed+5%": {
+		"title": ["+5% ", {"translate":"skills.spelunker.mining", "color":"white"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:haste"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:mining_speed",
+					"value": 0.05,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"mining_speed+10%": {
+		"title":  ["§6+10% ", {"translate":"skills.spelunker.mining", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond_pickaxe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:mining_speed",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_fortune+0.1": {
+		"title":  ["+0.1 ", {"translate":"skills.spelunker.fortune", "color":"white"}],
+		"description": {"translate":"skills.spelunker.fortune.description", "color":"gold"},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "gold_ingot"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fortune",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"fortune+0.1": {
+		"title":  ["+0.1 ", {"translate":"skills.spelunker.fortune", "color":"white"}],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "gold_ingot"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fortune",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"fortune+0.2": {
+		"title": ["§6+0.2 ", {"translate":"skills.spelunker.fortune", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fortune",
+					"value": 0.2,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_luck+1": {
+		"title": ["+1 ", {"translate":"skills.spelunker.luck", "color":"white"}],
+		"description": {"translate":"skills.spelunker.luck.description", "color":"gold"},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1.0,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"root_experience+10%": {
+		"title": ["+10% ", {"translate":"skills.spelunker.experience_gained", "color":"white"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "experience_bottle"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"experience+10%": {
+		"title": ["§6+10% ", {"translate":"skills.spelunker.experience_gained", "color":"gold"}],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "experience_bottle"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.1,
+					"operation": "add_value"
+				}
+			}
+		]
+	},
+	"experience+25%": {
+		"title": ["§6+25% ", {"translate":"skills.spelunker.experience_gained", "color":"gold"}],
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "experience_bottle"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.25,
+					"operation": "add_value"
+				}
+			}
+		]
+	}
+}

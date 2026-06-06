@@ -1,0 +1,18 @@
+#Schematic Fix Mod Configuration
+[general]
+	#Enable file watcher for schematic uploads
+	enableFileWatcher = true
+	#Interval in milliseconds to check file stability
+	# Default: 200
+	# Range: 50 ~ 5000
+	stableCheckInterval = 200
+	#Maximum time in milliseconds to consider a file stable
+	# Default: 500
+	# Range: 100 ~ 10000
+	maxStableTime = 500
+	#Automatically clean detected anomalies
+	autoCleanAnomalies = true
+	#Backup anomalous files to anomaly directory
+	backupAnomalousFiles = true
+	#Notify player in chat when anomalies are detected
+	notifyPlayerOnAnomaly = false

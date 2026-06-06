@@ -1,0 +1,31 @@
+{
+	id: "3A15C5C141B0CADD"
+	loot_size: 1
+	order_index: 38
+	rewards: [
+		{ id: "6C2AF0B39A72E2D8", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "3E5DD74A1169A738", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "78C3EDE665C977E2", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "61DAC2927A66C85D", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "6863F9931F5D3AE7", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "469EE3FF00247D6D", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "3DC6461886B56751", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "410EBD1ECAB019B7", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "3DF874A9D74FB908", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{
+			count: 7
+			id: "2DD3FDB1B20B8214"
+			item: {
+				count: 1
+				id: "touhou_little_maid:garage_kit"
+			}
+		}
+		{ id: "12BC574E69B7DC03", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "5C44C50E82F69B17", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "2426C8F0AC0E7AE7", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "53E4CBC1EDC39C3E", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "69E055343FB49B83", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "5B51DC42160EEE16", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+		{ id: "4B3684FB968746CA", item: { count: 1, id: "touhou_little_maid:garage_kit" } }
+	]
+}

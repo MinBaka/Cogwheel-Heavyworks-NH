@@ -1,0 +1,32 @@
+{
+	id: "7D38D3A44CDD7CFD"
+	loot_size: 1
+	order_index: 34
+	rewards: [
+		{
+			count: 16
+			id: "322DD34A68B014F6"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+		}
+		{
+			count: 8
+			id: "5ECEAC45B84B8A69"
+			item: {
+				count: 1
+				id: "l2complements:enchanted_totemic_apple"
+			}
+		}
+		{
+			count: 16
+			id: "40473EB5E7735A74"
+			item: {
+				count: 1
+				id: "l2complements:totemic_apple"
+			}
+			weight: 2.0f
+		}
+	]
+}

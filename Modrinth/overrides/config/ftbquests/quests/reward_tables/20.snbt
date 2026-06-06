@@ -1,0 +1,46 @@
+{
+	id: "5868C6224C06ED2C"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ id: "787BABDAFF764524", item: { components: { "ftbquests:missing_item": "baiyin:raffle_ticket_fragment" }, count: 1, id: "ftbquests:missing_item" } }
+		{
+			count: 2
+			id: "1DBBFA851DE1F412"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_fragment"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 5
+			id: "635B5C767869CE54"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_fragment"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			id: "6BDF1DA3F7A8B520"
+			item: {
+				components: {
+					"ftbquests:missing_item": "baiyin:raffle_ticket_common"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "013A8989ABFDA4E4"
+			type: "xp_levels"
+			xp_levels: 2
+		}
+	]
+}

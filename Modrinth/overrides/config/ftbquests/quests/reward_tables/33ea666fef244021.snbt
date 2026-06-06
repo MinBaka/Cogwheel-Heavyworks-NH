@@ -1,0 +1,51 @@
+{
+	id: "33EA666FEF244021"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ id: "0F8AD7B50115E19D", item: { count: 1, id: "l2hostility:protection" } }
+		{ id: "2892179080D9842C", item: { count: 1, id: "l2hostility:invisible" } }
+		{ id: "2C27F419E82B95D3", item: { count: 1, id: "l2hostility:regenerate" } }
+		{
+			id: "39F98D381AD9AFB4"
+			item: {
+				count: 1
+				id: "l2hostility:levitation"
+			}
+			weight: 0.5f
+		}
+		{ id: "31753F8073BE3313", item: { count: 1, id: "l2hostility:speedy" } }
+		{
+			id: "6815E3234EE5DEA0"
+			item: {
+				count: 1
+				id: "l2hostility:freezing"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "0ED644DD75C30EED"
+			item: {
+				count: 1
+				id: "l2hostility:nausea"
+			}
+			weight: 0.25f
+		}
+		{
+			id: "3DE0A63CFEBFB3D6"
+			item: {
+				count: 1
+				id: "l2hostility:blindness"
+			}
+			weight: 0.25f
+		}
+		{
+			id: "4033698C74E18D1C"
+			item: {
+				count: 1
+				id: "l2hostility:weakness"
+			}
+			weight: 0.5f
+		}
+	]
+}

@@ -1,0 +1,789 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "class": "com.mmd.ngengine.nodes.model.PmxModelNode",
+      "displayName": "PMX Model",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Model": "A:\\Minecraft\\.minecraft\\versions\\Cogwheel-Heavyworks-NH\\mods\\CustomSteve\\pmxModels\\蕾米Halloween\\蕾米Halloween.pmx",
+        "Unit Scale": 0.08,
+        "World Scale": 1.0,
+        "Total Mass": 60.0,
+        "Body Scale": 0.8,
+        "Kp Scale": 1.0,
+        "Kd Scale": 1.0,
+        "Torque Scale": 1.0,
+        "Spring Scale": 0.0,
+        "Spring Damping": 0.0,
+        "Linear Spring": 0.0,
+        "Body Friction": 0.0,
+        "Linear Damping": 0.0
+      },
+      "portIds": {
+        "out_Model": 1,
+        "out_PmxSkel": 2,
+        "out_Mesh": 3,
+        "out_RigidBody": 4,
+        "out_HumanoidSkel": 5,
+        "out_TPoseSkel": 6,
+        "out_Ragdoll": 7
+      }
+    },
+    {
+      "id": 2,
+      "class": "net.csmod.customsteve.core.nodes.McInputDataNode",
+      "displayName": "MC Input Data",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "out_MoveDir": 8,
+        "out_MoveSpeed": 9,
+        "out_JumpPressed": 10,
+        "out_SneakHeld": 11,
+        "out_FlyToggle": 12,
+        "out_LookYaw": 13,
+        "out_LookPitch": 14,
+        "out_HeadYaw": 15,
+        "out_BodyYaw": 16,
+        "out_StickX": 17,
+        "out_StickZ": 18
+      }
+    },
+    {
+      "id": 3,
+      "class": "net.csmod.customsteve.core.nodes.McStateDetectorNode",
+      "displayName": "MC State Detector",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Jump Speed": 5.0,
+        "Gravity": 9.81,
+        "Land Threshold": 0.02,
+        "Walk Speed Threshold": 0.3,
+        "Run Speed Threshold": 3.0,
+        "Fall Distance Threshold": 1.5,
+        "Idle Timeout": 8.0,
+        "Idle Anim Count": 3.0,
+        "Default Dual Mode": false,
+        "Auto Battle": true,
+        "Auto Switch Mode": 1.0,
+        "Battle Reset Ticks": 100.0
+      },
+      "portIds": {
+        "in_MoveSpeed": 19,
+        "in_SneakHeld": 20,
+        "in_JumpPressed": 21,
+        "in_FlyToggle": 22,
+        "out_BodyState": 23,
+        "out_DualMode": 24,
+        "out_UpperBodyMode": 25,
+        "out_RightActionState": 26,
+        "out_LeftActionState": 27,
+        "out_UpperBodyEnabled": 28,
+        "out_SingleBoneMode": 29,
+        "out_WeaponOnBack": 30,
+        "out_ExprState": 31,
+        "out_SearchTag": 32,
+        "out_RootYOffset": 33,
+        "out_BattleMode": 34,
+        "out_ExternalConditions": 35
+      }
+    },
+    {
+      "id": 4,
+      "class": "net.csmod.customsteve.core.nodes.VmdPlayerNode",
+      "displayName": "VMD Player",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "out_PlayerActive": 36,
+        "out_PlayerVmdPath": 37,
+        "out_PlayerLoop": 38,
+        "out_PlayerFrame": 39
+      }
+    },
+    {
+      "id": 5,
+      "class": "net.csmod.customsteve.core.nodes.AnimStateMachineNode",
+      "displayName": "Anim State Machine",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Config Path": "A:\\Minecraft\\.minecraft\\versions\\Cogwheel-Heavyworks-NH\\config\\customsteve\\animation.json",
+        "VMD Base Dir": "A:\\Minecraft\\.minecraft\\versions\\Cogwheel-Heavyworks-NH\\mods\\CustomSteve\\motions/",
+        "Body VMD Map": "idle\u003dstand.vmd,idle_battle\u003dstand_LO.vmd,idle_1\u003dstand_Idle_1.vmd,idle_2\u003dstand_Idle_2.vmd,idle_3\u003dstand_Idle_3.vmd,walk\u003dwalk.vmd,run\u003drun.vmd,jump\u003djump.vmd,fall\u003dfall.vmd,swim\u003dswim.vmd,ladder\u003dladder.vmd,ladderUp\u003dladderUp.vmd,ladderDown\u003dladderDown.vmd,sneak_idle\u003dsquat_LO.vmd,sneak_walk\u003dsneaking_LO.vmd,fly_idle\u003dfly.vmd,fly_move\u003dflying.vmd,elytra\u003dfly.vmd,riding\u003driding.vmd,sleep\u003dsleep.vmd",
+        "Action VMD Map": "attack_bare\u003dBarehandedWaveRight.vmd,attack_stick\u003dStickWaveRight.vmd,attack_item\u003dItemWaveRight.vmd,attack_shield\u003dShieldWaveRight.vmd,shield_parry\u003dShieldParryRight.vmd,shield_hold\u003dShieldHoldRight.vmd,stick_hold\u003dStickHoldRight.vmd,item_hold\u003dItemHoldRight.vmd,bow_draw\u003duseBow_UP.vmd,eat\u003dDrinkRight.vmd",
+        "State Blend Weights": "",
+        "Spear VMD Map": ""
+      },
+      "portIds": {
+        "in_HumanoidSkel": 40,
+        "in_PmxSkel": 41,
+        "in_BodyState": 42,
+        "in_DualMode": 43,
+        "in_UpperBodyMode": 44,
+        "in_RightActionState": 45,
+        "in_LeftActionState": 46,
+        "in_ExternalConditions": 47,
+        "in_PlayerActive": 48,
+        "in_PlayerVmdPath": 49,
+        "in_PlayerLoop": 50,
+        "in_PlayerFrame": 51,
+        "out_HumanoidSkel": 52,
+        "out_DebugPmxSkel": 53,
+        "out_DirectPmxSkel": 54,
+        "out_ResidualPmxSkel": 55,
+        "out_ResidualBoneMask": 56,
+        "out_ExprState": 57,
+        "out_ExprVmd": 58,
+        "out_ExprLoop": 59,
+        "out_ExprStack": 60,
+        "out_ExprStackJson": 61
+      }
+    },
+    {
+      "id": 6,
+      "class": "net.csmod.customsteve.core.nodes.McBodyInterpolationNode",
+      "displayName": "MC Body Interpolation",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enabled": true,
+        "Battle Mode": false,
+        "Force Single-Bone": false,
+        "Invert Body Pitch": true,
+        "Invert Non-Battle Head Pitch": true,
+        "Head Yaw Limit": 30.0,
+        "Pitch Limit": 60.0,
+        "Single-Bone Pitch": 30.0,
+        "Single-Bone Eye": 50.0,
+        "Lower Body Yaw": 15.0,
+        "Lower Body Pitch": 15.0,
+        "Swim Elytra Special Pitch": true,
+        "Swim Elytra Body Pitch %": 30.0,
+        "Swim Elytra Head Pitch %": 70.0,
+        "Swim Elytra Arm Pitch %": 60.0
+      },
+      "portIds": {
+        "in_HumanoidSkel": 62,
+        "in_HeadYaw": 63,
+        "in_BodyYaw": 64,
+        "in_Pitch": 65,
+        "in_BattleMode": 66,
+        "out_HumanoidSkel": 67
+      }
+    },
+    {
+      "id": 7,
+      "class": "net.csmod.customsteve.core.nodes.ExpressionLayerNode",
+      "displayName": "Expression Layer",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Auto Blink": true,
+        "Blink Interval": 4.0,
+        "Blink Duration": 0.15,
+        "Blink Morph": "まばたき"
+      },
+      "portIds": {
+        "in_ExprState": 68,
+        "in_ExprVmd": 69,
+        "in_ExprLoop": 70,
+        "in_ExprStack": 71,
+        "in_ExprStackJson": 72,
+        "in_PmxSkel": 73,
+        "in_Mesh": 74,
+        "out_Mesh": 75
+      }
+    },
+    {
+      "id": 8,
+      "class": "com.mmd.ngengine.nodes.humanoid.HumanoidUpdateNode",
+      "displayName": "Humanoid Update",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_HumanoidSkel": 76,
+        "in_PmxSkel": 77,
+        "out_HumanoidSkel": 78
+      }
+    },
+    {
+      "id": 9,
+      "class": "com.mmd.ngengine.nodes.humanoid.Humanoid2PmxNode",
+      "displayName": "Humanoid -\u003e PMX",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_HumanoidSkel": 79,
+        "in_PmxSkel": 80,
+        "out_PmxSkel": 81
+      }
+    },
+    {
+      "id": 10,
+      "class": "net.csmod.customsteve.core.nodes.HumanoidFootIkBridgeNode",
+      "displayName": "Humanoid Foot IK Bridge",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_PmxSkel": 82,
+        "out_PmxSkel": 83
+      }
+    },
+    {
+      "id": 11,
+      "class": "net.csmod.customsteve.core.nodes.PmxResidualMergeNode",
+      "displayName": "PMX Residual Merge",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_PrimaryPmxSkel": 84,
+        "in_ResidualPmxSkel": 85,
+        "in_ResidualBoneMask": 86,
+        "out_PmxSkel": 87
+      }
+    },
+    {
+      "id": 12,
+      "class": "net.csmod.customsteve.core.nodes.PlayerDirectPmxNode",
+      "displayName": "Player Direct PMX",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_BasePmxSkel": 88,
+        "in_DirectPmxSkel": 89,
+        "in_BodyYaw": 90,
+        "out_PmxSkel": 91
+      }
+    },
+    {
+      "id": 13,
+      "class": "com.mmd.ngengine.nodes.model.ModelUpdateNode",
+      "displayName": "Animation Update",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Morphs": true,
+        "Grants": true,
+        "IK": true
+      },
+      "portIds": {
+        "in_PmxSkel": 92,
+        "in_Mesh": 93,
+        "out_PmxSkel": 94,
+        "out_Mesh": 95
+      }
+    },
+    {
+      "id": 14,
+      "class": "com.mmd.ngengine.nodes.physics.PmxSkel2RBNode",
+      "displayName": "PmxSkel -\u003e RigidBody",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enable": true
+      },
+      "portIds": {
+        "in_PmxSkel": 96,
+        "in_RigidBody": 97,
+        "out_RigidBody": 98
+      }
+    },
+    {
+      "id": 15,
+      "class": "com.mmd.ngengine.nodes.physics.PhysicsWorldNode",
+      "displayName": "Physics World",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enable": true,
+        "Tick Mode": 0,
+        "Fix Threshold": 1.0,
+        "Solver Iter": 20,
+        "Fixed Timestep": 0.016666668,
+        "Cloth Max Substeps": 8,
+        "Gravity Y": -9.81,
+        "Use Spring Input": true,
+        "Rag Solver Iter": 20,
+        "Rag Max Substeps": 1000,
+        "Rag Timestep": 0.004166667,
+        "Rag Gravity Y": -9.81,
+        "Rag Ground Enabled": false,
+        "Rag Ground Y": -1.0,
+        "Rag Ground Friction": 0.8,
+        "Physics Freq Divisor": 1
+      },
+      "portIds": {
+        "in_RigidBody": 99,
+        "in_Ragdoll": 100,
+        "in_SceneBoxes": 101,
+        "out_RigidBody": 102,
+        "out_Ragdoll": 103
+      }
+    },
+    {
+      "id": 16,
+      "class": "com.mmd.ngengine.nodes.physics.RB2PmxSkelNode",
+      "displayName": "RigidBody -\u003e PmxSkel",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enable": true
+      },
+      "portIds": {
+        "in_RigidBody": 104,
+        "in_PmxSkel": 105,
+        "out_PmxSkel": 106
+      }
+    },
+    {
+      "id": 17,
+      "class": "com.mmd.ngengine.nodes.model.RenderOutputNode",
+      "displayName": "Render Output",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_Model": 107,
+        "in_PmxSkel": 108,
+        "in_Mesh": 109
+      }
+    },
+    {
+      "id": 18,
+      "class": "net.csmod.customsteve.core.nodes.EquipmentPmxNode",
+      "displayName": "Equipment PMX",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {},
+      "portIds": {
+        "in_PmxSkel": 110,
+        "out_PmxSkel": 111
+      }
+    },
+    {
+      "id": 19,
+      "class": "com.mmd.ngengine.nodes.render.DebugRenderBonesNode",
+      "displayName": "Debug Bones",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enable": true,
+        "Show Lines": true,
+        "Show Nodes": true,
+        "X-Ray": true,
+        "Show PMX": true,
+        "Show Humanoid": true,
+        "Show BVH": true
+      },
+      "portIds": {
+        "in_PmxSkel": 112,
+        "in_HumanoidSkel": 113,
+        "in_BvhSkel": 114
+      }
+    },
+    {
+      "id": 20,
+      "class": "com.mmd.ngengine.nodes.render.DebugRenderPhysicsNode",
+      "displayName": "Debug Physics",
+      "editorX": 0.0,
+      "editorY": 0.0,
+      "params": {
+        "Enable": true,
+        "Cloth": true,
+        "Cloth Joints": false,
+        "Ragdoll": true,
+        "Controller": false,
+        "Terrain Probe": false,
+        "X-Ray": true
+      },
+      "portIds": {
+        "in_RigidBody": 115,
+        "in_Ragdoll": 116
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "fromNodeId": 2,
+      "fromPortId": 9,
+      "toNodeId": 3,
+      "toPortId": 19
+    },
+    {
+      "id": 2,
+      "fromNodeId": 2,
+      "fromPortId": 11,
+      "toNodeId": 3,
+      "toPortId": 20
+    },
+    {
+      "id": 3,
+      "fromNodeId": 2,
+      "fromPortId": 10,
+      "toNodeId": 3,
+      "toPortId": 21
+    },
+    {
+      "id": 4,
+      "fromNodeId": 2,
+      "fromPortId": 12,
+      "toNodeId": 3,
+      "toPortId": 22
+    },
+    {
+      "id": 5,
+      "fromNodeId": 2,
+      "fromPortId": 15,
+      "toNodeId": 6,
+      "toPortId": 63
+    },
+    {
+      "id": 6,
+      "fromNodeId": 2,
+      "fromPortId": 16,
+      "toNodeId": 6,
+      "toPortId": 64
+    },
+    {
+      "id": 7,
+      "fromNodeId": 2,
+      "fromPortId": 14,
+      "toNodeId": 6,
+      "toPortId": 65
+    },
+    {
+      "id": 8,
+      "fromNodeId": 1,
+      "fromPortId": 5,
+      "toNodeId": 5,
+      "toPortId": 40
+    },
+    {
+      "id": 9,
+      "fromNodeId": 1,
+      "fromPortId": 2,
+      "toNodeId": 5,
+      "toPortId": 41
+    },
+    {
+      "id": 10,
+      "fromNodeId": 13,
+      "fromPortId": 94,
+      "toNodeId": 14,
+      "toPortId": 96
+    },
+    {
+      "id": 11,
+      "fromNodeId": 13,
+      "fromPortId": 94,
+      "toNodeId": 16,
+      "toPortId": 105
+    },
+    {
+      "id": 12,
+      "fromNodeId": 16,
+      "fromPortId": 106,
+      "toNodeId": 18,
+      "toPortId": 110
+    },
+    {
+      "id": 13,
+      "fromNodeId": 18,
+      "fromPortId": 111,
+      "toNodeId": 17,
+      "toPortId": 108
+    },
+    {
+      "id": 14,
+      "fromNodeId": 3,
+      "fromPortId": 23,
+      "toNodeId": 5,
+      "toPortId": 42
+    },
+    {
+      "id": 15,
+      "fromNodeId": 3,
+      "fromPortId": 24,
+      "toNodeId": 5,
+      "toPortId": 43
+    },
+    {
+      "id": 16,
+      "fromNodeId": 3,
+      "fromPortId": 25,
+      "toNodeId": 5,
+      "toPortId": 44
+    },
+    {
+      "id": 17,
+      "fromNodeId": 3,
+      "fromPortId": 26,
+      "toNodeId": 5,
+      "toPortId": 45
+    },
+    {
+      "id": 18,
+      "fromNodeId": 3,
+      "fromPortId": 27,
+      "toNodeId": 5,
+      "toPortId": 46
+    },
+    {
+      "id": 19,
+      "fromNodeId": 3,
+      "fromPortId": 35,
+      "toNodeId": 5,
+      "toPortId": 47
+    },
+    {
+      "id": 20,
+      "fromNodeId": 3,
+      "fromPortId": 34,
+      "toNodeId": 6,
+      "toPortId": 66
+    },
+    {
+      "id": 21,
+      "fromNodeId": 4,
+      "fromPortId": 36,
+      "toNodeId": 5,
+      "toPortId": 48
+    },
+    {
+      "id": 22,
+      "fromNodeId": 4,
+      "fromPortId": 37,
+      "toNodeId": 5,
+      "toPortId": 49
+    },
+    {
+      "id": 23,
+      "fromNodeId": 4,
+      "fromPortId": 38,
+      "toNodeId": 5,
+      "toPortId": 50
+    },
+    {
+      "id": 24,
+      "fromNodeId": 4,
+      "fromPortId": 39,
+      "toNodeId": 5,
+      "toPortId": 51
+    },
+    {
+      "id": 25,
+      "fromNodeId": 5,
+      "fromPortId": 52,
+      "toNodeId": 6,
+      "toPortId": 62
+    },
+    {
+      "id": 26,
+      "fromNodeId": 6,
+      "fromPortId": 67,
+      "toNodeId": 8,
+      "toPortId": 76
+    },
+    {
+      "id": 27,
+      "fromNodeId": 1,
+      "fromPortId": 2,
+      "toNodeId": 8,
+      "toPortId": 77
+    },
+    {
+      "id": 28,
+      "fromNodeId": 8,
+      "fromPortId": 78,
+      "toNodeId": 9,
+      "toPortId": 79
+    },
+    {
+      "id": 29,
+      "fromNodeId": 1,
+      "fromPortId": 2,
+      "toNodeId": 9,
+      "toPortId": 80
+    },
+    {
+      "id": 30,
+      "fromNodeId": 9,
+      "fromPortId": 81,
+      "toNodeId": 10,
+      "toPortId": 82
+    },
+    {
+      "id": 31,
+      "fromNodeId": 10,
+      "fromPortId": 83,
+      "toNodeId": 11,
+      "toPortId": 84
+    },
+    {
+      "id": 32,
+      "fromNodeId": 5,
+      "fromPortId": 55,
+      "toNodeId": 11,
+      "toPortId": 85
+    },
+    {
+      "id": 33,
+      "fromNodeId": 5,
+      "fromPortId": 56,
+      "toNodeId": 11,
+      "toPortId": 86
+    },
+    {
+      "id": 34,
+      "fromNodeId": 11,
+      "fromPortId": 87,
+      "toNodeId": 12,
+      "toPortId": 88
+    },
+    {
+      "id": 35,
+      "fromNodeId": 5,
+      "fromPortId": 54,
+      "toNodeId": 12,
+      "toPortId": 89
+    },
+    {
+      "id": 36,
+      "fromNodeId": 2,
+      "fromPortId": 16,
+      "toNodeId": 12,
+      "toPortId": 90
+    },
+    {
+      "id": 37,
+      "fromNodeId": 12,
+      "fromPortId": 91,
+      "toNodeId": 13,
+      "toPortId": 92
+    },
+    {
+      "id": 38,
+      "fromNodeId": 5,
+      "fromPortId": 57,
+      "toNodeId": 7,
+      "toPortId": 68
+    },
+    {
+      "id": 39,
+      "fromNodeId": 5,
+      "fromPortId": 58,
+      "toNodeId": 7,
+      "toPortId": 69
+    },
+    {
+      "id": 40,
+      "fromNodeId": 5,
+      "fromPortId": 59,
+      "toNodeId": 7,
+      "toPortId": 70
+    },
+    {
+      "id": 41,
+      "fromNodeId": 5,
+      "fromPortId": 60,
+      "toNodeId": 7,
+      "toPortId": 71
+    },
+    {
+      "id": 42,
+      "fromNodeId": 5,
+      "fromPortId": 61,
+      "toNodeId": 7,
+      "toPortId": 72
+    },
+    {
+      "id": 43,
+      "fromNodeId": 1,
+      "fromPortId": 2,
+      "toNodeId": 7,
+      "toPortId": 73
+    },
+    {
+      "id": 44,
+      "fromNodeId": 1,
+      "fromPortId": 3,
+      "toNodeId": 7,
+      "toPortId": 74
+    },
+    {
+      "id": 45,
+      "fromNodeId": 7,
+      "fromPortId": 75,
+      "toNodeId": 13,
+      "toPortId": 93
+    },
+    {
+      "id": 46,
+      "fromNodeId": 15,
+      "fromPortId": 102,
+      "toNodeId": 20,
+      "toPortId": 115
+    },
+    {
+      "id": 47,
+      "fromNodeId": 9,
+      "fromPortId": 81,
+      "toNodeId": 19,
+      "toPortId": 112
+    },
+    {
+      "id": 48,
+      "fromNodeId": 8,
+      "fromPortId": 78,
+      "toNodeId": 19,
+      "toPortId": 113
+    },
+    {
+      "id": 49,
+      "fromNodeId": 1,
+      "fromPortId": 4,
+      "toNodeId": 14,
+      "toPortId": 97
+    },
+    {
+      "id": 50,
+      "fromNodeId": 14,
+      "fromPortId": 98,
+      "toNodeId": 15,
+      "toPortId": 99
+    },
+    {
+      "id": 51,
+      "fromNodeId": 15,
+      "fromPortId": 102,
+      "toNodeId": 16,
+      "toPortId": 104
+    },
+    {
+      "id": 52,
+      "fromNodeId": 13,
+      "fromPortId": 95,
+      "toNodeId": 17,
+      "toPortId": 109
+    },
+    {
+      "id": 53,
+      "fromNodeId": 1,
+      "fromPortId": 1,
+      "toNodeId": 17,
+      "toPortId": 107
+    }
+  ]
+}
